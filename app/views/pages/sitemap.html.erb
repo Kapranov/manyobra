@@ -1,0 +1,76 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :heading do %>
+<section class="page-top">
+    <section class="parallax parallax-top" data-stellar-background-ratio="0.4" style="background-image:url(<%= image_url("slides/hill.jpg") %>);">
+        <div class="container">
+            <div class="row center">
+                <div class="col-md-12"></div>
+            </div>
+        </div>
+    </section>
+    <div class="page-top-info with-parallax container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><%= link_to t('.home'), page_home_path %></li>
+                    <li class="active"><%= t'.pages' %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1><%= raw t'.title' %></h1>
+            </div>
+        </div>
+    </div>
+</section>
+<% end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="sitemap list icons">
+                <li><i class="fa fa-caret-right"></i><%= link_to t('.home'), root_path %></li>
+                <li><i class="fa fa-caret-right"></i><%= link_to t('.about'), page_about_us_path %></li>
+                <li>
+                    <i class="fa fa-caret-right"></i><%= link_to t('.services.title'), page_contact_path %>
+                    <ul class="list icons">
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.extensive_repairs'), service_page_extensive_repairs_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.repair_of_kitchen'), service_page_repair_of_kitchen_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.installation_of_an_electrical_wiring'), service_page_installation_of_an_electrical_wiring_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.repair_of_bathrooms'), service_page_repair_of_bathrooms_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.installation_of_plumbing'), service_page_installation_of_plumbing_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.repair_of_office_and_industrial_premises'), service_page_repair_of_office_and_industrial_premises_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.registration_of_licenses'), service_page_registration_of_licenses_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.drafting_projects_of_architectural_and_engineering'), service_page_drafting_projects_of_architectural_and_engineering_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.construction'), service_page_construction_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.reforms_in_neighboring_communities'), service_page_reforms_in_neighboring_communities_path %></li>
+                        <li><i class="fa fa-caret-right"></i><%= link_to t('.services.urgent_repair'), service_page_urgent_repair_path %></li>
+                    </ul>
+                </li>
+                <li><i class="fa fa-caret-right"></i><%= link_to t('.prices'), page_prices_path %></li>
+                <li><i class="fa fa-caret-right"></i><%= link_to t('.blog'), blog_path %></li>
+                <li><i class="fa fa-caret-right"></i><%= link_to t('.contact'), page_contact_path %></li>
+            </ul>
+        </div>
+        <div class="col-md-6 hidden-xs">
+            <h2><%= t'.company.who_we_are' %></h2>
+            <p class="lead"><%= t'.company.brief_description' %></p>
+            <p><%= t'.company.description' %></p>
+            <p><%= t'.company.achievement' %></p>
+            <p><%= t'.company.workers.text' %></p>
+            <ul class="list icons">
+                <li><i class="fa fa-check"></i><%= t'.company.workers.bricklayers' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.plumbers' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.electricians' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.locksmiths' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.laying_parquet' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.chapadores' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.air_conditioning' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.heating' %></li>
+                <li><i class="fa fa-check"></i><%= t'.company.workers.and_much_more' %></li>
+            </ul>
+        </div>
+    </div>
+</div>

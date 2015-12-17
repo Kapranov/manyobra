@@ -1,0 +1,21 @@
+﻿				<div class="container">
+					<section class="page-not-found">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-1">
+								<div class="page-not-found-main">
+									<h2>404 <i class="fa fa-file"></i></h2>
+									<p><%= t('.text', default: "We're sorry, but the page you were looking for doesn't exist.") %></p>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<h4><%= t('.title_links', default: 'Here are some useful links') %>:</h4>
+								<ul class="nav nav-list primary">
+									<li><%= link_to t('Home'), page_home_path %></li>
+                                    <li><%= link_to t('About_me'), page_about_me_path %></li>
+                                    <li><%= link_to t('Contact'), page_contact_path %></li>
+								</ul>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>

@@ -1,0 +1,1828 @@
+# -*- encoding : utf-8 -*-
+#Copyright (c) 2014 Zettheme | Andrey Zhuk. All rights reserved.
+#File is part of Manyobra App
+#Spanish translation es.yml
+
+es:
+
+  index: "index-in-spanish"
+  contact: "Contactos"
+
+  # Website translation menu navigation
+  Home: "Inicio"
+  Services: "Servicios"
+  Prices: "Presupuestos"
+  Blog: "Blog"
+  About_us: "Sobre nosotros"
+  Contact: "Contacto"
+  Logout: "Salir"
+  Login: "Iniciar sesion"
+  Sign_Up: "Registrarse"
+  Authorization: "Autorización"
+  Products: "Productos"
+  Customers: "Clientes"
+  Events: "Eventos"
+  Testimonials: "Testimonios"
+  Offers: "Ofertas"
+  Sitemap: "Mapa del sitio"
+
+  email:
+    alert:
+      successful: "%{name}, Mensaje fue enviado, pronto nos pondremos en contacto con usted por correo electrónico: %{email} o por telefono al numero: %{phone}"
+      error: "%{name} hay %{error} y no puede enviar este mensaje debido a que:"
+  Comments: "Comentarios"
+  error: "error"
+
+  activemodel:
+    models:
+      message: "повідомлення"
+        #one: "повідомлення"
+        #other: "повідомлень"
+    attributes:
+      character:
+        name: "Ім'я"
+
+  helpers:
+    label:
+      user:
+        name: "Ім'я"
+        first_name: "Ім'я"
+        last_name: ""
+
+  Register_An_Account: "Registrar una cuenta"
+
+  pages:
+    home: #Home Page
+      view: "Más"
+      details: "Detalles"
+      page:
+        title: "Empresa de reformas y construcciones"
+        description: "Manyobra es la empresa lider de reformas integrales en valencia y construcción, reforma o reparación en naves industriales, hogares o locales comerciales. Móvil:686705360"
+        keywords: "reformas valencia, reformas integrales precios, empresa construcción valencia, presupuesto reformas valencia, interiorismo valencia, empresa interiorismo valencia, reformas en valencia, reforma de cocinas, manyobra"
+      section:
+        introduction:
+          description_one: "Nos ocupamos de todo para que no te preocupes de nada"
+          description_two: "Cada proyecto que nos confían es para nosotros individual y único"
+
+        who_we_are: 
+          title: "Empresa de reformas y construcciones"
+        we_love_our_work:
+          title: 'Nos <strong class="alternative-font default">encanta</strong> lo que hacemos y estamos orgullos de nuestro trabajo'
+          description_one: "Cada proyecto confiado a nosotros es individual y único!"
+          description_two: "Cada proyecto del cliente-nuestro proyecto-Tu proyecto-tu sueño-Tu sueño-Nuestro resultado común"
+        services:
+          title: '<strong class="alternative-font default">Servicios</strong>'
+          all: "Todos nuestros servicios"
+        how_we_can_help:
+          title: "Solicita ya tu presupuesto 100% gratis"
+          button: "Solicitar"
+        description_company:
+          random_title:
+            one: "Reformas integrales, Instalaciones en Naves Industriales y mucho más"
+            two: "Reformas de cocina, Reformas de baño, Construcciones y mucho más"
+            three: "Instalaciones de fontanería y electricidad, Reformas y mucho más"
+          paragraph: "Manyobra, S.L. es una empresa dedicada a la construcción, obras y reformas de todo tipo. Operamos en viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con seriedad, imaginación, compromiso, calidad y siempre en el plazo acordado. Ofrecemos una dirección de obra personalizada, desde las primeras ideas hasta los últimos detalles."
+        slider:
+          random_text:
+            one: "¿Necesitas una reforma?"
+            two: "¿Tienes alguna avería?"
+            three: "¿Necesitas adaptar tu nave industrial?"
+            four: "¿Quieres hacer de una casa un hogar?"
+            five: "¿Quieres calefacción sin obras?"
+          slide_one:
+            phrase_top: "Tu proyecto en buenas manos"
+            brand: "Manyobra"
+            phrase_bottom: "La respuesta profesional a tus necesidades."
+            button: "Empecemos"
+          slide_two:
+            phrase_top: "No todos somos iguales"
+            brand: "Manyobra"
+            phrase_bottom: "La diferencia la marcamos nosotros"
+            button: "Conócenos"
+        offers:
+          title: "<i class='fa fa-star-o'></i> Ofertas <strong>Especiales</strong>"
+          paragraph1: "Aprovechate de nuestras ofertas de temporada para mejorar tu comodidad."
+          paragraph2: "Disfruta de unos descuentos especiales para equipar tu hogar u oficina en sistemas de calefacción, aire acondicionado, y un sin fin de productos y servicios que podrás ver en esta sección de nuestra web."
+          button: "Ver Ofertas..."
+        posts:
+          title: "Últimos <strong>articulos</strong>"
+        map:
+          title: "Nosotros en el <strong>Mapa</strong>" # onmap
+          subtitle: "Pincha en el pin" #pick on pin
+          zoom_here: "Ampliar aquí"
+          office_in_liria: "Oficina en Llíria"
+          extensive_repairs:
+    extensive_repairs: #Extensive repairs Page
+      page:
+        title: "Reformas integrales"
+        description: "Reformas integrales"
+        keywords: "reformas integrales, reformas integrales valencia"
+      title: "Reformas integrales"
+      description: "Manyobra lleva a cabo reformas integrales de viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con el fin de responder a tus necesidades de transformación."
+      short_description: "Manyobra lleva a cabo reformas integrales de viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con el fin de responder a tus necesidades de transformación."
+      content:  " <p>Reformas integrales de viviendas, oficinas, naves industriales y locales comerciales.</p>
+                    <p>Manyobra lleva a cabo reformas integrales de viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con el fin de responder a tus necesidades de transformación. Además le ofrecemos:</p>
+                    <ul class='list check list-unstyled'>
+                      <li>Visita y asesoramiento previo</li>
+                      <li>Presupuesto sin compromiso</li>
+                      <li>Ideas creativas para un mejor aprovechamiento del espacio</li>
+                      <li>Realización de planos y proyectos de arquitectura o ingeniería</li>
+                      <li>Trámite de permisos en caso necesario</li>
+                      <li>Seguimiento y asesoramiento continuo de la reforma o rehabilitación</li>
+                      <li>Interiorismo y decoración</li>
+                      <li>Limpieza final de obra</li>
+                    </ul>
+                "
+      orderservice: 
+        title: "¿Quieres hacer una reforma?"
+        button: "Sí"
+    repair_of_kitchen:
+      page:
+        title: "Reformas integrales de cocina"
+        description: "Reforma tu cocina de forma rápida y económica con los mejores materiales y con la experiencia de nuestros profesionales. Móvil: 686 70 53 60"
+        keywords: "reformas de cocinas, reformas cocinas, reforma cocina, presupuesto reforma cocina, presupuesto cocina, presupuestos de cocinas, reformas integrales de cocina, reformas integrales de cocinas en la Comunidad Valenciana"
+      title: "Reformas integrales de cocina"
+      description: "<p class='lead'>Reformas integrales de cocinas en la Comunidad Valenciana, cocinas clásicas, rústicas, de diseño, modernas y siempre funcionales</p><p>En Manyobra somos especialistas en reformas de cocinas. Nuestra empresa cuenta con un gran abanico de posibilidades, puede obtener la cocina que desee, desde cocinas rusticas o clasicas hasta cocinas modernas y de diseño."
+      short_description: "Reformas integrales de cocinas en la Comunidad Valenciana, cocinas clásicas, rústicas, de diseño, modernas y siempre funcionales."
+      content:  " <p>Reformas integrales de cocinas en la Comunidad Valenciana, cocinas clásicas, rústicas, de diseño, modernas y siempre funcionales</p>
+                  <p>En Manyobra somos especialistas en reformas de cocinas. Nuestra empresa cuenta con un gran abanico de posibilidades, puede obtener la cocina que desee, desde cocinas rusticas o clasicas hasta cocinas modernas y de diseño.  Todas ellas con los complementos que solicite:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Integración de electrodomesticos</li>
+                    <li>Mármoles y Silestone</li>
+                    <li>Griferías</li>
+                    <li>Mobiliario de cocina</li>
+                    <li>Campanas decorativas de diseño</li>
+                    <li>Fregaderos</li>
+                    <li>Alicatados y suelos</li>
+                    <li>Mucho más...</li>
+                  </ul>
+                  <p>Desde el inicio de la reforma de tu cocina, asignamos un responsable a tu obra, que te informará de la evolución de los trabajos, el también coordina a todos nuestros profesionales desde albañiles hasta montadores pasando por electricistas y fontaneros.</p>
+                  <p>Nos ocupamos de todo para que no se preocupe de nada.</p>
+                  <p>Además el precio de la cocina puede ser muy económico ya que nuestros especialistas le orientarán para conseguir la cocina que busca a un precio insuperable.</p>
+                "
+      orderservice:
+        title: "¿Quieres reformar tu cocina?"
+        button: "Sí"
+    repair_of_bathrooms:
+      page:
+        title: "Reforma de baño"
+        description: "Reforma tu baño de forma rápida y económica con los mejores materiales y con la experiencia de nuestros profesionales. Móvil: 686 70 53 60"
+        keywords: "reformas de baños, reformas baños, reforma baños, reforma de baño"
+      title: "Reforma de baño"
+      description: "<p class='lead'>Reformas integrales de baños en valencia, baños clásicos, de diseño, modernos y sobre todo siempre funcionales</p><p>En la actualidad, nuestra empresa cuenta con un gran abanico de posibilidades para tu baño. Puede obtener el baño que desee, desde baños rústicos o clásicos hasta baños modernos.</p>"
+      short_description: "Reformas integrales de baños en valencia, baños clásicos, de diseño, modernos y sobre todo siempre funcionales."
+      content:  " <p class='lead'>Reformas integrales de baños en valencia, baños clasicos, de diseño, modernos y sobre todo siempre funcionales</p>
+                  <p>En la actualidad, nuestra empresa cuenta con un gran abanico de posibilidades para tu baño. Puede obtener el baño que desee, desde baños rusticos o clasicos hasta baños modernos, todos ellos con los complementos que solicite:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Integración de mobiliario de baño,</li>
+                    <li>Griferías</li>
+                    <li>Mamparas</li>
+                    <li>Platos de ducha extraplanos</li>
+                    <li>Bañeras con hidromasaje</li>
+                    <li>Alicatados y suelos</li>
+                    <li>Mucho más...</li>
+                  </ul>
+                  <p>Desde el inicio de la reforma de tu baño, asignamos un responsable a tu obra, que te informará de la evolución de los trabajos, coordinará a todos nuestros profesionales desde albañiles hasta montadores pasando por electricistas y fontaneros.</p>
+                  <p><strong>Nos ocupamos de todo para que no se preocupe de nada.</strong></p>
+                  <p>Además el precio del baño puede ser muy económico ya que nuestros especialistas te orientarán para conseguir el baño que buscas a un precio insuperable.</p>
+                "
+      orderservice: 
+        title: "¿Quieres reformar tu baño?"
+        button: "Sí"
+    installation_of_an_electrical_wiring:
+      page:
+        title: "Instalaciones electricidad"
+        description: "En viviendas y naves industriales. Reparación de averías, Instalación de iluminación. Boletines, Asesoramiento técnico. Móvil: 686 70 53 60"
+        keywords: "empresa de instalaciones electricas, empresas de instalaciones electricas, empresas instalaciones electricas, empresa instalaciones electricas, cuadro electrico, boletines electricos, electricista a domicilio, electricista, trabajo electricista, instalaciones electricidad"
+      title: "Instalaciones electricidad"
+      description: "<p class='lead'>Manyobra dispone de un buen equipo de electricistas a un precio muy competitivo que te ayudará a solventar tus problemas de electricidad o de antena así como mejorar o ampliar tus instalaciones.</p><p>Desde el cambio de mecanismos hasta una instalación de sistema domótico hace que tu vida sea más fácil y confortable en tu casa o lugar de trabajo.</p>"
+      short_description: "Manyobra dispone de un buen equipo de electricistas a un precio muy competitivo que te ayudará a solventar tus problemas de electricidad o de antena así como mejorar o ampliar tus instalaciones."
+      content:  " <p>Manyobra dispone de un buen equipo de electricistas a un precio muy competitivo que te ayudará a solventar tus problemas de electricidad o de antena así como mejorar o ampliar tus instalaciones.</p>
+                  <p>Desde el cambio de mecanismos hasta una instalación de sistema domótico hace que tu vida sea más fácil y confortable en tu casa o lugar de trabajo.</p>
+                  <p>No dudes en llamarnos para consultar todo lo que podemos hacer y sorpréndete con nuestros precios.</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Instalaciones eléctricas de todo tipo</li>
+                    <li>Cambio de mecanismos</li>
+                    <li>Reparación y ampliación de cuadros eléctricos</li>
+                    <li>Instalación y mantenimiento de antenas</li>
+                    <li>Instalación y mantenimiento de redes</li>
+                    <li>Instalación de sistemas de domótica</li>
+                    <li>Instalación y reparación de aparatos de aire acondicionado</li>
+                  </ul>
+                "
+      orderservice: 
+        title: "¿Quieres hacer instalacion de electricidad?"
+        button: "Sí"
+    installation_of_plumbing:
+      page:
+        title: "Instalaciones fontanería"
+        description: "Reparación de acometidas y desagües. Reparaciones de todo tipo a particulares y empresas. Instalación de sistemas de calefacción."
+        keywords: "Instalaciones fontanería"
+      title: "Instalaciones fontanería"
+      description: "<p class='lead'>Calefacción de gas, renovacción de aparatos sanitarios, Reparación de todo tipo de averías.</p><p>Manyobra dispone de un buen equipo de fontaneros que se encargarán de todo para que solo tengas que preocuparte de de disfrutar en tu hogar u oficina.</p><p>Contamos con infinitas ideas para que sin hacer obras puedas reparar o simplemente renovar tu baño o cocina. ¡Incluso te montamos la calefacción por caldera sin obras!</p>"
+      short_description: "Calefacción de gas, renovacción de aparatos sanitarios, Reparación de todo tipo de averías. Manyobra dispone de un buen equipo de fontaneros que se encargarán de todo para que solo tengas que preocuparte de de disfrutar en tu hogar u oficina"
+      content:  " <p class='lead'>Calefacción de gas, renovacción de aparatos sanitarios, Reparación de todo tipo de averías.</p>
+                  <p>Manyobra dispone de un buen equipo de fontaneros que se encargarán de todo para que solo tengas que preocuparte de de disfrutar en tu hogar u oficina.</p>
+                  <p>Contamos con infinitas ideas para que sin hacer obras puedas reparar o simplemente renovar tu baño o cocina. ¡Incluso te montamos la calefacción por caldera sin obras!</p>
+                  <p>Entre otros servicios te ofrecemos:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Instalación de calefacción por caldera sin obras</li>
+                    <li>Renovación de aparatos sanitarios y griferías</li>
+                    <li>Reparación de fugas</li>
+                    <li>Instalación y mantenimiento de equipos de presión</li>
+                  </ul>
+                  <p>Y siempre contando con la calidad de servicio que esperas</p>
+                "
+      orderservice: 
+        title: "¿Quieres que hagamos instalaciones de fontanería?"
+        button: "Sí"
+    repair_of_office_and_industrial_premises:
+      page:
+        title: "Naves industriales"
+        description: "Rapidez y eficacia en acondicionamiento y mantenimiento de naves industriales y de sus instalaciones. Asesoramiento técnico y profesional. Móvil: 686 70 53 60"
+        keywords: "construccion nave industrial, construcción de naves, construccion de nave industrial, construccion naves, Naves industriales"
+      title: "Naves industriales"
+      description: "<p class='lead'>Adaptación, acondicionamiento y mantenimientos en naves industriales.</p><p>Manyobra lleva a cabo trabajos de todo tipo en naves industriales. En muchos polígonos ya tenemos clientes que confían en nosotros para llevar a cabo las diversas adaptaciones, reparaciones y ampliaciones de sus naves.</p><p>Organizamos los trabajos para no entorpecer las labores propias de las industrias, adaptándonos al entorno y a los requerimientos y normas. Mantenemos una comunicación continua con el encargado responsable de la industria para garantizar el resultado esperado.</p>"
+      short_description: "Adaptación, acondicionamiento y mantenimientos en naves industriales. Manyobra lleva a cabo trabajos de todo tipo en naves industriales."
+      content:  " <p>Adaptación, acondicionamiento y mantenimientos en naves industriales.</p>
+                  <p>Manyobra lleva a cabo trabajos de todo tipo en naves industriales. En muchos polígonos ya tenemos clientes que confían en nosotros para llevar a cabo las diversas adaptaciones, reparaciones y ampliaciones de sus naves.</p>
+                  <p>Organizamos los trabajos para no entorpecer las labores propias de las industrias, adaptándonos al entorno y a los requerimientos y normas. Mantenemos una comunicación continua con el encargado responsable de la industria para garantizar el resultado esperado.</p>
+                  <p>Entre otros trabajos ofrecemos:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Trabajos en cubiertas</li>
+                    <li>Cimentaciones de máquinas</li>
+                    <li>Estructuras metálicas</li>
+                    <li>Cerrajería en general</li>
+                    <li>Instalaciones industriales eléctricas</li>
+                    <li>Instalaciones industriales de aire comprimido</li>
+                    <li>Instalaciones industriales de fontanería</li>
+                    <li>Instalaciones contra-incendios</li>
+                    <li>Soleras de hormigón fratasado</li>
+                    <li>Pavimentos de resinas de epoxi</li>
+                    <li>Panelado interior y exterior</li>
+                    <li>Pintura y logotipos</li>
+                    <li>Reparaciones en general</li>
+                  </ul>
+                  <p>Siempre con el mejor servicio:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Visita e intercambio de ideas</li>
+                    <li>Asesoramiento</li>
+                    <li>Presupuesto sin compromiso</li>
+                    <li>Realización de planos y proyectos de arquitectura o ingeniería</li>
+                    <li>Trámite de permisos en caso necesario</li>
+                    <li>Seguimiento y asesoramiento continuo</li>
+                    <li>Adaptación al entorno y normas de la industria</li>
+                    <li>Limpieza final de obra</li>
+                  </ul>
+                "
+      orderservice: 
+        title: "¿Quieres hacer trabajos en tu nave?"
+        button: "Sí"
+    construction:
+      page:
+        title: "Construcciones"
+        description: "Construimos viviendas, unifamiliares y naves industriales. Contamos con más de 25 años en el sector. Calidad y fiabilidad. Móvil: 686 70 53 60"
+        keywords: "construcciones y reformas, reformas y construcciones, construcciones y reformas en valencia, construcciones"
+      title: "Construcciones"
+      description: "<p class='lead'>Construcción de chalets, casas y viviendas unifamiliares en un corto de plazo de tiempo</p><p>Somos especialistas en la construcción de chalets, casas y unifamiliares en la Comunidad Valenciana. Nuestros profesionales le ayudarán desde la elección del solar hasta la legalización de la obra construida.</p>"
+      short_description: "Construcción de chalets, casas y viviendas unifamiliares en un corto de plazo de tiempo. Somos especialistas en la construcción de chalets, casas y unifamiliares en la Comunidad Valenciana."
+      content:  " <p>Construcción de chalets, casas y viviendas unifamiliares en un corto de plazo de tiempo</p>
+                  <p>Somos especialistas en la construcción de chalets, casas y unifamiliares en la Comunidad Valenciana. Nuestros profesionales le ayudarán desde la elección del solar hasta la legalización de la obra construida.</p>
+                  <p>Contamos con los profesionales más cualificados para encargarse de todos los procesos de la obra, incluyendo:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Visita y asesoramiento previo del solar</li>
+                    <li>Presupuesto personalizado sin compromiso</li>
+                    <li>Realización de planos</li>
+                    <li>Trámite de permisos, licencias y seguros necesarios para la ejecución de la vivienda</li>
+                    <li>Seguimiento y asesoramiento continuo de la obra</li>
+                    <li>Limpieza final de obra</li>
+                    <li>Servicio 'Llave en mano'</li>
+                  </ul>
+                  <p>Nos preocupamos de todo para que no se preocupe de nada.</p>
+                  <p>Construimos tu vivienda al mejor precio, con los mejores servicios a tu disposición como arquitectos e ingenieros para la ejecución de los proyectos, profesionales cualificados para desarrollar cada fase de la obra y decoradores de interiores para ayudarte a crear tu hogar.</p>
+                "
+      orderservice: 
+        title: "¿Quieres que construyamos para ti una casa o un chalet?"
+        button: "Sí"
+    urgent_repair:
+      page:
+        title: "Averías"
+        description: "Reparamos cualquier avería en tu vivienda, local comercial o nave industrial de una forma rápida y eficaz. Gestionamos la reparación con tu compañía aseguradora. Móvil: 686 70 53 60"
+        keywords: "Averías"
+      title: "Averías"
+      description: "<p class='lead'>Averías, Reparaciones y trabajos compañías seguro</p><p>Una AVERIA es un CONTRATIEMPO, por ello Manyobra, S.L. se compromete a buscar la SOLUCIÓN lo más rápido posible para poder actuar con profesionalidad y agilidad con el fin de que el problema entorpezca lo menos posible.</p><p>Gracias a nuestras rápidas y eficaces intervenciones en averías del hogar o negocio, Manyobra es una empresa aprobada por compañías de seguros como Allianz o Caser para reparar los siniestros de sus clientes.</p>"
+      short_description: "Averías, Reparaciones y trabajos compañías seguro</p><p>Una AVERIA es un CONTRATIEMPO, por ello Manyobra, S.L. se compromete a buscar la SOLUCIÓN lo más rápido posible para poder actuar con profesionalidad y agilidad con el fin de que el problema entorpezca lo menos posible."
+      content:  " <p>Averías, Reparaciones y trabajos compañías seguro</p>
+                  <p>Una AVERIA es un CONTRATIEMPO, por ello Manyobra, S.L. se compromete a buscar la SOLUCIÓN lo más rápido posible para poder actuar con profesionalidad y agilidad con el fin de que el problema entorpezca lo menos posible.</p>
+                  <p>Gracias a nuestras rápidas y eficaces intervenciones en averías del hogar o negocio, Manyobra es una empresa aprobada por compañías de seguros como Allianz o Caser para reparar los siniestros de sus clientes.</p>
+                  <p>Entre una gran variedad de servicios ofrecemos:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Reparación de fugas de agua</li>
+                    <li>Reparación de instalaciones eléctricas</li>
+                    <li>Siniestros por incendio o robo</li>
+                    <li>Reparación de cubiertas</li>
+                    <li>Reparación de goteras y filtraciones</li>
+                    <li>Desatasco de tuberías</li>
+                  </ul>
+                  <p>Cuéntanos tu problema y le daremos solución</p>
+                "
+      orderservice: 
+        title: "¿Tienes una avería?"
+        button: "Sí"
+    registration_of_licenses:
+      page:
+        title: "Trámites administrativos"
+        description: "Nos desplazamos a Ayuntamientos, Diputaciones  y resto de instituciones para facilitarte los trámites antes, durante y tras tu obra. Móvil: 686 70 53 60"
+        keywords: "Trámites administrativos"
+      title: "Trámites administrativos"
+      description: "<p>Realizamos todo tipo de trámites administrativos relacionados con la vivienda para que no tengas ningún problema al respecto.</p>"
+      short_description: "Realizamos todo tipo de trámites administrativos relacionados con la vivienda para que no tengas ningún problema al respecto."
+      content:  " <p>Realizamos todo tipo de trámites administrativos relacionados con la vivienda para que no tengas ningún problema al respecto. Por ejemplo:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Cédulas de habitabilidad vivienda.</li>
+                    <li>Licencias de obras menores, mayores.</li>
+                    <li>Alta de suministro de Electricidad</li>
+                    <li>Alta de suministro de Agua</li>
+                    <li>Alta y gestión de gas ciudad</li>
+                  </ul>
+                "
+      orderservice: 
+        title: "¿Necesitas hacer trámites administrativos?"
+        button: "Sí"
+    drafting_projects_of_architectural_and_engineering:
+      page:
+        title: "Redacción de proyectos de arquitectura e ingeniería"
+        description: "Elaboración de proyectos de arquitectura e ingeniería tanto particulares como empresas. Asesoramiento técnico, trámites administrativos. Móvil: 686 70 53 60"
+        keywords: "Redacción de proyectos de arquitectura e ingeniería"
+      title: "Redacción de proyectos de arquitectura e ingeniería"
+      description: "<p class='lead'>Proyectos, Licencias, Trámites y estudios técnicos</p><p>Manyobra dispone de técnicos para realizar cualquier tipo de proyecto de arquitectura o ingeniería que necesites para llevar a cabo tu obra en hogar o industria.</p><p>Tras visitarte y conocer tus planes, te asesoramos y te realizamos bajo presupuesto los proyectos así como las gestiones en Ayuntamientos, Diputaciones y demás Instituciones para legalizar completamente tu obra.</p>"
+      short_description: "Proyectos, Licencias, Trámites y estudios técnicos. Manyobra dispone de técnicos para realizar cualquier tipo de proyecto de arquitectura o ingeniería que necesites para llevar a cabo tu obra en hogar o industria.="
+      content:  " <p>Proyectos, Licencias, Trámites y estudios técnicos</p>
+                  <p>Manyobra dispone de técnicos para realizar cualquier tipo de proyecto de arquitectura o ingeniería que necesites para llevar a cabo tu obra en hogar o industria.</p>
+                  <p>Tras visitarte y conocer tus planes, te asesoramos y te realizamos bajo presupuesto los proyectos así como las gestiones en Ayuntamientos, Diputaciones y demás Instituciones para legalizar completamente tu obra.</p>
+                  <p>Entre otros proyectos y tramitaciones te ofrecemos:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Proyectos de obra mayor</li>
+                    <li>Proyectos de obra menor</li>
+                    <li>Licencias Ambientales</li>
+                    <li>Proyectos instalación contra-incendios</li>
+                    <li>Proyectos de instalación eléctrica en B.T. con certificado final instalación</li>
+                    <li>Proyectos de instalación de refrigeración con certificado final instalación</li>
+                    <li>Estudios técnico-económicos de Industria</li>
+                    <li>Cumplimentación de fichas para registro industrial y legalización de maquinaria</li>
+                    <li>Tramitaciones de expedientes en Servicio Territorial de Industria</li>
+                  </ul>
+                "
+      orderservice: 
+        title: "¿Necesitas hacer un proyecto?"
+        button: "Sí"
+    reforms_in_neighboring_communities:
+      page:
+        title: "Reformas en comunidades de vecinos"
+        description: "Trabajamos en tu comunidad con precios y profesionalidad sin competencia. Impermeabilización, reforma de zaguán y reparaciones de todo tipo. Móvil: 686 70 53 60"
+        keywords: "Reformas en comunidades de vecinos, Trabajos en Terrazas, Tejados, Fachadas y Cubiertas"
+      title: "Reformas en comunidades de vecinos"
+      description: "<p class='lead'>Reformas en comunidades de vecinos</p><p>Trabajos en Terrazas, Tejados, Fachadas y Cubiertas</p><p>Manyobra se dedica desde sus inicios a trabajos en comunidades de vecinos, estando en continuo contacto con administradores de fincas y trabajando como siempre con personal formado tanto en tu sector como en seguridad.</p><p>Las obras en las comunidades de vecinos suelen realizarse en fachadas, zaguanes, cubiertas, terrazas, escaleras  y resto de zonas comunitarias.</p>"
+      content:  " <p>Reformas en comunidades de vecinos</p>
+                  <p>Trabajos en Terrazas, Tejados, Fachadas y Cubiertas</p>
+                  <p>Manyobra se dedica desde sus inicios a trabajos en comunidades de vecinos, estando en continuo contacto con administradores de fincas y trabajando como siempre con personal formado tanto en tu sector como en seguridad.</p>
+                  <p>Las obras en las comunidades de vecinos suelen realizarse en fachadas, zaguanes, cubiertas, terrazas, escaleras  y resto de zonas comunitarias.</p>
+                  <p>Nuestros profesionales están cualificados para realizar trabajos de:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Restauración de fachadas y pintura</li>
+                    <li>Reformas de zaguanes</li>
+                    <li>Instalación y mantenimiento de equipos de presión</li>
+                    <li>Trabajos verticales en altura</li>
+                    <li>Reparaciones de fontanería y electricidad</li>
+                    <li>Reparación y adaptación de antenas</li>
+                    <li>Impermeabilización asfáltica de terrazas o cubiertas</li>
+                    <li>Aislamientos acústicos y térmicos</li>
+                    <li>Proyecciones de poliuretano</li>
+                  </ul>
+                  <p>Igualmente gestionamos las obras de reparación con las compañías de seguros para conseguir un menor coste para la comunidad.</p>
+                "
+      orderservice: 
+        title: "¿Quieres hacer una reforma en tu comunidad de vecinos?"
+        button: "Sí"
+    service_name:
+      page:
+        title: ""
+        description: ""
+        keywords: ""
+      title: ""
+      content:  "
+                "
+    service_name:
+      page:
+        title: ""
+        description: ""
+        keywords: ""
+      title: ""
+      content:  "
+                "
+    service_name:
+      page:
+        title: ""
+        description: ""
+        keywords: ""
+      title: ""
+      content:  "
+                "
+    service_name:
+      page:
+        title: ""
+        description: ""
+        keywords: ""
+      title: ""
+      content:  "
+                "
+    service_name:
+      page:
+        title: ""
+        description: ""
+        keywords: ""
+      title: ""
+      content:  "
+                "
+    services:
+      page:
+        title: "Servicios"
+        slider_title: "Servicios de <strong>Manyobra</strong>"
+        description: "Reformas integrales, reformas de baño y cocina, reparación de averías, mantenimientos y acondicionamientos de naves industriales. Móvil: 686 70 53 60"
+        keywords: "Reformas integrales, reformas de baño y cocina, reparación de averías, mantenimientos y acondicionamientos de naves industriales"
+      section:
+        button:
+          request: "Solicitar"
+        other_services:
+          title: "Otros nuestros <strong>servicios</strong>"
+      view: "Більш"
+      details: "Детальніше"
+      modal:
+        title: "<strong>Solicitar</strong> el servicio"
+        text: "Por favor, introduce nombre y el numero y te llamamos sin compromiso."
+        
+        form:
+          submit: "Solicitar llamada"
+          close: "Cerrar"
+          name: "Nombre"
+          email: "Correo electrónico"
+          phone: "Teléfono"
+      extensive_repairs:
+        page:
+          title: "Reformas integrales"
+          description: "Somos especialistas en la Comunidad Valenciana en reformas integrales de tu hogar o local comercial. Asesoramiento técnico y decoración. Móvil: 686 70 53 60"
+          keywords: ""
+        title: "Reformas integrales"
+        description: "Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... Descripcion de Reformas integrales... "
+        content:  " <p>Reformas integrales de viviendas, oficinas, naves industriales y locales comerciales.</p>
+                    <p>Manyobra lleva a cabo reformas integrales de viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con el fin de responder a sus necesidades de transformación. Además le ofrecemos:</p>
+                    <ul class='list check list-unstyled'>
+                      <li>Visita y asesoramiento previo</li>
+                      <li>Presupuesto sin compromiso</li>
+                      <li>Ideas creativas para un mejor aprovechamiento del espacio</li>
+                      <li>Realización de planos y proyectos de arquitectura o ingeniería</li>
+                      <li>Trámite de permisos en caso necesario</li>
+                      <li>Seguimiento y asesoramiento continuo de la reforma o rehabilitación</li>
+                      <li>Interiorismo y decoración</li>
+                      <li>Limpieza final de obra</li>
+                    </ul>"
+
+      repairs_of_kitchen:
+        title: "Reforma de cocina"
+        description: "Descripcion de Reforma de cocina..."
+      repairs_of_bathrooms:
+        title: "Reforma de baño"
+        description: "Descripcion de Reforma de baño..."
+      construction:
+        title: "Construcciónes"
+        description: "Descripcion de Construcciónes..."
+      installation_of_plumbing:
+        title: "Instalaciones de fontanería"
+        description: "Descripcion de Instalaciones de fontanería..."
+      installation_of_an_electrical:
+        title: "Instalaciones de electricidad"
+        description: "Descripcion de Instalaciones de electricidad..."
+      urgent_repairs:
+        title: "Averías"
+        description: "Descripcion de Averías..."
+      registration_of_licenses:
+        title: "Trámites administrativos"
+        description: "Descripcion de Trámites administrativos..."
+      insurence:
+        title: "Seguros"
+        description: "Descripcion de Seguros..."
+
+    prices: #Pricing & Billing Faq Page
+      page:
+        title: "Presupuestos"
+        slider_title: "Presupuestos"
+        description: "Obtén tu presupuesto rápido y sin compromiso. Nos desplazamos gratis y realizamos un presupuesto individual. Móvil: 686 70 53 60"
+        keywords: "Precios, Presupuestos"
+      title: "Presupuestos"
+
+      paragraph1: "Solicita el presupuesto ahora GRATIS y sin compromiso."
+      paragraph2: "No trabajamos con precios definidos, elaboramos cada presupuesto después de visitarte, ya que cada vivienda, local u oficina es diferente y por ello cada cliente es tratado de forma individual. De esta forma logramos conseguir la mejor relación calidad-precio."
+      paragraph3: "Antes del presupuesto ya te ofrecemos lo mejor de nosotros:"
+      list: " <ul class='list check list-unstyled'>
+                <li>Desplazamiento gratuito de un profesional</li>
+                <li>Toma de mediciones</li>
+                <li>Asesoramiento previo</li>
+                <li>Ayuda en la elección de materiales</li>
+                <li>Respuesta rápida en la entrega de tu presupuesto</li>
+              </ul>"
+      section:
+        button:
+          request: "Te llamamos gratis"
+        how_we_can_help:
+          title: "Solicita el presupuesto ahora GRATIS y sin compromiso"
+          button: "Solicitar"
+      section_faq:
+        title: "Precios y Presupuestos FAQ"
+      why_choose_manyobra:
+        question: "¿Por qué elegir Manyobra?"
+        answer: "<p class='dark'>En Manyobra estamos para ayudarte y garantizarte la mayor tranquilidad.</p><p class='dark'>Como especialistas en reformas, reparaciones y construcciones en el hogar, oficinas o naves industriales, nos ponemos a tu disposición con los mejores especialistas para solucionar cualquier tipo de necesidad o problema siempre que lo necesites.</p><p class='dark'>Somos una empresa que contamos con más de 25 años de experiencia ofreciendo el mejor servicio atendiendo siempre a tus necesidades.</p>"
+      what_kind_of_services_offered: 
+        question: "¿Qué tipo de servicios ofrece Manyobra?"
+        answer: "En Manyobra te ofrecemos cualquier tipo de solución a tus necesidades ya que nos hacemos cargo de cualquier reparación, mantenimiento, reforma o construcción en tu hogar, oficina, taller o nave industrial. Contamos con los profesionales adecuados para cada tipo de actuación y siempre asesorándote de principio a fin.  Entre otros contamos con: Albañiles, fontaneros, electricistas, cerrajeros, carpinteros, pintores, escayolistas, cristaleros, montadores de parquet, especialistas en pladur, instaladores de calderas y sistemas de calefacción y aire acondicionado, etc..."
+      warranty_on_work:
+        question: "¿Qué tipo de garantía tienen los trabajos realizados por Manyobra?"
+        answer: "La garantía en trabajos de obra nueva es la establecida por la ley vigente. Desde 1 a 10 años dependiendo de la tipología de la obra y del elemento. En cuanto a reformas y reparaciones contamos con una garantía de 12 meses siempre y cuando se sigan las instrucciones de nuestro reparador o que se deba a un fallo en la ejecución de la misma."
+      hours_of_operation:
+        question: "¿En qué horario y días me puede dar servicio Manyobra?"
+        answer: "Resolvemos cualquier urgencia durante los 365 días del año, sin importar si es festivo o la hora enviándote un profesional lo antes posible."
+      change_time_of_visit:
+        question: "¿Como puedo cambiar la hora...?"
+        answer: "Si necesitas cambiar la cita que tenías concertada con nosotros, llama al 686 70 53 60"
+      request_budget:
+        question: "¿Cómo solicitar un presupuesto?"
+        answer: "Puedes solicitar un presupuesto sin compromiso a través de nuestro formulario o llamando por teléfono al 686 70 53 60. Te visitaremos orientándote en todo lo necesario y así poder ofrecerte el mejor presupuesto adaptado a tus necesidades sin ningún tipo de compromiso."
+      time_to_give_a_budget:
+        question: "¿Cuánto tiempo tardan en darme un presupuesto?"
+        answer: "Dependiendo de la complejidad del presupuesto solicitado tardaremos más o menos en darte el precio. Si se trata de una simple reparación podrás tener tu presupuesto sin compromiso en menos de 24h. En caso de reformas menores tardamos alrededor de 48h."
+      transfer_credits_between_accounts:
+        question: "¿Puede cambiar el precio de una reparación?"
+        answer: "No, nuestros precios son cerrados e incluyen desplazamiento. En el caso de que la reparación requiera un servicio adicional o pieza no cubierta en el precio, te informaremos del coste adicional antes de realizar la reparación."
+      guarantees_of_quality:
+        question: "¿Cómo garantiza Manyobra la calidad de su servicio?"
+        answer: "Nuestra larga trayectoria a lo largo de los 25 años que llevamos en el sector, garantiza nuestra labor. Que quedes satisfecho con nuestro servicio es nuestra mejor publicidad. Esperamos que tras conocernos sigas contando con nosotros en el futuro y nos recomiendes, ya que nuestra existencia es gracias a ti, nuestro cliente."
+      email:
+          alert:
+            successful: "%{name}, Solicitud fue enviada, pronto nos pondremos en contacto con usted por telefono al numero: %{phone}"
+            error: "%{name} hay %{error} y no puede enviar solucitud debido a que:"
+      modal:
+        title: "<strong>Solicitar</strong> una llamada"
+        text: "Por favor, introduce nombre y el numero y te llamamos sin compromiso."
+        form:
+          name: "Nombre"
+          phone: "Teléfono"
+          submit: "Solicitar llamada"
+          close: "Cerrar"
+
+    about: #about Page
+      page:
+        title: "Sobre nosotros"
+        description: "Más de 25 años a tu servicio. Realizamos todo tipo de obras y reformas en la Comunidad Valenciana tanto en hogares como en naves industriales. Móvil: 686 70 53 60"
+        keywords: "empresa de reformas, empresa de reformas manyobra, que es manyobra, reformas en valencia, manyobra"
+      title: "Manyobra"
+      about_us: "Sobre nosotros"
+      section:
+        aboutus:
+          family_business:
+            title: "Trato personal y cercano"
+            text: "Empresa familiar dedicada más de 25 años al mundo de la construcción. Le atendemos personalmente desde el inicio de tu proyecto y le asesoramos para obtener el mejor resultado al mejor precio."
+          professionalism:
+            title: "Profesionalidad y seriedad"
+            text: "Con nuestros profesionales garantizamos un trabajo bien hecho con toda la seriedad de una empresa líder en tu sector. Disponemos de especialistas profesionales para cada una de las fases de tu obra."
+          individual_approach:
+            title: "Precios económicos"
+            text: "Le asesoramos para que tu proyecto le salga lo más económico posible y siempre consiguiendo el mejor resultado."
+          quickness:
+            title: "Rapidez"
+            text: "Coordinamos todos los profesionales para agilizar la ejecucion de la obra."
+          workers:
+            title: "Disponemos de todo tipo de profesionales altamente cualificados y con una gran experiencia:"
+            text: " <ul class='list icons list-unstyled'>
+                      <li><i class='fa fa-check'></i>Albañiles</li>
+                      <li><i class='fa fa-check'></i>Fontaneros</li>
+                      <li><i class='fa fa-check'></i>Electricistas</li>
+                      <li><i class='fa fa-check'></i>Cerrajeros</li>
+                      <li><i class='fa fa-check'></i>Colocación parquet</li>
+                      <li><i class='fa fa-check'></i>Chapadores</li>
+                      <li><i class='fa fa-check'></i>Aire acondicionado</li>
+                      <li><i class='fa fa-check'></i>Calefacción</li>
+                      <li><i class='fa fa-check'></i>Y mucho más...</li>
+                    </ul>
+                  "
+          description:
+            text: "Manyobra, S.L. es una empresa dedicada a la construcción, obras y reformas de todo tipo. Operamos en viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con seriedad, imaginación, compromiso, calidad y siempre en el plazo acordado. Ofrecemos una dirección de obra personalizada, desde las primeras ideas hasta los últimos detalles."
+
+    contact: #Contact Page
+      page:
+        title: "Póngase en contacto con nosotros"
+        description: "Contacto con Manyobra"
+        keywords: "reformas valencia, reformas integrales, reforma integral, contactos manyobra"
+      email:
+          alert:
+            successful: "%{name}, Mensaje fue enviado, pronto nos pondremos en contacto con usted por correo electrónico: %{email} o por telefono al numero: %{phone}"
+            error: "%{name} hay %{error} y no puede enviar este mensaje debido a que:"
+      form:
+        name: "Nombre"
+        email: "Correo electrónico"
+        submit: "Enviar"
+        phone: "Teléfono"
+        subject: "Tema"
+        question: "Consulta"
+
+      title: "Contactos"
+      subtitle: "Contacta con <strong>Nosotros</strong>"
+      text: "Para realizar cualquier consulta Por favor, rellene el siguiente formulario."
+      explanation: "* Cualquier información personal que nos proporcione sólo será utilizada por Manyobra, S.L. para gestionar tu presupuesto o consulta y no será facilitada a ninguna otra empresa o entidad."
+      modal:
+        title: "<strong>Solicitar</strong> una llamada"
+        text: "Por favor, introduce nombre y el numero y te llamamos sin compromiso."
+        form:
+          submit: "Solicitar llamada"
+          close: "Cerrar"
+      section:
+        map:
+          zoom_here: "Ampliar aquí"
+          office_in_liria: "Oficina en Llíria"
+        contact_us:
+          title: "Nuestros <strong>contactos</strong>"
+          text: "Puede ponerse en contacto con nosotros en cualquier momento conveniente para usted de la siguiente manera:"
+          address: "Dirección"
+          phone: "Teléfono"
+          mobile: "Móvil"
+          email: "Correo electrónico"
+          my_contacts_title: "Nuestros <strong>contactos</strong>"
+          office_title: "Nuestra <strong>Oficina</strong>"
+          business_time_title: "Horario de <strong>trabajo</strong>"
+          business_days_time: "Lunes - Viernes 8:00 hasta 20:00"
+          business_time_saturday: "Sábado - A convenir"
+          business_time_sunday: "Domingo - A convenir"
+          explanation: "Servicios de urgencia fuera de horario sin incremento de precio"
+          order: "Solicitar llamada"
+    offers: #Offers Page
+      page:
+        title: "Ofertas especiales"
+        description: "Ofertas especiales"
+        keywords: "ofertas, ofertas especiales, ofertas manyobra"
+      title: "Ofertas especiales"
+      content:  " <p>Durante este otoño-invierno aprovéchate de un 15% de descuento en la instalación de tu calefacción por caldera de gas o gasóleo.</p>
+                  <p>¿Sabías que podemos montarte los radiadores y el resto de la instalación sin obras?</p>
+                  <p>Infórmate contactando con nosotros y te daremos buenas ideas para la instalación de tu calefacción a un precio insuperable.</p>
+                  <p>Esta oferta incluye:</p>
+                      <ul class='list check list-unstyled'>
+                        <li>Visita y asesoramiento técnico gratuito</li>
+                        <li>Caldera de condensación (Instalación incluida)</li>
+                        <li>Suministro e instalación de radiadores</li>
+                        <li>Termostato programador</li>
+                        <li>Instalación de tubería suministro de gas</li>
+                        <li>Puesta en marcha</li>
+                      </ul>
+                  <p>No incluye el alta de gasNatural, gas Propano o Gasóleo pero te la gestionamos de forma gratuita.</p>
+                  <p>Contacta con nosotros para solicitar tu presupuesto de instalación de calefacción con el 15% de descuento.</p>
+                  <p>10% de descuento en la reforma completa de tu baño si  la contratas antes del 31 de enero de 2015</p>
+                  <p>Esta oferta incluye:</p>
+                      <ul class='list check list-unstyled'>
+                        <li>Visita y asesoramiento</li>
+                        <li>Desmontaje de aparatos sanitarios</li>
+                        <li>Demolición de alicatados, solado y falso techo escayola</li>
+                        <li>Retirada a vertedero autorizado de los escombros</li>
+                        <li>Instalación completa de fontanería (Incluye griferías a elegir)</li>
+                        <li>Instalación completa de electricidad (Incluye 1 downlight de techo)</li>
+                        <li>Suministro y colocación del nuevo alicatado y solado de gres (a elegir)</li>
+                        <li>Colocación de nuevo falso techo de escayola lisa</li>
+                        <li>Montaje de aparatos sanitarios</li>
+                        <li>Pintura falso techo</li>
+                        <li>Limpieza final de obra</li>
+                      </ul>
+                  <p>Contacta con nosotros para solicitar tu presupuesto de reforma completa de baño con el 10% de descuento</p>
+                "
+    sitemap:
+      page:
+        title: "Mapa del Sitio"
+        description: "Mapa del Sitio de Manyobra"
+        keywords: "Mapa del Sitio"
+      title: "Mapa del <strong>Sitio</strong>"
+      home: "Inicio"
+      about: "Sobre nosotros"
+      pages: "Páginas"
+      services:
+        title: "Servicios"
+        extensive_repairs: "Reformas integrales"
+        repair_of_kitchen: "Reformas integrales de cocina"
+        installation_of_an_electrical_wiring: "Instalaciones electricidad"
+        repair_of_bathrooms: "Reforma de baño"
+        installation_of_plumbing: "Instalaciones fontanería"
+        repair_of_office_and_industrial_premises: "Naves industriales"
+        registration_of_licenses: "Trámites administrativos"
+        drafting_projects_of_architectural_and_engineering: "Redacción de proyectos de arquitectura e ingeniería"
+        construction: "Construcciónes"
+        reforms_in_neighboring_communities: "Reformas en comunidades de vecinos"
+        urgent_repair: "Averías"
+      prices: "Presupuestos"
+      blog: "Blog"
+      contact: "Contacto"
+      company:
+        who_we_are: "¿Quiénes somos?"
+        brief_description: "Manyobra, S.L. es una empresa dedicada a la construcción, obras y reformas de todo tipo."
+        description: "Operamos en viviendas, oficinas, naves industriales, locales comerciales y cualquier otro tipo de edificación, con seriedad, imaginación, compromiso, calidad y siempre en el plazo acordado. Ofrecemos una dirección de obra personalizada, desde las primeras ideas hasta los últimos detalles."
+        achievement: "Llevamos más de 25 años trabajando en el sector con profesionales cualificados en cada uno de sus respectivos sectores, avalando cada uno de nuestros proyectos."
+        workers: 
+          text: "Disponemos de todo tipo de profesionales altamente cualificados y con una gran experiencia:"
+          bricklayers: "Albañiles"
+          plumbers: "Fontaneros"
+          electricians: "Electricistas"
+          locksmiths: "Cerrajeros"
+          laying_parquet: "Colocación parquet"
+          chapadores: "Chapadores"
+          air_conditioning: "Aire acondicionado"
+          heating: "Calefacción"
+          and_much_more: "Y mucho más"
+
+  sessions: #Login Page
+    new:
+      title: "Por favor, inicie sesión para continuar."
+      description: "Inicio de sesión"
+      keywords: "Inicio de sesión"  
+      form:
+        email: "Correo electrónico"
+        password: "Contraseña"
+        forgot: "¿Has olvidado tu contraseña?"
+        remember_me: "Recordar me"
+        submit: "Entrar"
+        no_account_yet: "¿No tiene cuenta todavía?"
+        create_one: "Crear"
+  password_resets: #Reset password Pages
+    new:
+      title: "Introduzca tu dirección de correo electrónico para restablecer tu contraseña."  
+      form:
+        email: "Correo electrónico"
+        submit: "Restablecer contraseña"
+  users: #Create Account Page
+    new:
+      title: "Crea tu cuenta de Manyobra"
+      description: "Crea tu cuenta de Manyobra"
+      keywords: "nueva cuenta de Manyobra"
+      form:
+        first_name: "Nombre"
+        last_name: "Apellido"
+        email: "Correo electrónico"
+        password: "Contraseña"
+        password_confirmation: "Confirmar contraseña"
+        birthday: "Cumpleaños"
+        gender: "Sexo"
+        country: "País"
+        language: "Idioma"
+        forgot: "¿Has olvidado tu contraseña?"
+        remember_me: "Recordar me"
+        submit: "Crear"
+        already_have_an_account: "Ya tienes una cuenta"
+        signin: "Entrar"
+
+  blog: #blog page
+    posts:
+      show:
+        search: "Búscar"
+        share: "Compartir este artículo"
+        categories:
+          title: "Categorías"
+        tags: "Etiquetas"
+        recents: "Artículos recientes"
+        comments:
+          zero: "Sin comentarios"
+          one: "1 comentario"
+          other: "%{count} comentarios"
+          tooltip: "¡Sé el primero en dejar tu comentario!"
+        Leave_a_comment: "Deja comentario"
+        form:
+          first_name: "Nombre"
+      index:
+        title: "Blog de Manyobra"
+        description: "Blog de Manyobra"
+        keywords: "blog de Manyobra"
+        search: "Búscar"
+        share: "Compartir este artículo"
+        categories:
+          title: "Categorías"
+        tags: "Etiquetas"
+        recents: "Artículos recientes"
+        comments:
+          zero: "Sin comentarios"
+          one: "1 comentario"
+          other: "%{count} comentarios"
+          tooltip: "¡Sé el primero en dejar tu comentario!"
+      new:
+        create: "Crear un articulo"
+      form:
+        title: "Título"
+        tag: "Etiquetas"
+    search:
+      search:
+        search: "Búscar"
+
+    tags:
+      show:
+        tagged: "Entradas etiquetadas con"
+        search: "Búscar"
+        share: "Поділитися цим постом"
+        categories:
+          title: "Categorías"
+        tags: "Etiquetas"
+        recents: "Artículos recientes"
+        comments:
+          zero: "Sin comentarios"
+          one: "1 comentario"
+          other: "%{count} comentarios"
+          tooltip: "¡Sé el primero en dejar tu comentario!"
+
+  layouts:
+    navigation_link:
+      links_title:
+        home: "Pagina de inicio"
+        about_us: "Quienes somos y que servicios damos"
+        services: "Nuestros servicios"
+        
+        prices: "Nuestros presupuestos y precios"
+        contact: "Formulario y datos de contacto"
+        blog: "Articulos, tutoriales y mucho mas"
+        
+    site:
+      links_title:
+        about_us: "Quienes somos y que servicios damos"
+        prices: "Nuestros presupuestos y precios"
+        services: "Nuestros servicios"
+        blog: "Articulos, tutoriales y mucho mas"
+        contact: "Formulario y datos de contacto"
+        sitemap: "Mapa del sitio"
+        offers: "Nuestras ofertas especiales"
+      section:
+        сopyright: "Todos los derechos reservados"
+        made: 
+          title: "Desarrollado por"
+          creators: "creadores de la web"
+        posts:
+          title: "Últimos <strong>articulos</strong>"
+          link: "Ver Blog"
+    blog:
+      section:
+        сopyright: "Todos los derechos reservados"
+        made: 
+          title: "Desarrollado por"
+          creators: "creadores de la web"
+        posts:
+          title: "Últimos <strong>articulos</strong>"
+          title_tooltip: "Últimas noticias del sitio web"
+          link: "Ver Blog"
+    application:
+      section:
+        сopyright: "Todos los derechos reservados"
+        made: 
+          title: "Desarrollado por"
+          creators: "creadores de la web"
+        posts:
+          title: "Últimos <strong>articulos</strong>"
+          title_tooltip: "Últimas noticias del sitio web"
+          link: "Ver Blog"
+#login Page
+  Because_of_your_long_absence_session_work_on_the_page_of_your_Manyobra_account_automatically_completed_for_security_purposes: "Унаслідок вашої тривалої відсутності сесія роботи на сторінці вашого рахунку в Manyobra автоматично завершена в цілях безпеки."
+  Username: "Nombre de usuario"
+  Password: "Contraseña"
+  Forgotten_your_password: "¿Has olvidado tu contraseña?"
+  You_have_been_signed_out: "Sesión ha sido cerrada"
+  Signing_in_failed_Please_double-check_your_user_name_and_re-enter_your_password: "Помилка ідентифікації. Перевірте правильність логіна і введіть ваш пароль ще раз."
+
+  # email
+  user_mailer:
+    password_reset:
+      subject: "Restablecimiento de la contraseña de la cuenta Manyobra.com"
+      title_email: "Restablecer contraseña de cuenta"
+      text1: "Hemos recibido una solicitud para restablecer la contraseña de tu cuenta."
+      text2: "Si la solicitud fue enviada por ti, haz clic en el botón de abajo. De lo contrario, ignora este mensaje."
+      text3: "También puedes utilizar este enlace para restablecer la contraseña:"
+      button: "Restablecer contraseña"
+  Ask_a_question: "Hacer una pregunta"
+
+  options_for_select_language:
+    en: "Inglés"
+    es: "Español"
+    ru: "Ruso"
+  options_for_select_currency:
+    EUR: "Euro"
+    USD: "Dólar"
+  options_for_select_gender:
+    male: "Masculino"
+    femele: "Femenino"
+  date:
+    abbr_day_names:
+    - dom
+    - lun
+    - mar
+    - mié
+    - jue
+    - vie
+    - sáb
+    abbr_month_names:
+    -
+    - ene
+    - feb
+    - mar
+    - abr
+    - may
+    - jun
+    - jul
+    - ago
+    - sep
+    - oct
+    - nov
+    - dic
+    day_names:
+    - domingo
+    - lunes
+    - martes
+    - miércoles
+    - jueves
+    - viernes
+    - sábado
+    formats:
+      default: ! '%d/%m/%Y'
+      long: ! '%d de %B de %Y'
+      short: ! '%d de %b'
+    month_names:
+    -
+    - enero
+    - febrero
+    - marzo
+    - abril
+    - mayo
+    - junio
+    - julio
+    - agosto
+    - septiembre
+    - octubre
+    - noviembre
+    - diciembre
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        one: alrededor de 1 hora
+        other: alrededor de %{count} horas
+      about_x_months:
+        one: alrededor de 1 mes
+        other: alrededor de %{count} meses
+      about_x_years:
+        one: alrededor de 1 año
+        other: alrededor de %{count} años
+      almost_x_years:
+        one: casi 1 año
+        other: casi %{count} años
+      half_a_minute: medio minuto
+      less_than_x_minutes:
+        one: menos de 1 minuto
+        other: menos de %{count} minutos
+      less_than_x_seconds:
+        one: menos de 1 segundo
+        other: menos de %{count} segundos
+      over_x_years:
+        one: más de 1 año
+        other: más de %{count} años
+      x_days:
+        one: 1 día
+        other: ! '%{count} días'
+      x_minutes:
+        one: 1 minuto
+        other: ! '%{count} minutos'
+      x_months:
+        one: 1 mes
+        other: ! '%{count} meses'
+      x_seconds:
+        one: 1 segundo
+        other: ! '%{count} segundos'
+    prompts:
+      day: Día
+      hour: Hora
+      minute: Minutos
+      month: Mes
+      second: Segundos
+      year: Año
+  errors:
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: debe ser aceptado
+      blank: no puede estar en blanco
+      confirmation: no coincide
+      empty: no puede estar vacío
+      equal_to: debe ser igual a %{count}
+      even: debe ser par
+      exclusion: está reservado
+      greater_than: debe ser mayor que %{count}
+      greater_than_or_equal_to: debe ser mayor que o igual a %{count}
+      inclusion: no está incluido en la lista
+      invalid: no es válido
+      less_than: debe ser menor que %{count}
+      less_than_or_equal_to: debe ser menor que o igual a %{count}
+      not_a_number: no es un número
+      not_an_integer: debe ser un entero
+      odd: debe ser impar
+      record_invalid: ! 'La validación falló: %{errors}'
+      taken: ya está en uso
+      too_long: es demasiado largo (%{count} caracteres máximo)
+      too_short: es demasiado corto (%{count} caracteres mínimo)
+      wrong_length: no tiene la longitud correcta (%{count} caracteres exactos)
+    template:
+      body: ! 'Se encontraron problemas con los siguientes campos:'
+      header:
+        one: No se pudo guardar este/a %{model} porque se encontró 1 error
+        other: No se pudo guardar este/a %{model} porque se encontraron %{count} errores
+  helpers:
+    select:
+      prompt: Por favor seleccione
+    submit:
+      create: Crear %{model}
+      submit: Guardar %{model}
+      update: Actualizar %{model}
+  number:
+    currency:
+      format:
+        delimiter: .
+        format: ! '%n %u'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: €
+    format:
+      delimiter: .
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion: mil millones
+          million: millón
+          quadrillion: mil billones
+          thousand: mil
+          trillion: billón
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: true
+        strip_insignificant_zeros: true
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            one: Byte
+            other: Bytes
+          gb: GB
+          kb: KB
+          mb: MB
+          tb: TB
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ', y '
+      two_words_connector: ! ' y '
+      words_connector: ! ', '
+  time:
+    am: am
+    formats:
+      default: ! '%A, %d de %B de %Y %H:%M:%S %z'
+      long: ! '%d de %B de %Y %H:%M'
+      short: ! '%d de %b %H:%M'
+    pm: pm
+
+
+ 
+
+  Press_to_go_back: "Haga clic para volver"
+  #Footer
+  Privacy_Policy: "Política de privacidad"
+  # currency
+  currencies:
+    names:
+      long:
+        USD: "Dólares"
+        EUR: "Euro"
+    symbol:
+      USD: "$"
+      EUR: "€"
+
+  English: "Inglés"
+  Spanish: "Español"
+  Russian: "Ruso"
+
+  EN: "Inglés"
+  ES: "Español"
+  RU: "Ruso"
+
+
+  # Basic words
+  Number: "Número" 
+
+  # Action
+  Change_password: "Cambiar la contraseña"
+  Change_password_of_your_account: "Cambiar contraseña de la cuenta"
+  Changing_Password: "Cambio de la contraseña"
+  Change_time_zone: "Cambiar la zona horaria"
+  Change_profile_picture: "Cambiar la foto de perfil"
+  Change_currency: "Cambiar la moneda"
+  Change_current_currency_to_another_currency: "Змінити поточну валюту %{attribute} на іншу валюту"
+  Language_is_changed_to: "Мова була змінена на"
+  Redeem_your_voucher_or_gift_card: "Погасити ваучер або подарункові карти"
+  Send_SMS: "Відправити СМС"
+  Changing_profile_picture: "Зміна зображення профілю"
+  Profile_picture_was_changed: "Зображення профілю була змінена"
+  Profile_picture_was_not_changed: "Зображення профілю не змінилося"
+  Default_currency_has_changed_from_now_will_see_prices_in: "Валюта за замовчуванням змінилася, тепер Ви будете бачити ціни в %{attribute}"
+  Sign_in: "Iniciar Sesión"
+  # Basics action
+  Save: "Guardar"
+  Cancel: "Cancelar"
+
+  # Basics user personal information
+  First_name: "Nombre"
+  Last_name: "Apellido"
+  Username: "Nombre de usuario"
+  Profile_picture: "Imagen de perfil"
+  Email: "Correo electrónico"
+  Phone: "Teléfono"
+  Address: "Dirección"
+  Mobile_phone: "Teléfono móvil"
+  Landline_phone: "Teléfono fijo"
+
+  Default_currency: "moneda predeterminada"
+  currency_symbol: "símbolo de moneda"
+
+  # Geography
+  City: "Ciudad"
+  Province: "Provincia"
+  Country: "País"
+  Time_zone: "Zona horaria"
+  Time_Zone_is_changed: "Zona horaria ha sido cambiada"
+  Time_Zone_not_changed: "Zona horaria no ha sido cambiada"
+  Changing_Time_Zone: "Cambio de zona horaria"
+
+  # Time Zone
+
+  # Gender
+  Gender: "Sexo"
+  Male: "Masculino"
+  Female: "Femenino"
+
+  #profile
+  Language: "Idioma"
+  Change_language: "Cambiar el idioma"
+
+  You_have_been_signed_out: "Usted ha salido de tu cuenta."
+  Signing_in_failed_Please_double-check_your_user_name_and_re-enter_your_password: "Error de autenticación. Por favor verifique nombre de usuario e introduzca tu contraseña de nuevo."
+
+  Your_profile_has_been_updated: "Tu perfil se ha actualizado"
+
+  # H1 Profile
+  Account_information: "Інформація про обліковий запис"
+  Contact_information: "Información del contacto"
+  Personal_information: "Información personal"
+  Notifications: "Notificaciónes"
+  My_account: "Mi cuenta"
+
+  # Payments
+  Payments: "Pagos"
+  Paid: "Pagado"
+  Your_last_payment_is: "Tu último pago"
+
+  Date: "Fecha"
+  Type: "Tipo"
+  Details: "Información detallada"
+  Amount: "Suma"
+  Status: "Estado"
+  Completed: "Completado"
+  Uncompleted: "Incompleto"
+
+  Profile: "Perfil"
+  Subscriptions: "Suscripciones"
+  Features: "Funciones"
+  Are_you_sure: "Está seguro"
+
+  # Vaucher
+  Voucher: "Cupón"
+  Redeem_a_voucher: "Активувати ваучер"
+  Redeem_voucher: "Активувати ваучер"
+  Redeem: "Активувати"
+  Enter_voucher_number: "Введіть номер ваучера"
+  Voucher_not_found: "Ваучер не найден"
+
+
+  See_all: "Ver todos"
+
+  # Dashboard
+  Read_more: "Más información"
+  Today: "Hoy"
+  in_total_you_have: "en total tiene"
+  Check_the_boxes_if_you_want_to_receive_notifications: "Marca las casillas si desea recibir notificaciones"
+
+  # Change password
+  To_change_your_password_please_type_your_old_password_first_Then_enter_a_new_password_twice: "Для того щоб змінити пароль зробите наступні дії."
+  Old_password: "Contraseña antigua"
+  New_password: "Nueva contraseña"
+  Password_confirmation: "Confirmar contraseña"
+  The_fields_is_blank,_please_enter_your_password: "Поля порожні, будь ласка, введіть пароль."
+  Your_password_was_changed_Next_time_you_sign_in_use_your_new_password: "Ваш пароль був змінений. Наступного разу при вході в систему, використовуйте новий пароль."
+  New_password_and_password_confirmation_do_not_match: "Новий пароль і підтвердження пароля не співпадають."
+  Password_has_not_been_changed: "Contraseña no se ha cambiado"
+  Old_password_was_not_correct_Please_try_again: "La contraseña antigua no es correcta. Por favor, inténtalo de nuevo"
+
+  # Change language
+  Select_new_language: "Seleccione un nuevo idioma"
+  Changing_language: "Cambiar el idioma"
+
+
+  countries:
+    AC: "Острів Вознесіння"
+    AD: "Андорра"
+    AE: "Обʼєднані Арабські Емірати"
+    AF: "Афганістан"
+    AG: "Антигуа і Барбуда"
+    AI: "Ангілья"
+    AL: "Албанія"
+    AM: "Вірменія"
+    AN: "Нідерландські Антильські Острови"
+    AO: "Ангола"
+    AQ: "Антарктида"
+    AR: "Аргентина"
+    AS: "Американське Самоа"
+    AT: "Австрія"
+    AU: "Австралія"
+    AW: "Аруба"
+    AX: "Аландські острови"
+    AZ: "Азербайджан"
+    BA: "Боснія і Герцоговина"
+    BB: "Барбадос"
+    BD: "Бангладеш"
+    BE: "Бельгія"
+    BF: "Буркіна-Фасо"
+    BG: "Болгарія"
+    BH: "Бахрейн"
+    BI: "Бурунді"
+    BJ: "Бенін"
+    BL: "Острів Святого Бартоломея"
+    BM: "Бермуди"
+    BN: "Бруней"
+    BO: "Болівія"
+    BQ: "Нідерландські Карибські островиd"
+    BR: "Бразилія"
+    BS: "Багами"
+    BT: "Бутан"
+    BV: "Острів Буве"
+    BW: "Ботсвана"
+    BY: "Білорусь"
+    BZ: "Беліз"
+    CA: "Канада"
+    CC: "Кокосові острови"
+    CD: "Конґо - Кіншаса"
+    CD: "Конґо [ДРК]"
+    CF: "Центральноафриканська Республіка"
+    CG: "Конґо - Браззавіль"
+    CG: "Конґо [Республіка]"
+    CH: "Швейцарія"
+    CI: "Кот д’Івуар"
+    CI: "Берег Слонової Кістки"
+    CK: "Острови Кука"
+    CL: "Чилі"
+    CM: "Камерун"
+    CN: "Китай"
+    CO: "Колумбія"
+    CP: "Острів Кліппертон"
+    CR: "Коста-Рика"
+    CU: "Куба"
+    CV: "Кабо-Верде"
+    CW: "Кюрасао"
+    CX: "Острів Різдва"
+    CY: "Кіпр"
+    CZ: "Чеська республіка"
+    DE: "Німеччина"
+    DG: "Дієґо-Ґарсія"
+    DJ: "Джібуті"
+    DK: "Данія"
+    DM: "Домінік"
+    DO: "Домініканська Республіка"
+    DZ: "Алжир"
+    EA: "Сеута і Мелілья"
+    EC: "Еквадор"
+    EE: "Естонія"
+    EG: "Єгипет"
+    EH: "Західна Сахара"
+    ER: "Еритрея"
+    ES: "Іспанія"
+    ET: "Ефіопія"
+    EU: "Європейський Союз"
+    FI: "Фінляндія"
+    FJ: "Фіджі"
+    FK: "Фолклендські острови"
+    FK: "Фолклендські [Мальвінські] острови"
+    FM: "Мікронезія"
+    FM: "Мікронезія Федеративні Штати"
+    FO: "Фарерські острови"
+    FR: "Франція"
+    GA: "Габон"
+    GB: "Велика Британія"
+    GD: "Гренада"
+    GE: "Грузія"
+    GF: "Французька Гвіана"
+    GG: "Гернсі"
+    GH: "Гана"
+    GI: "Гібралтар"
+    GL: "Гренландія"
+    GM: "Гамбія"
+    GN: "Гвінея"
+    GP: "Гваделупа"
+    GQ: "Екваторіальна Гвінея"
+    GR: "Греція"
+    GS: "Південна Джорджія та Південні Сандвічеві Острови"
+    GT: "Гватемала"
+    GU: "Гуам"
+    GW: "Гвінея-Біссау"
+    GY: "Гайана"
+    HK: "Гонконґ О.А.Р. Китаю"
+    HK: "Гонконґ"
+    HM: "Острови Херд і Мак-Дональд"
+    HN: "Гондурас"
+    HR: "Хорватія"
+    HT: "Гаїті"
+    HU: "Угорщина"
+    IC: "Канарські острови"
+    ID: "Індонезія"
+    IE: "Ірландія"
+    IL: "Ізраїль"
+    IM: "Острів Мен"
+    IN: "Індія"
+    IO: "Британські території Індійського океану"
+    IQ: "Ірак"
+    IR: "Іран"
+    IS: "Ісландія"
+    IT: "Італія"
+    JE: "Джерсі"
+    JM: "Ямайка"
+    JO: "Йорданія"
+    JP: "Японія"
+    KE: "Кенія"
+    KG: "Киргизстан"
+    KH: "Камбоджа"
+    KI: "Кірибаті"
+    KM: "Коморські Острови"
+    KN: "Сент-Кітс і Невіс"
+    KP: "Північна Корея"
+    KR: "Південна Корея"
+    KW: "Кувейт"
+    KY: "Кайманові острови"
+    KZ: "Казахстан"
+    LA: "Лаос"
+    LB: "Ліван"
+    LC: "Сент-Люсія"
+    LI: "Ліхтенштейн"
+    LK: "Шрі-Ланка"
+    LR: "Ліберія"
+    LS: "Лесото"
+    LT: "Литва"
+    LU: "Люксембург"
+    LV: "Латвія"
+    LY: "Лівія"
+    MA: "Марокко"
+    MC: "Монако"
+    MD: "Молдова"
+    ME: "Чорногорія"
+    MF: "Острів Святого Мартіна"
+    MG: "Мадагаскар"
+    MH: "Маршаллові Острови"
+    MK: "Македонія"
+    MK: "Македонія [КЮРМ]"
+    ML: "Малі"
+    MM: "Мʼянма [Бірма]"
+    MN: "Монголія"
+    MO: "Макао О.А.Р. Китаю"
+    MO: "Макао"
+    MP: "Північні Маріанські Острови"
+    MQ: "Мартиніка"
+    MR: "Мавританія"
+    MS: "Монсеррат"
+    MT: "Мальта"
+    MU: "Маврикій"
+    MV: "Мальдіви"
+    MW: "Малаві"
+    MX: "Мексика"
+    MY: "Малайзія"
+    MZ: "Мозамбік"
+    NA: "Намібія"
+    NC: "Нова Каледонія"
+    NE: "Нігер"
+    NF: "Острів Норфолк"
+    NG: "Нігерія"
+    NI: "Нікарагуа"
+    NL: "Нідерланди"
+    'NO': "Норвегія"
+    NP: "Непал"
+    NR: "Науру"
+    NU: "Нія"
+    NZ: "Нова Зеландія"
+    OM: "Оман"
+    PA: "Панама"
+    PE: "Перу"
+    PF: "Французька Полінезія"
+    PG: "Папуа Нова Гвінея"
+    PH: "Філіппіни"
+    PK: "Пакистан"
+    PL: "Польща"
+    PM: "Сен-Пʼєр і Мікелон"
+    PN: "Острови Піткерн"
+    PR: "Пуерто-Ріко"
+    PS: "Палестина"
+    PT: "Португалія"
+    PW: "Палау"
+    PY: "Парагвай"
+    QA: "Катар"
+    QO: "Інша Океанія"
+    RE: "Реюньйон"
+    RO: "Румунія"
+    RS: "Сербія"
+    RU: "Росія"
+    RW: "Руанда"
+    SA: "Саудівська Аравія"
+    SB: "Соломонові Острови"
+    SC: "Сейшели"
+    SD: "Судан"
+    SE: "Швеція"
+    SG: "Сінгапур"
+    SH: "Острів Святої Єлени"
+    SI: "Словенія"
+    SJ: "Острови Свальбард та Ян-Маєн"
+    SK: "Словакія"
+    SL: "Сьєрра-Леоне"
+    SM: "Сан-Марино"
+    SN: "Сенегал"
+    SO: "Сомалі"
+    SR: "Суринам"
+    SS: "Південний Судан"
+    ST: "Сан-Томе і Прінсіпі"
+    SV: "Сальвадор"
+    SX: "Сінт-Мартен"
+    SY: "Сирія"
+    SZ: "Свазіленд"
+    TA: "Трістан-да-Кунья"
+    TC: "Теркс і Кайкос"
+    TD: "Чад"
+    TF: "Французькі Південні Території"
+    TG: "Того"
+    TH: "Таїланд"
+    TJ: "Таджикистан"
+    TK: "Токелау"
+    TL: "Тімор-Лешті"
+    TL: "Східний Тімор"
+    TM: "Туркменистан"
+    TN: "Туніс"
+    TO: "Тонга"
+    TR: "Туреччина"
+    TT: "Тринідад і Тобаго"
+    TV: "Тувалу"
+    TW: "Тайвань"
+    TZ: "Танзанія"
+    UA: "Україна"
+    UG: "Уганда"
+    UM: "Віддалені Острови США"
+    US: "США"
+    UY: "Уругвай"
+    UZ: "Узбекистан"
+    VA: "Ватикан"
+    VC: "Сент-Вінсент і Гренадини"
+    VE: "Венесуела"
+    VG: "Віргінські острови Британії"
+    VI: "Віргінські острови США"
+    VN: "Вʼєтнам"
+    VU: "Вануату"
+    WF: "Уолліс і Футуна"
+    WS: "Самоа"
+    YE: "Ємен"
+    YT: "Майот"
+    ZA: "ПАР"
+    ZM: "Замбія"
+    ZW: "Зімбабве"
+    ZZ: "Невідомий регіон"
+
+  languages:
+    names:
+
+      ab: Abjasio
+      aa: Afar
+      af: Afrik?ans
+      ay: Aimara
+      sq: Alban?s
+      de: Alem?n
+      am: Am?rico
+      ar: ?rabe
+      hy: Armenio
+      as: Asam?s
+      az: Azerbaiyano
+      bh: Bahrein?
+      ba: Baskir
+      bn: Bengal?
+      be: Bielorruso
+      my: Birmano
+      bi: Bislama
+      br: Bret?n
+      bg: B?lgaro
+      dz: Butan?s
+      ks: Cachemiro
+      km: Camboyano
+      ca: Catal?n
+      cs: Checo
+      zh: Chino
+      si: Cingal?s
+      ko: Coreano
+      co: Corso
+      hr: Croata
+      da: Dan?s
+      sk: Eslovaco
+      sl: Esloveno
+      es: Español
+      eo: Esperanto
+      et: Estonio
+      fo: Fero?s
+      fi: Fin?s
+      fj: Fiyiano
+      fr: Franc?s
+      fy: Fris?n
+      gd: Ga?lico escoc?s
+      cy: Gal?s
+      gl: Gallego
+      ka: Georgiano
+      el: Griego
+      kl: Groenland?s
+      gn: Guaran?
+      gu: Gujarati
+      ha: Hausa
+      he: Hebreo
+      hi: Hindi
+      hu: H?ngaro
+      id: Indonesio
+      en: Inglés
+      ia: Interlingua
+      iu: Inuktitut
+      ik: Inupiaq
+      ga: Irland?s
+      is: Island?s
+      it: Italiano
+      ja: Japon?s
+      jw: Javan?s
+      kn: Kannada
+      kk: Kazajo
+      rw: Kinyarwanda
+      ky: Kirgu?s
+      rn: Kirundi
+      ku: Kurdo
+      lo: Lao
+      la: Lat?n
+      lv: Let?n
+      ln: Lingala
+      lt: Lituano
+      mk: Macedonio
+      ml: Malabar
+      ms: Malayo
+      mg: Malgache
+      mt: Malt?s
+      mi: Maor?
+      mr: Marat?
+      mo: Moldavo
+      mn: Mongol
+      na: Nauruano
+      nl: Neerland?s
+      ne: Nepal?
+      no: Noruego
+      oc: Occitano
+      or: Oriya
+      om: Oromo
+      pa: Panyab?
+      ps: Pashto
+      fa: Persa
+      pl: Polaco
+      pt: Portugu?s
+      qu: Quechua
+      rm: Reto rom?nico
+      ro: Rumano
+      ru: Ruso
+      sm: Samoano
+      sg: Sango
+      sa: S?nscrito
+      sr: Serbio
+      sh: Serbo-Croatian
+      st: Sesotho
+      tn: Setsuana
+      sn: Shona
+      sd: Sindhi
+      so: Somal?
+      ss: Suazi
+      sv: Sueco
+      su: Sundan?s
+      sw: Swahili
+      tl: Tagalog
+      th: Tailand?s
+      ta: Tamil
+      tt: T?rtaro
+      tg: Tayiko
+      te: Telug?
+      bo: Tibetano
+      ti: Tigri?a
+      to: Tonga
+      ts: Tsonga
+      tr: Turco
+      tk: Turcomano
+      tw: Twi
+      uk: Ucraniano
+      ug: Uigur
+      ur: Urdu
+      uz: Uzbeko
+      eu: Vasco
+      vi: Vietnamita
+      vo: Volap?k
+      wo: Wolof
+      xh: Xhosa
+      yi: Yidis
+      yo: Yoruba
+      za: Zhuang
+      zu: Zul?
+
+  timezones:
+      "American Samoa": "Американское Самоа" # -11:00
+      "International Date Line West": "Международная линия перемены дат" # -11:00
+      "Midway Island": "Остров Мидуэй" # -11:00
+      "Hawaii": "Гавайи" # -10:00
+      "Alaska": "Аляска" # -09:00
+      "Pacific Time (US & Canada)": "Североамериканское тихоокеанское время" # -08:00
+      "Tijuana": "Тихуана" # -08:00
+      "Arizona": "Аризона" # -07:00
+      "Chihuahua": "Чиуауа" # -07:00
+      "Mazatlan": "Масатлан" # -07:00
+      "Mountain Time (US & Canada)": "Североамериканское горное время" # -07:00
+      "Central America": "Цетральная Америка" # -06:00
+      "Central Time (US & Canada)": "Североамериканское центральное время" # -06:00
+      "Guadalajara": "Гвадалахара" # -06:00
+      "Mexico City": "Мехико" # -06:00
+      "Monterrey": "Монтеррей" # -06:00
+      "Saskatchewan": "Саскачеван" # -06:00
+      "Bogota": "Богота" # -05:00
+      "Eastern Time (US & Canada)": "Североамериканское восточное время" # -05:00
+      "Indiana (East)": "Индиана" # -05:00
+      "Lima": "Лимо" # -05:00
+      "Quito": "Кито" # -05:00
+      "Caracas": "Каракас" # -04:30
+      "Atlantic Time (Canada)": "Североамериканское атлантическое время" # -04:00
+      "Georgetown": "Джорджтаун" # -04:00
+      "La Paz": "Ла-Пас" # -04:00
+      "Santiago": "Сантьяго" # -04:00
+      "Newfoundland": "Ньюфаундленд" # -03:30
+      "Brasilia": "Бразилиа" # -03:00
+      "Buenos Aires": "Буэенос-Айрес" # -03:00
+      "Greenland": "Гренландия" # -03:00
+      "Mid-Atlantic": "Центральноатлантическое время" # -02:00
+      "Azores": "Азорские острова" # -01:00
+      "Cape Verde Is.": "Кабо-Верде" # -01:00
+      "Casablanca": "Касабланка" # +00:00
+      "Dublin": "Дублин" # +00:00
+      "Edinburgh": "Эдинбург" # +00:00
+      "Lisbon": "Лиссабон" # +00:00
+      "London": "Лондон" # +00:00
+      "Monrovia": "Монровия" # +00:00
+      "UTC": "Всемирное координированное время (UTC)" # +00:00
+      "Amsterdam": "Амстердам" # +01:00
+      "Belgrade": "Белград" # +01:00
+      "Berlin": "Берлин" # +01:00
+      "Bern": "Берн" # +01:00
+      "Bratislava": "Братислава" # +01:00
+      "Brussels": "Брюссель" # +01:00
+      "Budapest": "Будапешт" # +01:00
+      "Copenhagen": "Копенгаген" # +01:00
+      "Ljubljana": "Любляна" # +01:00
+      "Madrid": "Мадрид" # +01:00
+      "Paris": "Пириж" # +01:00
+      "Prague": "Прага" # +01:00
+      "Rome": "Рим" # +01:00
+      "Sarajevo": "Сараево" # +01:00
+      "Skopje": "Скопье" # +01:00
+      "Stockholm": "Стокгольм" # +01:00
+      "Vienna": "Вена" # +01:00
+      "Warsaw": "Варшава" # +01:00
+      "West Central Africa": "Западноафриканское время" # +01:00
+      "Zagreb": "Загреб" # +01:00
+      "Athens": "Афины" # +02:00
+      "Bucharest": "Бухарест" # +02:00
+      "Cairo": "Каир" # +02:00
+      "Harare": "Хараре" # +02:00
+      "Helsinki": "Хельсинки" # +02:00
+      "Istanbul": "Стамбул" # +02:00
+      "Jerusalem": "Иерусалим" # +02:00
+      "Kyiv": "Киев" # +02:00
+      "Pretoria": "Претория" # +02:00
+      "Riga": "Рига" # +02:00
+      "Sofia": "София" # +02:00
+      "Tallinn": "Таллин" # +02:00
+      "Vilnius": "Вильнюс" # +02:00
+      "Baghdad": "Багдад" # +03:00
+      "Kuwait": "Кувейт" # +03:00
+      "Minsk": "Минск" # +03:00
+      "Nairobi": "Найроби" # +03:00
+      "Riyadh": "Эр-Рияд" # +03:00
+      "Tehran": "Тегеран" # +03:30
+      "Abu Dhabi": "Абу-Даби" # +04:00
+      "Baku": "Баку" # +04:00
+      "Moscow": "Москва" # +04:00
+      "Muscat": "Маскат" # +04:00
+      "St. Petersburg": "Санкт-Петербург" # +04:00
+      "Tbilisi": "Тбилиси" # +04:00
+      "Volgograd": "Волгоград" # +04:00
+      "Yerevan": "Ереван" # +04:00
+      "Kabul": "Кабул" # +04:30
+      "Islamabad": "Исламабад" # +05:00
+      "Karachi": "Карачи" # +05:00
+      "Tashkent": "Ташкент" # +05:00
+      "Chennai": "Ченнаи" # +05:30
+      "Kolkata": "Калькутта" # +05:30
+      "Mumbai": "Бомбей" # +05:30
+      "New Delhi": "Нью-Дели" # +05:30
+      "Sri Jayawardenepura": "Шри-Джаяварденепура-Котте" # +05:30
+      "Kathmandu": "Катманду" # +05:45
+      "Almaty": "Алма-Ата" # +06:00
+      "Astana": "Астана" # +06:00
+      "Dhaka": "Дакка" # +06:00
+      "Ekaterinburg": "Екатеринбург" # +06:00
+      "Rangoon": "Рангун" # +06:30
+      "Bangkok": "Бангкок" # +07:00
+      "Hanoi": "Ханой" # +07:00
+      "Jakarta": "Джакарта" # +07:00
+      "Novosibirsk": "Новосибирск" # +07:00
+      "Beijing": "Пекин" # +08:00
+      "Chongqing": "Чунцин" # +08:00
+      "Hong Kong": "Гонконг" # +08:00
+      "Krasnoyarsk": "Красноярск" # +08:00
+      "Kuala Lumpur": "Куала-Лумпур" # +08:00
+      "Perth": "Перт" # +08:00
+      "Singapore": "Сингапур" # +08:00
+      "Taipei": "Тайпей" # +08:00
+      "Ulaan Bataar": "Улан-Батор" # +08:00
+      "Urumqi": "Урумчи" # +08:00
+      "Irkutsk": "Иркутск" # +09:00
+      "Osaka": "Осака" # +09:00
+      "Sapporo": "Саппоро" # +09:00
+      "Seoul": "Сейл" # +09:00
+      "Tokyo": "Токио" # +09:00
+      "Adelaide": "Аделаида" # +09:30
+      "Darwin": "Дарвин" # +09:30
+      "Brisbane": "Брисбен" # +10:00
+      "Canberra": "Канберра" # +10:00
+      "Guam": "Гуам" # +10:00
+      "Hobart": "Хобарт" # +10:00
+      "Melbourne": "Мельбурн" # +10:00
+      "Port Moresby": "Порт-Морсби" # +10:00
+      "Sydney": "Сидней" # +10:00
+      "Yakutsk": "Якутск" # +10:00
+      "New Caledonia": "Новая Каледония" # +11:00
+      "Vladivostok": "Владивосток" # +11:00
+      "Auckland": "Окленд" # +12:00
+      "Fiji": "Фиджи" # +12:00
+      "Kamchatka": "Камчатка" # +12:00
+      "Magadan": "Магадан" # +12:00
+      "Marshall Is.": "Маршалловы острова" # +12:00
+      "Solomon Is.": "Саломоновы острова" # +12:00
+      "Wellington": "Веллингтон" # +12:00
+      "Nuku'alofa": "Нукуалофа" # +13:00
+      "Samoa": "Самоа" # +13:00
+      "Tokelau Is.": "Токелау" # +14:00
+      "Montevideo": "Монтевидео"
+      "Ulaanbaatar": "Улан-Батор"
+      "Chatham Is.": "Остров Чатем"
+
+  Birthday: "Cumpleaños"
+  Load_more: "Cargar más"
+  The_currency_of_your_account_is: "La moneda de su cuenta"
+  Profile_picture_has_not_been_changed: "Foto del perfil no se ha cambiado"
+  Your_currency_has_not_been_changed: "Su moneda no se ha cambiado"
+  Time_Zone_has_not_been_changed: "Franja horaria no se ha cambiado"
+  Time_Zone_has_been_changed: "Franja horaria ha cambiado"
+  The_fields_is_blank_please_enter_your_password: "El campo está en blanco Por favor, introduzca su contraseña"
+  Enter_your_mobile_number: "Introduzca tu número de móvil"
+  Continue: "Continuar"
+  Enter_pin_code: "Введіть код"
+  Verify: "Verificar"
+  The_field_is_blank_please_enter_your_number_and_click_Verify: "Поле не заповнене введіть свій номер і натисніть кнопку Перевірити"
+  Language_was_not_specified: "No se ha especificado el idioma"

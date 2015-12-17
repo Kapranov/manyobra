@@ -1,0 +1,37 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :twitter_card do 'product' end %>
+<% content_for :social_image do image_url "services/corporate.jpg" end %>
+<% content_for :product_meta_twitter do %>
+<meta name="twitter:label1" content="">
+<meta name="twitter:data1" content="">
+<meta name="twitter:label2" content="">
+<meta name="twitter:data2" content="">
+<% end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+                <li><%= link_to t('Home'), page_home_path %></li>
+                <li><%= link_to t('Services'), page_services_path, :rel => "up" %></li>
+                <li class="active"><%= t'.title' %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container page">
+    <div class="row">
+        <div class="col-md-12">
+            <h1><%= raw t '.title' %></h1>
+            <%= raw t '.content' %>
+        </div>
+    </div>
+    <section class="call-to-action featured footer">
+        <div class="row">
+            <div class="center">
+                <h3><%= raw t'pages.section.orderservice.title' %> <%= link_to t('pages.section.orderservice.button'), page_contact_path, class: "btn btn-lg btn-primary", alt: t('pages.section.orderservice.button') %></h3>
+            </div>
+        </div>
+    </section>
+</div>

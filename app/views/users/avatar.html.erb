@@ -1,0 +1,19 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<%= form_for :user, url: avatar_path, :html => { :multipart => true } do |f| %>
+    <% if @user.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+          <ul>
+          <% @user.errors.full_messages.each do |msg| %>
+            <li><%= msg %></li>
+          <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <%#= form_for :avatar, :html => { :multipart => true } do |f| %>
+    <%= f.label :avatar %><br />
+    <%= f.file_field :avatar, required: true %>
+    <%= f.submit :class => 'button blue' %>
+    <% end %>

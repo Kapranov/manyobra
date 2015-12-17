@@ -1,0 +1,456 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :social_image do image_url "logo.png" end %>
+
+
+<% content_for :css do %>
+<%= stylesheet_link_tag "vendor/owl-carousel/owl.carousel" %>
+<%= stylesheet_link_tag "vendor/owl-carousel/owl.theme" %>
+<%= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+<% end %>
+<% content_for :js do %>
+<%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+<%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+<%= javascript_include_tag "vendor/owl-carousel/owl.carousel" %>
+<%= javascript_include_tag "views/view.home.js" %>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        <%= javascript_include_tag "vendor/jquery.gmap.js" %>
+        <script>
+        // Map Markers
+        var mapMarkers = [{
+            address: "Calle Juan Izquierdo, 87, 46160 Llíria, España",
+            html: "<strong><%= t'.section.map.office_in_liria' %></strong><br>Calle Juan Izquierdo, 87, 46160 Llíria, España<br><br><a href='#' onclick='mapCenterAt({latitude: 39.623185, longitude: -0.589984, zoom: 19}, event)'>[+] <%= t'.section.map.zoom_here' %></a>",
+            icon: {
+                image: "<%= image_path("pin.png") %>",
+                iconsize: [36, 46],
+                iconanchor: [12, 46]
+            }
+
+        }];
+
+        // Map Initial Location 39.623185, -0.589984
+        var initLatitude = 39.623185;
+        var initLongitude = -0.589984;
+
+        // Map Extended Settings
+        var mapSettings = {
+            controls: {
+                panControl: true,
+                zoomControl: true,
+                mapTypeControl: true,
+                scaleControl: true,
+                streetViewControl: true,
+                overviewMapControl: true
+            },
+            scrollwheel: false,
+            markers: mapMarkers,
+            latitude: initLatitude,
+            longitude: initLongitude,
+            zoom: 16
+        };
+
+        var map = $("#googlemaps").gMap(mapSettings),
+            mapRef = $("#googlemaps").data('gMap.reference');
+
+        // Map Center At
+        var mapCenterAt = function(options, e) {
+            e.preventDefault();
+            $("#googlemaps").gMap("centerAt", options);
+        }
+
+        </script>
+<% end %>
+
+<!-- Google Maps -->
+<%
+=begin
+%>
+<% content_for :footer do %>
+<div id="content" class="content full">
+    <div id="googlemaps" class="parallax google-map hidden-xs"></div>
+</div>
+<% end %>
+<%
+=end
+%>
+<% content_for :heading do %>
+<div id="content" class="content full">
+    <section class="home-top clean">
+        <div class="slider-container">
+            <div class="slider page-top-slider" id="topRevolutionSlider" data-plugin-options='{"startheight": 520}'>
+                <ul>
+                    <li data-transition="fade" data-slotamount="13" data-masterspeed="300">
+                        <%= image_tag "slides/bg_white.jpg", :data => { :bgposition => 'left top', :bgrepeat => 'no-repeat' }, alt: "background" %>
+                        <div class="tp-caption top-label md customin" data-x="left" data-hoffset="15" data-y="170" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="0" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_one.phrase_top' %></div>
+                        <div class="tp-caption main-label md customin" data-x="left" data-hoffset="15" data-y="190" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="300" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_one.brand' %></div>
+                        <div class="tp-caption top-label md sfb" data-x="left" data-hoffset="20" data-y="310" data-speed="800" data-start="500" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_one.phrase_bottom' %></div>
+                        <div class="tp-caption sft" data-x="left" data-hoffset="105" data-y="360" data-speed="800" data-start="700" data-easing="Back.easeInOut" data-endspeed="300">
+                            <a data-hash="" href="#get-started" class="btn btn-lg btn-primary main-button"><%= t'.section.slider.slide_one.button' %></a>
+                        </div>
+                        <div class="tp-caption sfb" data-x="right" data-hoffset="150" data-y="center" data-voffset="50" data-speed="1000" data-start="700" data-easing="Back.easeInOut" data-endspeed="300">
+                            <%= image_tag("slides/home/builder.png", alt: "Manyobra") %>
+                        </div>
+                    </li>
+                    <li data-transition="fade" data-slotamount="13" data-masterspeed="300">
+                        <%= image_tag "slides/people_bluer10.jpg", :data => { :bgposition => 'left top', :bgrepeat => 'no-repeat' }, alt: "background" %>
+                        <div class="tp-caption top-label md customin" data-x="left" data-hoffset="15" data-y="170" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="0" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_two.phrase_top' %></div>
+                        <div class="tp-caption main-label md customin" data-x="left" data-hoffset="15" data-y="190" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="300" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_two.brand' %></div>
+                        <div class="tp-caption top-label md sfb" data-x="left" data-hoffset="20" data-y="310" data-speed="800" data-start="500" data-easing="Back.easeInOut" data-endspeed="300"><%= t'.section.slider.slide_two.phrase_bottom' %></div>
+                        <div class="tp-caption sft" data-x="left" data-hoffset="105" data-y="360" data-speed="800" data-start="700" data-easing="Back.easeInOut" data-endspeed="300">
+                            <a data-hash="" href="#get-started" class="btn btn-lg btn-primary main-button"><%= t'.section.slider..slide_two.button' %></a>
+                        </div>
+                        <div class="tp-caption sfb" data-x="right" data-hoffset="150" data-y="center" data-voffset="50" data-speed="1000" data-start="700" data-easing="Back.easeInOut" data-endspeed="300">
+                            <%= image_tag("slides/home/services-builder.png", alt: "Manyobra") %>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+<% end %>
+
+
+<div class="container">
+    <div class="row center" id="get-started">
+        <div class="col-md-12">
+            <h1 class="short lead"><%= raw t'.section.who_we_are.title' %></h1>
+            <h2 class="featured lead"><%= t'.section.introduction.description_one' %></h2>
+            <h2 class="featured lead"><%= t'.section.introduction.description_two' %></h2>
+
+            <hr class="tall" />
+
+            <h2 class="short lead"><%= raw t'.section.services.title' %></h2>
+
+            <hr class="invisible" />
+
+        </div>
+    </div>
+</div>
+        
+<div class="main-carousel">
+    <div class="owl-carousel manual">
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_extensive_repairs_url %>" data-tooltip="<%= t'pages.extensive_repairs.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/extensive_repairs.jpg", class: "img-responsive", alt: "#{ t'pages.extensive_repairs.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_repair_of_kitchen_url %>" data-tooltip="<%= t'pages.repair_of_kitchen.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/repair_of_kitchen.jpg", class: "img-responsive", alt: "#{ t'pages.repair_of_kitchen.title' }"  %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_repair_of_bathrooms_url %>" data-tooltip="<%= t'pages.repair_of_bathrooms.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/repair_of_bathrooms.jpg", class: "img-responsive", alt: "#{ t'pages.repair_of_bathrooms.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_installation_of_an_electrical_wiring_url %>" data-tooltip="<%= t'pages.installation_of_an_electrical_wiring.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/installation_of_an_electrical_wiring.jpg", class: "img-responsive", alt: "#{ t'pages.installation_of_an_electrical_wiring.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_installation_of_plumbing_url %>" data-tooltip="<%= t'pages.installation_of_plumbing.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/installation_of_plumbing.jpg", class: "img-responsive", alt: "#{ t'pages.installation_of_plumbing.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_repair_of_office_and_industrial_premises_url %>" data-tooltip="<%= t'pages.repair_of_office_and_industrial_premises.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/repair_of_office_and_industrial_premises.jpg", class: "img-responsive", alt: "#{ t'pages.repair_of_office_and_industrial_premises.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_construction_url %>" data-tooltip="<%= t'pages.construction.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/construction.jpg", class: "img-responsive", alt: "#{ t'pages.construction.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div>
+            <div class="portfolio-item">
+                <a href="<%= service_page_urgent_repair_url %>" data-tooltip="<%= t'pages.urgent_repair.title' %>" class="thumb-info img-thumbnail">
+                    <span class="thumb-info-image">
+                        <span class="thumb-info-act">
+                            <span class="thumb-info-act-left"><em><%= t'.view' %></em></span>
+                            <span class="thumb-info-act-right"><em><%= t'.details' %></em></span>
+                        </span>
+                        <%= image_tag "services/bubbles/urgent_repair.jpg", class: "img-responsive", alt: "#{ t'pages.urgent_repair.title' }" %>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+  
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="center">
+                <%= link_to t('.section.services.all'), page_services_path, class: "btn btn-default btn-lg", data: { 'appear-animation' => 'bounceIn', 'appear-animation-delay' => '0' }, title: t('.section.services.all') %>                 
+            </div>
+        </div>
+    </div>
+</div>
+<%
+=begin
+%>
+<section class="featured highlight">
+    <div class="container">
+        <div class="row center counters">
+            <div class="col-md-3">
+                <strong data-to="323">0</strong>
+                <label><%= t'.section.counters.clients'%></label>
+            </div>
+            <div class="col-md-3">
+                <strong data-to="<%= Time.zone.now.year - 2006 %>">0</strong>
+                <label><%= t'.section.counters.years'%></label>
+            </div>
+            <div class="col-md-3">
+                <strong data-to="293">0</strong>
+                <label><%= t'.section.counters.litigations' %></label>
+            </div>
+            <div class="col-md-3">
+                <strong data-to="1177">0</strong>
+                <label><%= t'.section.counters.consultation' %></label>
+            </div>
+        </div>
+    </div>
+</section>
+<%
+=end
+%>
+
+<section class="parallax home" data-stellar-background-ratio="0.4" style="background-image: url(<%= image_url("parallax-bg1.jpg") %>);">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 appear-animation fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft">
+                <h2 class="push-top white"><%= raw t'.section.offers.title' %></h2>
+                <p class="white lead">
+                    <%= t'.section.offers.paragraph1' %>
+                </p>
+                <p class="white tall">
+                    <%= t'.section.offers.paragraph2' %>
+                </p>
+                <%= link_to t('.section.offers.button'), page_offers_path, class: "btn btn-primary btn-lg push-top" %>
+            </div>
+            <div class="col-md-5 col-md-offset-1 appear-animation fadeInRight appear-animation-visible" data-appear-animation="fadeInRight" data-appear-animation-delay="300">
+<%
+=begin
+%>
+                <img class="img-responsive pull-right" src="img/premium-features-2.png">
+<%
+=end
+%>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr class="invisible" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2><%= [t('.section.description_company.random_title.one'), t('.section.description_company.random_title.two'), t('.section.description_company.random_title.three')].sample %></h2>
+            <p><%= t'.section.description_company.paragraph' %></p>
+        </div>
+    </div>
+
+    <hr class="tall" />
+
+</div>
+
+<div class="container">
+    <div class="row">
+<%
+=begin
+%>
+        <div class="col-md-6">
+            <h2><%= raw t'.section.testimonial.title' %></h2>
+            <div class="owl-carousel" data-plugin-options='{"items": 1, "transitionStyle": "backSlide"}'>
+                <div>
+                    <blockquote class="testimonial">
+                        <p><%= t'.section.testimonial.client.one.massage' %></p>
+                    </blockquote>
+                    <div class="testimonial-arrow-down"></div>
+                    <div class="testimonial-author">
+                        <div class="img-thumbnail img-thumbnail-small">
+                            <%= image_tag("clients/client-2.jpg", class: "img-circle img-responsive") %>
+                        </div>
+                        <p><strong><%= t'.section.testimonial.client.one.name' %></strong><span><%= t'.section.testimonial.client.one.profession' %></span></p>
+                    </div>
+                </div>
+                <div>
+                    <blockquote class="testimonial">
+                        <p><%= t'.section.testimonial.client.two.massage' %></p>
+                    </blockquote>
+                    <div class="testimonial-arrow-down"></div>
+                    <div class="testimonial-author">
+                        <!--
+                        <div class="img-thumbnail img-thumbnail-small">
+                            <%= image_tag("clients/client-1.jpg", class: "img-circle img-responsive") %>
+                        </div>
+                        -->
+                        <p><strong><%= t'.section.testimonial.client.two.name' %></strong><span><%= t'.section.testimonial.client.two.profession' %></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<%
+=end
+%>
+
+        <div class="col-md-6">
+            <div class="recent-posts">
+                <h2><%= raw t'.section.posts.title' %></h2>
+                <div class="row">
+                    <div class="owl-carousel" data-plugin-options='{"items": 1, "transitionStyle": "backSlide"}'>
+                        <% Blog::Post.last(6).each do |blog_post| %>
+                            <div>
+                                <div class="col-md-12">
+                                    <article>
+                                        <div class="date">
+                                            <%= content_tag(:span, l( blog_post.created_at, format: '%d'  ), class: 'day', :rel => "tooltip", :title => blog_post.created_at.to_s(:time) )%>                                            <span class="month"><%= l( blog_post.created_at, format: '%b'  ) %></span>
+                                        </div>
+                                        <h4><%= link_to blog_post.title, blog_post_path(blog_post), title: blog_post.title %></h4>
+                                        <%= sanitize blog_post.content.truncate(200, separator: '</p>'), tags: %w(p) %> 
+                                        <p><%= link_to t('Read_more'), blog_post_path(blog_post), class: 'btn btn-xs btn-primary pull-right' %></p>
+                                    </article>
+                                </div>
+                            <%# end %>
+                            </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="tall" />
+    
+</div>
+
+
+<section class="featured highlight">
+    <div class="container">
+        <div class="row center">
+            <div class="col-md-12">
+                <h2><%= raw t'.section.map.title' %></h2>
+                <label><%= raw t'.section.map.subtitle' %></label>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="content" class="content full">
+    <div id="googlemaps" class="google-map"></div>
+</div>
+<div class="container">
+    <section data-appear-animation="fadeInDown" class="call-to-action featured footer appear-animation">
+        <div class="row">
+            <div class="col-md-12 center">
+                <h3><%= raw t'.section.how_we_can_help.title' %> <%= link_to t('.section.how_we_can_help.button'), page_contact_path, class: "btn btn-lg btn-primary appear-animation bounceIn appear-animation-visible", alt: t('.section.how_we_can_help.button') %></h3>
+            </div>
+        </div>
+    </section>
+</div>
+
+
+
+
+
+
+
+<hr class="invisible" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div id="fb-root"></div>
+            <% 
+                case I18n.locale
+                when "es"
+                  @Location = "es_ES"
+                when "en"
+                  @Location = "en_EN"
+                when "ru"
+                  @Location = "ru_RU"
+                else
+                  @Location = "es_ES"
+                end
+            %>
+                <script>(function(d, s, id) {
+                  var js, fjs = d.getElementsByTagName(s)[0];
+                  if (d.getElementById(id)) return;
+                  js = d.createElement(s); js.id = id;
+                  js.src = "//connect.facebook.net/<%= @Location %>/sdk.js#xfbml=1&version=v2.0";
+                  fjs.parentNode.insertBefore(js, fjs);
+                }(document, 'script', 'facebook-jssdk'));</script>
+
+                <div class="fb-like" data-href="http://www.manyobra.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+        </div>
+        <div class="col-md-6">
+            <script src="https://apis.google.com/js/platform.js" async defer>
+              {lang: '<%= I18n.locale %>'}
+            </script>
+            <div class="g-plusone" data-annotation="inline" data-width="300"></div>
+        </div>
+    </div>
+</div>

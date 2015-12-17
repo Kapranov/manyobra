@@ -1,0 +1,11 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<%= form_for @user, url: change_time_zone_path, method: :post do |f| %>
+    <div class="fieldRow">
+        <label for="time_zone"><%= t'Select_a_new_time_zone_if_you_want_to_change_the_current_time_zone' %></label> 
+        <%#= f.time_zone_select('time_zone', ActiveSupport::TimeZone.all, :model => I18nTimeZone ) %>
+        <%#= f.time_zone_select :time_zone, TimeZone.all %>
+        <%= f.time_zone_select :time_zone %>
+    </div>
+    <%= f.submit :class => 'button blue' %>
+<% end %>

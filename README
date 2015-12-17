@@ -1,0 +1,56 @@
+Fedosin
+========================
+
+________________________
+
+Recipes:
+
+* core
+* deployment
+* devise
+* email
+* extras
+* frontend
+* gems
+* git
+* init
+* learn_rails
+* locale
+* omniauth
+* pages
+* rails_bootstrap
+* rails_devise
+* rails_devise_pundit
+* rails_foundation
+* rails_omniauth
+* rails_signup_download
+* railsapps
+* readme
+* roles
+* setup
+* tests
+
+Preferences:
+
+* git: true
+* apps4: railsapps
+* dev_webserver: webrick
+* prod_webserver: unicorn
+* database: mysql
+* templates: erb
+* tests: none
+* frontend: none
+* email: gmail
+* authentication: none
+* authorization: none
+* form_builder: none
+* pages: about+users
+* locale: uk
+* rvmrc: false
+* better_errors: true
+* jsruntime: false
+* github: true
+
+________________________
+
+License

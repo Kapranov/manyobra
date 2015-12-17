@@ -1,0 +1,106 @@
+<% content_for :js do %>
+<%#= javascript_include_tag "vendor/ckeditor/ckeditor" %>
+<%
+=begin
+%>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            CKEDITOR.replace( 'editor', {
+                fullPage: true,
+                //allowedContent: true
+            });
+        </script>
+<%
+=end
+%>
+<% end %>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <%= form_for @blog_post, multipart: true do |f| %>
+            <%= f.hidden_field :author, :value => current_user.email %>
+            <% if @blog_post.errors.any? %>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="error_explanation">
+                        <h2><%= pluralize(@blog_post.errors.count, "error") %> prohibited this post from being saved:</h2>
+                        <ul>
+                          <% @blog_post.errors.full_messages.each do |message| %>
+                            <li><%= message %></li>
+                          <% end %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <%= f.label :title, t('.title') %>
+                        <%= f.text_field :title, class: 'form-control' %>
+                    </div>
+                    <div class="col-md-12">
+                        <%= f.label :slug, t('.slug') %>
+                        <%= f.text_field :slug, class: 'form-control' %>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <%= f.label :content, t('.content') %>
+                        <%= f.text_area :content, id: "editor", rows: "10", cols: "80", class: 'form-control' %>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <%= f.label :image, t('.image') %>
+                        <%= f.file_field :image, class: 'form-control' %>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <% if !current_page?(new_blog_post_url)%>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <p>Created on: <%#= localize @post.created_at %></p>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+            <div class="row">
+                <div class="col-md-12">
+                    <%= f.submit  class: 'btn btn-primary pull-right' %>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <%=f.label :tag_list, t('.tags') %>
+                        <%=f.text_field :tag_list, class: 'form-control' %>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-md-12">
+                    <%# @categories.each do |category| %>
+                        <%#= label_tag do %>
+                          <%#= check_box_tag 'blog[category_ids][]', @post.category.id, @post.category_ids.include?(@post.category.id) %>
+                          <%#=  @post.category.name %>
+                        <%# end %>
+                    <%# end %>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+        </div>
+    </div>
+</div>

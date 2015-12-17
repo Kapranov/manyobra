@@ -1,0 +1,1659 @@
+# -*- encoding : utf-8 -*-
+#Copyright (c) 2014 Zettheme | Andrey Zhuk. All rights reserved.
+#File is part of Manyobra App
+#English translation en.yml
+
+en:
+
+  lawyer:
+    fullname: "Artem <strong>Fedosin</strong>"
+  index: "index-in-spanish"
+  contact: "Contacts"
+
+  # Website translation menu navigation
+  Home: "Home"
+  Services: "Services"
+  Prices: "Prices"
+  Blog: "Blog"
+  About_me: "About Us"
+  Contact: "Contacts"
+  Logout: "Logout"
+  Login: "Login"
+  Sign_Up: "Sign Up"
+  Authorization: "Authorization"
+  Products: "Products"
+  Customers: "Customers"
+  Events: "Events"
+  Testimonials: "Testimonials"
+
+
+  Comments: "Comments"
+
+  activemodel:
+    models:
+      message: "Message"
+        #one: "повідомлення"
+        #other: "повідомлень"
+    attributes:
+      character:
+        name: "Name"
+
+  helpers:
+    label:
+      user:
+        name: "Name"
+        first_name: "Name"
+        last_name: ""
+
+  Register_An_Account: "Register an account"
+  Name: "Name"
+  Phone: "Phone"
+  Subject: "Subject"
+  Question: "Question"
+
+  pages:
+    home: #Home Page
+      view: "View"
+      details: "Details"
+      section:
+        love_my_work:
+          title: 'I <strong class="alternative-font default">love</strong> my job and am proud of my work!'
+          description_one: "Each case entrusted to me, is a individual and confidential!"
+          description_two: "Each affair of client - my affair! Life - Fight! Your fight - my fight! Victory - our common results!"
+        services:
+          title: '<strong class="alternative-font default">Services</strong>'
+          all: "All services"
+        counters:
+          clients: "Clients"
+          years: "My experience"
+          litigations: "Successful court"
+          consultation: "Provided consultation"
+
+        how_can_i_help:
+          title: "How can I help? Send me your <strong>question</strong>."
+          button: "Ask a question"
+        slider:
+          random_text:
+            one: "Do you need a lawyer?"
+            two: "Do you a dispute?"
+            three: "Do you need legal advice?"
+            four: "You need to make legal documents?"
+            five: "Do you need legal assistance?"
+          lawyer: "Lawyer"
+          name: "Fedosin Artem Viktorovych"
+          start: "Let's start!"
+        testimonial:
+          title: "What they say about <strong>me...</strong>"
+          client:
+            one:
+              name: "Andrey Zhuk"
+              profession: "CEO & founder - Zetfon"
+              massage: "Спасибо за помощь, ты настоящий профи."
+            two:
+              name: "Марія Медицка"
+              profession: "PR"
+              massage: "Спасибо за быстрое и эффективное решение вопроса."
+        posts:
+          title: "Recent <strong>posts</strong>"
+    services:
+      view: "View"
+      details: "Details"
+      isotope:
+        title: "Services <strong>All</strong>"
+        switches:
+          all: "All"
+          physical: "Physical persons"
+          legal: "Legal persons"
+    criminal:
+      page:
+        title: "Criminal"
+      title: "Criminal cases"
+      content:  "<p>I realize professional protection of Clients (suspects accused / defendant, convicted, acquitted), and the interests of victims in criminal proceedings at any stage in different categories of crimes.</p>
+                  <p>My services in criminal proceedings include:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Appeal against unlawful detention.</li>
+                    <li>Participation in the election (continued) restraint.</li>
+                    <li>Participation during the investigation (investigation) actions, including questioning, search.</li>
+                    <li>Determining the amount of evidence and evidence collection (holding «advocates investigation»).</li>
+                    <li>Appeal against decisions, actions or omissions of the preliminary investigation or the prosecutor during the preliminary investigation.</li>
+                    <li>Appeal decisions investigating judge during the preliminary investigation (a preventive measure in the form of detention, house arrest or extension of such measures, seizure, temporary access to objects and documents; removal from office).</li>
+                    <li>Preparation review the results of pre-determining future strategy of judicial remedy.</li>
+                    <li>Protection (representation) in trial, appellate and cassation.</li>
+                    <li>Analysis of material legal proceedings regarding the possibility of judicial review by the Supreme Court of Ukraine, the preparation of the application for review of the decision and participate in the hearing.</li>
+                    <li>Analysis of material legal proceedings for viewing criminal proceedings under the new circumstances, the preparation of an application for review of decision and participate in the hearing.</li>
+                    <li>Participation in criminal proceedings on the basis of agreements (the settlement between the victim and the suspect / accused, the agreement between the prosecutor and the suspect / accused on the recognition of guilt), and criminal proceedings in the form of private prosecution.</li>
+                  </ul>
+                  <p>You can be sure that your case is in safe hands.</p>"
+    antimonopoly:
+      page:
+        title: "Anti-monopoly and Competition"
+      title: "Anti-monopoly and Competition"
+      content:  "<p>One of the main practices in the provision of legal aid is antitrust and competition law, which includes:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Providing advice on antitrust and competition laws</li>
+                    <li>Structuring of transactions for the acquisition of companies and assets, parsing of obtaining control over the companies, taking into account the anti-monopoly legislation</li>
+                    <li>receipt of the preliminary findings of the Anti-monopoly Committee of Ukraine on the concerted actions, concentration entities obtaining approval of the Anti-monopoly Committee of Ukraine for concerted actions, concentration of economic entities</li>
+                    <li>obtaining approval of the Anti-monopoly Committee of Ukraine for concerted actions, concentration of economic entities</li>
+                    <li>Preparation of applications and complaints about anticompetitive concerted actions, abuse of dominant position in the market, restrictive and discriminatory activity, unfair competition and anti-competitive behavior authorities and local self-government</li>
+                    <li>Representation of the Anti-monopoly Committee of Ukraine and its administrative boards in cases of violation of the anti-monopoly legislation</li>
+                    <li>Representation in court to appeal against the decisions of the Anti-monopoly Committee of Ukraine and administrative boards</li>
+                  </ul>"
+    commercial_disputes:
+      page:
+        title: "Commercial disputes"
+      title: "Commercial disputes"
+      content:  "<p>I realize representation of clients in the commercial courts in dealing with, inter alia:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Disputes relating to the implementation, modification, termination, invalidation of contracts.</li>
+                    <li>Disputes over payments for products, goods or services.</li>
+                    <li>Investment disputes, including the privatization of the property.</li>
+                    <li>Disputes relating to the protection of property rights (recognition of the right of property, recovery of property from illegal possession, the removal of obstacles in the implementation of the right to use and dispose of property).</li>
+                    <li>Disputes regarding the use of economic circulation of intellectual property (trademark, inventions, utility models, industrial designs, suggestions for improvements).</li>
+                    <li>Disputes over the accounting of rights to securities.</li>
+                    <li>Corporate disputes (recognition of constituent documents void invalidate the decision of the general meeting, the supervisory board or other governing bodies, withdrawal or expulsion from the company).</li>
+                    <li>Bankruptcy proceedings.</li>
+                  </ul>"
+    housing:
+      page:
+        title: "Housing disputes"
+      title: "Housing disputes"
+      content:  "<p>I have experience and I will be happy to help you resolve housing disputes, in particular:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Recognition of the right of use of premises.</li>
+                    <li>Establish procedures to use the apartment.</li>
+                    <li>Check-in living room.</li>
+                    <li>Allocation (division) flat (apartment house), which is the partial or total joint property.</li>
+                    <li>Removing barriers by expulsion and removal from registration Registry.</li>
+                    <li>Evictions without providing alternative accommodation.</li>
+                    <li>Recognition of a person so that has lost the right to use the apartment.</li>
+                  </ul>"
+    business_advocate:
+      page:
+        title: "Бізнес адвокат"
+      title: "Бізнес адвокат"
+      content:  "<p>Програма «Бізнес адвокат» є комплексом заходів направлених на захист, представництво інтересів та надання правової допомоги юридичним особам, зокрема:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>надання усних та письмових консультацій, висновків, роз’яснень тощо;</li>
+                    <li>розробка корпоративної документації (статут та зміни до нього, внутрішні положення, інструкції, протоколи тощо);</li>
+                    <li>проведення реєстраційних дій;</li>
+                    <li>правовий аналіз та / або підготовка договорів, а також подальший супровід їх укладення та виконання;</li>
+                    <li>участь у переговорах із замовниками, контрагентами, клієнтами;</li>
+                    <li>підготовка заяв, листів, скарг, претензій тощо;</li>
+                    <li>ведення справ у судах (господарських, адміністративних, загальних);</li>
+                    <li>взаємодія з контролюючими та правоохоронними органами.</li>
+                  </ul>
+                  <p>В рамках програми «Бізнес адвокат» можлива співпраця як по окремих питаннях так і повний юридичний супровід господарської діяльності.</p>"
+    execution_of_judgments:
+      page:
+        title: "Execution of judgments"
+      title: "Execution of judgments"
+      content:  "<p>The enforcement proceeding is the finishing stage of judicial proceedings and the enforcement of decisions of other bodies (officials). Enforcement of decisions rests with the state executive service. The executive production should actively participate in the enforcement proceedings and to exercise their rights.</p>
+                  <p>I have experience in representing and protecting the rights of the parties at the stage of enforcement proceedings:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Opening of enforcement proceedings.</li>
+                    <li>Renewal of the missed deadline for filing writ of execution to execution.</li>
+                    <li>Correction of errors in the writ of execution and recognition of a writ of execution so that it is not enforceable.</li>
+                    <li>Participation during any enforcement actions.</li>
+                    <li>Conclusion of a settlement agreement in the process of execution.</li>
+                    <li>Deferral and installment of execution.</li>
+                    <li>Changing or establishing a method and procedure for execution.</li>
+                    <li>Removing the attachment of the property.</li>
+                    <li>Appeal against the results of evaluation of the property of the debtor, the recognition of the auction results null and void.</li>
+                    <li>Appeal against decisions, actions or inaction of officials of the State Executive Service (State Executive).</li>
+                    <li>The recognition and enforcement of a foreign judgment.</li>
+                  </ul>"
+    commercial_law:
+      page:
+        title: "Commercial & Contract Law"
+      title: "Commercial & Contract Law"
+      content:  "<p>One of the main practices in the provision of legal aid is a commercial and contract law, which includes:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Advising on the conclusion, performance, modification or termination (termination) of the Treaty.</li>
+                    <li>Participation in the negotiation process at the conclusion, modification or termination of contracts.</li>
+                    <li>Preparation of letters of intent, preliminary contracts.</li>
+                    <li>Preparation and legal examination of all types of contracts, additional agreements (applications), including agreements on security (mortgage, pledge, assignment, and others).</li>
+                    <li>Support of registration or negotiation of contracts in public authorities (National Bank of Ukraine, the State Property Fund of Ukraine and others).</li>
+                    <li>Legal support for the conclusion of contracts by tender, tenders, auctions, exchanges.</li>
+                    <li>Representation in courts in cases relating to the conclusion, performance or termination of contracts, and the invalidation of contracts.</li>
+                  </ul>"
+    corporate:
+      page:
+        title: "Corporate Law & Securities"
+      title: "Corporate Law & Securities"
+      content:  "<p>One of the main practices in the provision of legal aid is a corporate and securities, which includes:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Providing advice on choosing the best form of business, preparation of statutory documents and internal regulations, the development of corporate structure</li>
+                    <li>Registration of legal persons, associations of enterprises, holding companies, registration of representative offices of foreign companies, as well as their re-registration</li>
+                    <li>Reorganization (transformation, division, merger and acquisition), the allocation and liquidation of legal entities</li>
+                    <li>Legal support for mergers and acquisitions (M & A), the structuring of agreements</li>
+                    <li>Corporate restructuring, the development of optimal in view of corporate governance standards</li>
+                    <li>Legal support of alienation and acquisition of corporate rights (shares) thereof, to those buying and selling businesses</li>
+                    <li>Legal support to increase or decrease the authorized capital</li>
+                    <li>Organization and holding of general meetings of shareholders (participants), preparing minutes of general meetings</li>
+                    <li>Services of the Corporate Secretary</li>
+                    <li>Legal support for the issue of shares (open (public) and closed (private) placement), the denomination of the shares</li>
+                    <li>Legal support for the issuance of corporate and mortgage bonds, investment certificates, certificates of real estate funds (certificates background) and option certificates</li>
+                    <li>Authorization of the National Commission on Securities and Stock Market turnover of shares or bonds of Ukrainian enterprises abroad Ukraine</li>
+                    <li>Creation of collective investment institutions (mutual and corporate investment funds)</li>
+                    <li>Obtaining coordination of the National Commission on Securities and Stock Market for the acquisition or increase of a qualifying holding in the professional stock market participants</li>
+                    <li>Representation of the National Commission on Securities and Stock Market, including in cases of violation in the securities market, as well as in its relations with professional stock market participants</li>
+                    <li>Resolution of corporate disputes (conflicts), protection from hostile takeovers, the protection of the rights of shareholders (participants)</li>
+                    <li>Representation in the courts for corporate disputes</li>
+                  </ul>"
+    appeal_of_decisions:
+      page:
+        title: "Appeal of decisions and actions of the authorities"
+      title: "Appeal of decisions and actions of the authorities"
+      content:  "<p>I realize representation of clients before the administrative courts in dealing with public law disputes:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Appeal against the decision (normative act or a legal act of individual actions), actions or omissions of public authorities.</li>
+                    <li>Appeal against decisions, actions or inaction of state registrars.</li>
+                    <li>The case in the implementation of the state policy in the sphere of economy, including government regulation of prices and tariffs, protection of economic competition, customs.</li>
+                    <li>The case in the implementation of fiscal policy, including the administration of taxes, fees and mandatory payments (cancellation of tax notices, decisions, etc.).</li>
+                    <li>Disputes with the subjects of authority with respect to the realization of their competence in the field of management, including the delegated authority.</li>
+                    <li>Appeal against decisions, actions or inaction of the state executive service (public performers).</li>
+                    <li>Disputes about the acceptance of the public service, its passage, dismissal from the public service.</li>
+                    <li>Appeal against decisions, actions or inaction in terms of access to public information.</li>
+                  </ul>"
+    personal_lawyer:
+      page:
+        title: "Особистий адвокат"
+      title: "Особистий адвокат"
+      content:  "<p>Програма «Особистий адвокат» спрямована на оперативне консультування та вирішення проблем клієнта, що включає:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>надання усних та письмових консультацій, висновків, роз’яснень, правової інформації тощо;</li>
+                    <li>складання та / або подання заяв, листів, скарг та інших документів правового характеру;</li>
+                    <li>екстрений виїзд адвоката (цілодобово);</li>
+                    <li>захист і представництво інтересі у правоохоронних органах (міліція, прокуратура), органах державної влади та місцевого самоврядування;</li>
+                    <li>участь в проведенні переговорів;</li>
+                    <li>ведення справ у судах всіх інстанцій.</li>
+                  </ul>"
+    debt_collection:
+      page:
+        title: "Debt collection & Bankruptcy."
+      title: "Debt collection & Bankruptcy."
+      content:  "<p></p>
+                  <ul class='list check list-unstyled'>
+                    <li>Conduct pre-trial settlement with respect to repayment of debt.</li>
+                    <li>Restructuring of the debt.</li>
+                    <li>Preparation of the application for debt collection, calculation of penalty (fine), inflation losses.</li>
+                    <li>To initiate the seizure of property and assets of the debtor.</li>
+                    <li>Representation in courts of all levels.</li>
+                    <li>Representation in the state executive service.</li>
+                    <li>Initiation of bankruptcy proceedings (by the debtor or creditor).</li>
+                    <li>Representation in the Economic Court, meetings of creditors, creditors' committee and the liquidator (executor of the estate, manage sanitation, liquidator).</li>
+                  </ul>"
+    labor:
+      page:
+        title: "Labor disputes"
+      title: "Labor disputes"
+      content:  "<p>I have experience and I will be happy to help you resolve the labor dispute, or provide other legal assistance in the field of labor relations, including:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Preparation and / or analysis of labor contracts (labor contracts with the management of the Company).</li>
+                    <li>Preparation and registration of the collective agreement.</li>
+                    <li>Advising on design, hiring or dismissal by the employer or employee.</li>
+                    <li>Preparation of internal documents of the Company, including job descriptions, regulations, etc.</li>
+                    <li>Bringing the employee to disciplinary action or material.</li>
+                    <li>Development of a set of measures associated with the preservation of trade secrets and / or confidential information.</li>
+                    <li>Mediation in resolving labor disputes between an employer and employee.</li>
+                    <li>Reinstatement (cancel the order or instruction).</li>
+                    <li>Recognition of the illegal dismissal or change the wording of the reasons for dismissal.</li>
+                    <li>Recovery of average earnings during his forced absence and / or delay time calculation.</li>
+                    <li>Cancellation of disciplinary action.</li>
+                  </ul>"
+    civil:
+      page:
+        title: "Civil cases"
+      title: "Civil cases"
+      content:  "<p>I have experience and I will be happy to help you resolve a civil dispute, in particular:</p>
+                  <ul class='list check list-unstyled'>
+                    <li>Establishment of the facts, which have legal significance.</li>
+                    <li>Protection of property rights (recognition of the right of property, recovery of property from illegal possession, removal of barriers to the implementation of the right to use and dispose of property).</li>
+                    <li>Protection of rights of land owners and land users.</li>
+                    <li>Division and allocation of property, which is a common partial or joint ownership.</li>
+                    <li>Contractual disputes (with respect to execution or improper execution of contracts); training and / or legal expertise agreements (contracts).</li>
+                    <li>Recognition agreements (transactions) void.</li>
+                    <li>Recovery of debts (debt).</li>
+                    <li>Protection of consumers' rights.</li>
+                    <li>Medical disputes.</li>
+                    <li>Copyright protection (the rights to intellectual property).</li>
+                    <li>Protection of honor, dignity and business reputation (refutation of false information).</li>
+                    <li>Compensation for moral and material damage.</li>
+                    <li>Inheritance disputes.</li>
+                  </ul>"
+    legal_service:
+      page:
+        title: "Legal service"
+      title: "Legal service"
+      content:  " <ul class='list check list-unstyled'>
+                    <li>General Legal complex support the company's operations</li>
+                    <li>Legal support of the company: to provide legal security business, protection of corporate interests</li>
+                    <li>Legal support of structural units</li>
+                    <li>The preparation and examination of legal documents, including founding documents, bylaws, minutes, power of attorney, and others</li>
+                    <li>Carrying out registration procedures</li>
+                    <li>Development of standard contracts, negotiation of agreements on economic activities of the company</li>
+                    <li>Identification and assessment of legal risks in dealing with potential, existing partners; evaluation of contracts with contractors providing business advice to deal effectively with them</li>
+                    <li>Representation in courts of all levels</li>
+                    <li>Legal support for the recovery of bad debts</li>
+                    <li>Representation of the company in the State executive bodies and cooperation with law enforcement</li>
+                    <li>Monitoring of changes in the legislation, advice on legal issues related to the activities of the company</li>
+                  </ul>"
+    credit:
+      page:
+        title: "Credit"
+      title: "Credit disputes"
+      content:  "<p>I have experience and I will be happy to help you resolve a credit dispute, including:</p>
+                <ul class='list check list-unstyled'>
+                    <li>Negotiate with banks or collection companies on pre-settlement credit debt.</li>
+                    <li>Recognition of the loan agreement void in whole or in part.</li>
+                    <li>Disputes arising from contracts of mortgage, pledge or surety.</li>
+                    <li>Analysis and review the lawfulness of calculating debt.</li>
+                    <li>Reduce credit debt through the courts.</li>
+                    <li>Representation in courts of all instances.</li>
+                    <li>Appeals court decision in absentia.</li>
+                    <li>Appeal against the decision of the arbitral tribunal.</li>
+                    <li>Acknowledgment of the order as not enforceable.</li>
+                    <li>Representation in the state executive service.</li>
+                    <li>Installment or postponement of loan repayment.</li>
+                </ul>"
+    family:
+      page:
+        title: "Family disputes"
+      title: "Family disputes"
+      content:  "<p>I have experience and I will be happy to help you resolve a family dispute, including:</p>
+                <ul class='list check list-unstyled'>
+                    <li>Dissolution of marriage (divorce) or annulment.</li>
+                    <li>Alimony or child support resizing.</li>
+                    <li>Recovery of additional expenses for the child.</li>
+                    <li>An agreement between the parents on the payment of child support.</li>
+                    <li>The determination of residence one family without marriage.</li>
+                    <li>The division of marital property.</li>
+                    <li>Conclusion and termination of the marriage contract.</li>
+                    <li>Determination of residence of a minor child.</li>
+                    <li>Take the child and return.</li>
+                    <li>Participation in the education of the child of the parent who does not live with.</li>
+                    <li>Paternity or maternity.</li>
+                    <li>Deprivation and restoration of parental rights.</li>
+                </ul>"
+
+    prices: #Pricing & Billing Faq Page
+      title: "FEES"
+      paragraph1: "My reward for carrying out security missions and to provide other types of legal assistance to clients is carried out in the form of royalties."
+      paragraph2: "The method of calculating the fee, the reasons for changing the size of the fee, order of payment, repayment terms, etc. are defined in the contract for legal assistance."
+      paragraph3: "Possible fee calculation:"
+      paragraph4: "In determining the fee takes into account the following factors:"
+      items:
+        variants:
+          one: "Fixed size for the cause"
+          two: "Phased fixed size"
+          thre: "Hourly rate"
+        determination:
+          one: "Categories of cases"
+          two: "Complexity and stage of the case"
+          thre: "Future expenses"
+          four: "Financial position of the issuer"
+          five: "Other significant circumstances"
+      section_faq:
+        title: "Ціни та Тарифи FAQ"
+      payments: 
+        question: "Яку форму оплати ви приймаєте?"
+        answer: "Ми приймаємо Visa, MasterCard, American Express, Discover, і PayPal."
+      refunds:
+        question: "Ви пропонуєте повернення коштів?"
+        answer: "Ні, ми не пропонуємо повернення коштів. Якщо є пом'якшувальні обставини, будь ласка, зв'яжіться з нами."
+      delays_in_balance_update:
+        question: "Я зробив платіж через PayPal. Чому мій баланс не був оновлений?"
+        answer: "Баланс, не оновлюється в реальному часі, як тільки ви відправите платіж на PayPal, він отримує запит на обробку вашого платежа та його зачислиння на нашій системі. Ви повинні побачити оновлений баланс протягом декількох годин."
+      destroy_account:
+        question: "Як закрити свій аккаунт?"
+        answer: "Ви можете скасувати свій обліковий запис в будь-який час за допомогою панелі управління, на вкладці налаштувань."
+      tarification:
+        question: "Як відбувається тарифікація?"
+        answer: "Кожна послуга тарифікується по разному ми надаемо послуги одноразові чи послуги за які списуватимуться щомісячно кошти с вашого баланса."
+      pay_in_advance:
+        question: "Чи можу я сплатити заздалегідь?"
+        answer: "Ми в даний час ми не приймаэмо передоплату, але ви можете додати додатковий кредит на баланс вашого аккаунту в будь-який час, відправивши в оплаті PayPal."
+      transfer_credits_between_accounts:
+        question: "Чи можу я перевести кредити з одного рахунку на інший?"
+        answer: "Ні - кредити не можуть бути передані між рахунками."
+      promo_code:
+        question: "Як застосувати промо-код?"
+        answer: "Як новий клієнт можна легко застосувати промо-код на свій аккаунт зі сторінки способи оплати. Введіть з урахуванням регістру код в поле промо коду. Після того, як введений правильно, кредити будуть автоматично зараховані до вашого облікового запису. Для того, щоб заказати будь-яку першу послугу ви також повинні мати діючу кредитну карту та внести депозит на свій аккаунт. також це можливо шляхом PayPal. Майте на увазі, що ми дозволяємо мати тільки один промо-код на кожний аккаунт, так що якщо ви вже скористались з одним в минулому, тоди ви не можете додати ще один. Щоб побачити історію промо-код, будь ласка, перейдіть на сторінку платежі."
+    about: #about Page
+      page:
+        title: "Artem Fedosin"
+      title: "Artem <strong>Fedosin</strong>"
+      section:
+        aboutme:
+          i_am_lawyer:
+            title: "I Advocate"
+            text: "I, Advocate, Artem Fedosin fulfill their professional activities on the basis of evidence of the right to practice law number 3875 24.09.2009 issued by the Kyiv City qualification commission of advocates."
+          education:
+            title: "Education"
+            text: "His legal education in the Kyiv National Taras Shevchenko University (LL.M.)."
+          protection:
+            title: "Protection and representation"
+            text: "My advocacy is to protect, representation and provision of other types of legal assistance to the client (for legal information, advice and clarification of legal issues, legal support of the client, drawing, complaints, proceedings and other legal documents)."
+          principles:
+            title: "Principles"
+            text: "My advocacy is based on the following principles: the rule of law, legality, maximum independence, confidentiality and avoidance of conflicts of interest."
+          member:
+            title: "Association"
+            text: "I am a member of the following professional associations:"
+            uba: "Association of Lawyers of Ukraine"
+            uaa: "Ukrainian Advocates’ Association"
+            unba: "National Association of Advocates of Ukraine"
+        testimonial:
+            title: "What they say about <strong>me...</strong>"
+            client:
+              one:
+                name: "Andrey Zhuk"
+                profession: "CEO & Founder - Zetfon"
+                massage: "Спасибо за помощь, ты настоящий профи."
+              two:
+                name: "Марія Медицка"
+                profession: "PR - Zetfon"
+                massage: "Спасибо за быстрое и эффективное решение вопроса."
+        skills:
+          title: "My <strong>Victories</strong>"
+          one: "In criminal proceedings"
+          two: "In civil disputes"
+          three: "In commercial disputes"
+          four: "In administrative disputes"
+    contact: #Contact Page
+      email:
+        alert:
+          successful: "%{name}, повідомлення було успішно відіслано, найближчим часом з вами зв'яжуться, поштою %{email} або телефонним дзвінком на номер %{phone}"
+          error: ""
+      form:
+        name: "Name"
+        email: "Email"
+        submit: "Send"
+        phone: "Phone"
+        subject: "Subject"
+        question: "Question"
+
+      title: "Contacts"
+      subtitle: "<strong>Ask*</strong>"
+      text: "Do you have questions? Please fill out the form below."
+      explanation: "* Any information that you had transferred and / or having communicated to me, is considered to be an attorney's secret and confidential and not subject to disclosure."
+      modal:
+        title: "<strong>Order</strong> a call"
+        text: "Do you have questions? Please fill out the form below."
+        form:
+          submit: "Order a call"
+          close: "Close"
+      section:
+        contact_me:
+          title: "<strong>Contact*</strong>"
+          text: "You can contact me at any time convenient for you as follows:"
+          phone: "Phone"
+          email: "Email"
+          mts: "МТС"
+          kyivstar: "Kyivstar"
+          life: "Life"
+          my_contacts_title: "My <strong>contacts</strong>"
+          office_title: "Мій <strong>Офіс</strong>"
+          business_time_title: "Work <strong>schedules</strong>"
+          business_days_time: "Monday - Friday 9:00 до 19:00"
+          business_time_saturday: "Saturday - By appointment"
+          business_time_sunday: "Sunday - By appointment"
+          order: "Order a call"
+    section:
+      orderservice:
+        title: "Learn more or get advice"
+        button: "Yes"
+  sessions: #Login Page
+    new:
+      title: "Please login to continue."  
+      form:
+        email: "Email"
+        password: "Password"
+        forgot: "Forgot your password?"
+        remember_me: "Remember me"
+        submit: "Sign in"
+        create_one: "create one"
+  password_resets: #Reset password Pages
+    new:
+      title: "Enter your email to reset your password."  
+      form:
+        email: "Email"
+        submit: "Reset password"
+  users: #Create Account Page
+    new:
+      title: "Register an account."  
+      form:
+        first_name: "First name"
+        last_name: "Last name"
+        email: "Email"
+        password: "Пароль"
+        password_confirmation: "Password confirmation"
+        birthday: "Birthday"
+        gender: "Gender"
+        country: "Country"
+        language: "Language"
+        forgot: "Forgot your password?"
+        remember_me: "Remember me"
+        submit: "Create"
+        signin: "Sign in"
+
+
+
+  blog: #blog page
+    posts:
+      show:
+        search: "Search"
+        share: "Share this post"
+        categories:
+          title: "Categories"
+        tags: "Tags"
+        recents: "Recents posts"
+        comments:
+          zero: "No comments"
+          one: "1 comment"
+          other: "%{count} comments"
+          tooltip: "будьте першими залиште ваш коментар"
+        Leave_a_comment: "Leave a comment"
+        form:
+          first_name: "First name"
+      index:
+        search: "Search"
+        share: "Share this post"
+        categories:
+          title: "Categories"
+        tags: "Tags"
+        recents: "Recents posts"
+        comments:
+          zero: "No comments"
+          one: "1 comment"
+          other: "%{count} comments"
+          tooltip: "будьте першими залиште ваш коментар"
+      new:
+        create: "Створити пост"
+      form:
+        title: "Title"
+
+        tag: "Теги"
+    search:
+      search:
+        search: "Search"
+
+    tags:
+      show:
+        tagged: "Post tagged with"
+        search: "Search"
+        share: "Share this post"
+        categories:
+          title: "Categories"
+        tags: "Tags"
+        recents: "Recents posts"
+        comments:
+          zero: "No comments"
+          one: "1 comment"
+          other: "%{count} comments"
+          tooltip: "будьте першими залиште ваш коментар"
+  layouts:
+    site:
+      section:
+        сopyright: "All rights reserved"
+        language: "Language"
+        made: 
+          title: "Developed by"
+          creators: "creators of the site"
+        posts:
+            title: "Recent <strong>posts</strong>"
+            title_tooltip: "Latest news the website"
+            link: "View Blog"
+
+
+
+
+
+#login Page
+
+  Because_of_your_long_absence_session_work_on_the_page_of_your_Fedosin_account_automatically_completed_for_security_purposes: "Унаслідок вашої тривалої відсутності сесія роботи на сторінці вашого рахунку в Fedosin автоматично завершена в цілях безпеки."
+
+  Username: "ім'я користувача"
+  Password: "Пароль"
+  Forgotten_your_password: "Забули свій пароль?"
+  You_have_been_signed_out: "Ви вийшли зі свого рахунку."
+  Signing_in_failed_Please_double-check_your_user_name_and_re-enter_your_password: "Помилка ідентифікації. Перевірте правильність логіна і введіть ваш пароль ще раз."
+
+
+  # email
+  user_mailer:
+    password_reset:
+      subject: "Скидання пароля облікового запису Fedosin.com"
+      title_email: "Скидання пароля облікового запису"
+      text1: "Ми отримали запит на скидання пароля вашого облікового запису."
+      text2: "Якщо запит був відправлений вами, натисніть кнопку нижче. В іншому випадку, проігноруйте це повідомлення."
+      text3: "Ви також можете скористатися цим лінком, щоб змінити пароль:"
+
+  Ask_a_question: "Задати запитання"
+
+
+  options_for_select_language:
+    en: "Англійська"
+    es: "Іспанська"
+    ru: "Російська"
+    uk: "Українська"
+  options_for_select_currency:
+    EUR: "Євро"
+    USD: "Долар"
+    UAH: "Гривеня"
+    RUR: "Рублі"
+  options_for_select_gender:
+    male: "Чоловіча"
+    femele: "Жіноча"
+  date:
+    abbr_day_names:
+    - нд.
+    - пн.
+    - вт.
+    - ср.
+    - чт.
+    - пт.
+    - сб.
+    abbr_month_names:
+    -
+    - січ.
+    - лют.
+    - бер.
+    - квіт.
+    - трав.
+    - черв.
+    - лип.
+    - серп.
+    - вер.
+    - жовт.
+    - лист.
+    - груд.
+    day_names:
+    - неділя
+    - понеділок
+    - вівторок
+    - середа
+    - четвер
+    - п'ятниця
+    - субота
+    formats:
+      default: ! '%d.%m.%Y'
+      long: ! '%-d %B %Y'
+      short: ! '%-d %b'
+    month_names:
+    -
+    - Січень
+    - Лютий
+    - Березень
+    - Квітень
+    - Травень
+    - Червень
+    - Липень
+    - Серпень
+    - Вересень
+    - Жовтень
+    - Листопад
+    - Грудень
+    order:
+    - :day
+    - :month
+    - :year
+  datetime:
+    distance_in_words:
+      about_x_hours:
+        few: близько %{count} години
+        many: близько %{count} годин
+        one: близько %{count} година
+        other: близько %{count} години
+      about_x_months:
+        few: близько %{count} місяців
+        many: близько %{count} місяців
+        one: близько %{count} місяця
+        other: близько %{count} місяця
+      about_x_years:
+        few: близько %{count} років
+        many: близько %{count} років
+        one: близько %{count} року
+        other: близько %{count} року
+      almost_x_years:
+        few: майже %{count} років
+        many: майже %{count} років
+        one: майже %{count} роки
+        other: майже %{count} років
+      half_a_minute: півхвилини
+      less_than_x_minutes:
+        few: менше %{count} хвилин
+        many: менше %{count} хвилин
+        one: менше %{count} хвилини
+        other: менше %{count} хвилини
+      less_than_x_seconds:
+        few: менше %{count} секунд
+        many: менше %{count} секунд
+        one: менше %{count} секунди
+        other: менше %{count} секунди
+      over_x_years:
+        few: більше %{count} років
+        many: більше %{count} років
+        one: більше %{count} року
+        other: більше %{count} року
+      x_days:
+        few: ! '%{count} дні'
+        many: ! '%{count} днів'
+        one: ! '%{count} день'
+        other: ! '%{count} дня'
+      x_minutes:
+        few: ! '%{count} хвилини'
+        many: ! '%{count} хвилин'
+        one: ! '%{count} хвилина'
+        other: ! '%{count} хвилини'
+      x_months:
+        few: ! '%{count} місяці'
+        many: ! '%{count} місяців'
+        one: ! '%{count} місяць'
+        other: ! '%{count} місяця'
+      x_seconds:
+        few: ! '%{count} секунди'
+        many: ! '%{count} секунд'
+        one: ! '%{count} секунда'
+        other: ! '%{count} секунди'
+    prompts:
+      day: День
+      hour: Година
+      minute: Хвилина
+      month: Місяць
+      second: Секунда
+      year: Рік
+  errors: &errors
+    format: ! '%{attribute} %{message}'
+    messages:
+      accepted: має бути прийнятий
+      blank: не може бути пустим
+      confirmation: не збігається з підтвердженням
+      empty: не може бути порожнім
+      equal_to: має дорівнювати %{count}
+      even: має бути парним
+      exclusion: зарезервовано
+      greater_than: має бути більше ніж %{count}
+      greater_than_or_equal_to: має бути більше ніж або дорівнювати %{count}
+      inclusion: не включено до переліку
+      invalid: недійсний
+      less_than: має бути менше ніж %{count}
+      less_than_or_equal_to: має бути менше ніж або дорівнювати %{count}
+      not_a_number: не число
+      not_an_integer: не э цілим числом
+      odd: має бути непарним
+      record_invalid: ! 'Виникли помилки: %{errors}'
+      taken: вже зайнятий
+      too_long:
+        few: занадто довгий (максимум %{count} знаки)
+        many: занадто довгий (максимум %{count} знаків)
+        one: занадто довгий (максимум %{count} знак)
+        other: занадто довгий (максимум %{count} знаку)
+      too_short:
+        few: занадто короткий (мінімум %{count} знаки)
+        many: занадто короткий (мінімум %{count} знаків)
+        one: занадто короткий (мінімум %{count} знак)
+        other: занадто короткий (мінімум %{count} знаку)
+      wrong_length:
+        few: неправильна довжина (має бути %{count} знаки)
+        many: неправильна довжина (має бути %{count} знаків)
+        one: неправильна довжина (має бути %{count} знак)
+        other: неправильна довжина (має бути %{count} знаку)
+    template:
+      body: ! 'Помилки виявлено в таких полях:'
+      header:
+        few: ! '%{model} не збережено через %{count} помилки'
+        many: ! '%{model} не збережено через %{count} помилок'
+        one: ! '%{model} не збережено через %{count} помилку'
+        other: ! '%{model} не збережено через %{count} помилки'
+  helpers:
+    select:
+      prompt: ! 'Оберіть: '
+    submit:
+      create: Створити %{model}
+      submit: Зберегти %{model}
+      update: Зберегти %{model}
+  number:
+    currency:
+      format:
+        delimiter: ! ' '
+        format: ! '%n %u'
+        precision: 2
+        separator: ! ','
+        significant: false
+        strip_insignificant_zeros: false
+        unit: грн.
+    format:
+      delimiter: ! ' '
+      precision: 3
+      separator: ! ','
+      significant: false
+      strip_insignificant_zeros: false
+    human:
+      decimal_units:
+        format: ! '%n %u'
+        units:
+          billion:
+            few: Мільярдів
+            many: Мільярдів
+            one: Мільярд
+            other: Мільярдів
+          million:
+            few: Мільйонів
+            many: Мільйонів
+            one: Мільйон
+            other: Мільйонів
+          quadrillion:
+            few: Квадрильйонів
+            many: Квадрильйонів
+            one: Кквадрильйон
+            other: Квадрильйонів
+          thousand:
+            few: Тисяч
+            many: Тисяч
+            one: Тисяча
+            other: Тисяч
+          trillion:
+            few: Трильйонів
+            many: Трильйонів
+            one: Трильйон
+            other: Трильйонів
+          unit: ''
+      format:
+        delimiter: ''
+        precision: 1
+        significant: false
+        strip_insignificant_zeros: false
+      storage_units:
+        format: ! '%n %u'
+        units:
+          byte:
+            few: байти
+            many: байтів
+            one: байт
+            other: байту
+          gb: ГБ
+          kb: кБ
+          mb: МБ
+          tb: ТБ
+    percentage:
+      format:
+        delimiter: ''
+    precision:
+      format:
+        delimiter: ''
+  support:
+    array:
+      last_word_connector: ! ' та '
+      two_words_connector: ! ' і '
+      words_connector: ! ', '
+  time:
+    am: до полудня
+    formats:
+      default: ! '%a, %d %b %Y, %H:%M:%S %z'
+      long: ! '%d %B %Y, %H:%M'
+      short: ! '%d %b, %H:%M'
+    pm: по полудні
+  # remove these aliases after 'activemodel' and 'activerecord' namespaces are removed from Rails repository
+  activemodel:
+    errors:
+      <<: *errors
+  activerecord:
+    errors:
+      <<: *errors
+
+
+
+
+  Press_to_go_back: "Натисніть, щоб повернутися"
+  #Footer
+  Privacy_Policy: "Політика конфіденційності"
+  # currency
+  currencies:
+    names:
+      long:
+        USD: "Долари США"
+        EUR: "Евро"
+        UAH: "Гривні"
+        RUR: "Рублі"
+    symbol:
+      USD: "$"
+      EUR: "€"
+
+
+  Select_a_new_currency_if_you_want_to_change_the_current_currency: "Виберіть нову валюту, якщо ви хочете змінити поточну валюту"
+
+
+  Japanese_Yen: "Японська Ієна"
+  American_Dollar: "Американський Долар"
+  Euro: "Евро"
+
+
+  Changing_default_currency: "Зміна валюти за замовчуванням"
+  The_currency_of_your_account_is: "Валюта вашого рахунку"
+  Select_a_new_currency: "Виберіть нову валюту"
+  if_you_want_to_change_the_current_currency: "якщо хочете змінити поточну валюту"
+
+
+  English: "English"
+  Spanish: "Spanish"
+  Russian: "Russian"
+
+  EN: "Англійська"
+  ES: "Іспанська"
+  RU: "Російська"
+
+
+  # Basic words
+  Number: "Номер" 
+
+  # Action 
+
+  Change_password: "Змінити пароль"
+  Change_password_of_your_account: "Змінити пароль облікового запису"
+  Changing_Password: "Зміна пароля"
+  Change_time_zone: "Змінити часовий пояс"
+  Change_profile_picture: "Змінити зображення профілю"
+  Change_currency: "Змінити валюту"
+  Change_current_currency_to_another_currency: "Змінити поточну валюту %{attribute} на іншу валюту"
+  Language_is_changed_to: "Мова була змінена на"
+  Buy_virtual_number: "Купити віртуальний номер"
+  Subscribe_to_a_virtual_number: "Підписатися на віртуальний номер"
+  Redeem_your_voucher_or_gift_card: "Погасити ваучер або подарункові карти"
+  Send_SMS: "Відправити СМС"
+  See_all_your_virtual_numbers: "Подивитися всі ваші віртуальні номера"
+  Changing_profile_picture: "Зміна зображення профілю"
+  Profile_picture_was_changed: "Зображення профілю була змінена"
+  Profile_picture_was_not_changed: "Зображення профілю не змінилося"
+  Default_currency_has_changed_from_now_will_see_prices_in: "Валюта за замовчуванням змінилася, тепер Ви будете бачити ціни в %{attribute}"
+  Sign_in: "Увійти"
+  # Basics action
+  Save: "Зберегти"
+  Cancel: "Відмінити"
+
+  # Basics user personal information
+  First_name: "Ім'я"
+  Last_name: "Прізвище"
+  Username: "Ім'я користувача"
+  Profile_picture: "Зображення профілю"
+  Email: "Електронна пошта"
+  Phone: "Телефон"
+  Address: "Адреса"
+  Mobile_phone: "Мобільний телефон"
+  Landline_phone: "Стаціонарний телефон"
+  Virtual_number: "Віртуальний номер"
+  Virtual_numbers: "Віртуальні номери"
+
+  Default_currency: "Валюта за замовчуванням"
+  currency_symbol: "символ валюти"
+
+
+
+  # Geography
+  City: "Місто"
+  Province: "Область"
+  Country: "Країна"
+  Time_zone: "Часовий пояс"
+  Time_Zone_is_changed: "Часовий пояс змінений"
+  Time_Zone_not_changed: "Часовий пояс не змінився"
+  Changing_Time_Zone: "Зміна часового поясу"
+
+  # Time Zone
+
+  # Gender
+  Gender: "Стать"
+  Male: "Чоловіча"
+  Female: "Жіноча"
+
+
+  #profile
+  Language: "Мова"
+  Change_language: "Змінити мову"
+
+
+
+  You_have_been_signed_out: "Ви вийшли зі свого рахунку."
+  Signing_in_failed_Please_double-check_your_user_name_and_re-enter_your_password: "Помилка ідентифікації. Перевірте правильність логіна і введіть ваш пароль ще раз."
+
+  Your_profile_has_been_updated: "Ваш профіль обновився"
+
+  # H1 Profile
+  Account_information: "Інформація про обліковий запис"
+  Contact_information: "Контактна інформація"
+  Personal_information: "Особиста інформація"
+  Notifications: "Повідомлення"
+  My_account: "Мій аккаунт"
+
+  # Payments
+  Payments: "Платежі"
+  Paid: "Оплачено"
+  Your_last_payment_is: "Ваш останній платіж"
+
+  Date: "Дата"
+  Type: "Тип"
+  Details: "Детальна інформація"
+  Amount: "Сума"
+  Status: "Стан"
+  Completed: "Завершений"
+  Uncompleted: "Незавершений"
+
+  Profile: "Профіль"
+  Subscriptions: "Підписки"
+  Features: "Функції"
+  Are_you_sure: "Ви впевнені"
+  # Vaucher
+  Voucher: "Ваучер"
+  Redeem_a_voucher: "Активувати ваучер"
+  Redeem_voucher: "Активувати ваучер"
+  Redeem: "Активувати"
+  Enter_voucher_number: "Введіть номер ваучера"
+  Voucher_not_found: "Ваучер не найден"
+
+
+  See_all: "Переглянути всі"
+  # Dashboard
+
+  Read_more: "Дізнатися більше"
+
+
+
+  Today: "Сьогодні"
+
+  in_total_you_have: "в всього у Вас є"
+  Check_the_boxes_if_you_want_to_receive_notifications: "Відзначте прапорцями, якщо Ви хочете отримувати повідомлення"
+
+
+# Change password
+  To_change_your_password_please_type_your_old_password_first_Then_enter_a_new_password_twice: "Для того щоб змінити пароль зробите наступні дії."
+  Old_password: "Старий пароль"
+  New_password: "Новий пароль"
+  Password_confirmation: "Підтвердження пароля"
+  The_fields_is_blank,_please_enter_your_password: "Поля порожні, будь ласка, введіть пароль."
+  Your_password_was_changed_Next_time_you_sign_in_use_your_new_password: "Ваш пароль був змінений. Наступного разу при вході в систему, використовуйте новий пароль."
+  New_password_and_password_confirmation_do_not_match: "Новий пароль і підтвердження пароля не співпадають."
+  Password_has_not_been_changed: "Пароль не був змінений."
+  Old_password_was_not_correct_Please_try_again: "Старий пароль невірний. Будь ласка, спробуйте ще раз."
+
+  # Change language
+  Select_new_language: "Виберіть нову мову"
+  Changing_language: "Зміна мови"
+
+
+  countries:
+    AC: "Острів Вознесіння"
+    AD: "Андорра"
+    AE: "Обʼєднані Арабські Емірати"
+    AF: "Афганістан"
+    AG: "Антигуа і Барбуда"
+    AI: "Ангілья"
+    AL: "Албанія"
+    AM: "Вірменія"
+    AN: "Нідерландські Антильські Острови"
+    AO: "Ангола"
+    AQ: "Антарктида"
+    AR: "Аргентина"
+    AS: "Американське Самоа"
+    AT: "Австрія"
+    AU: "Австралія"
+    AW: "Аруба"
+    AX: "Аландські острови"
+    AZ: "Азербайджан"
+    BA: "Боснія і Герцоговина"
+    BB: "Барбадос"
+    BD: "Бангладеш"
+    BE: "Бельгія"
+    BF: "Буркіна-Фасо"
+    BG: "Болгарія"
+    BH: "Бахрейн"
+    BI: "Бурунді"
+    BJ: "Бенін"
+    BL: "Острів Святого Бартоломея"
+    BM: "Бермуди"
+    BN: "Бруней"
+    BO: "Болівія"
+    BQ: "Нідерландські Карибські островиd"
+    BR: "Бразилія"
+    BS: "Багами"
+    BT: "Бутан"
+    BV: "Острів Буве"
+    BW: "Ботсвана"
+    BY: "Білорусь"
+    BZ: "Беліз"
+    CA: "Канада"
+    CC: "Кокосові острови"
+    CD: "Конґо - Кіншаса"
+    CD: "Конґо [ДРК]"
+    CF: "Центральноафриканська Республіка"
+    CG: "Конґо - Браззавіль"
+    CG: "Конґо [Республіка]"
+    CH: "Швейцарія"
+    CI: "Кот д’Івуар"
+    CI: "Берег Слонової Кістки"
+    CK: "Острови Кука"
+    CL: "Чилі"
+    CM: "Камерун"
+    CN: "Китай"
+    CO: "Колумбія"
+    CP: "Острів Кліппертон"
+    CR: "Коста-Рика"
+    CU: "Куба"
+    CV: "Кабо-Верде"
+    CW: "Кюрасао"
+    CX: "Острів Різдва"
+    CY: "Кіпр"
+    CZ: "Чеська республіка"
+    DE: "Німеччина"
+    DG: "Дієґо-Ґарсія"
+    DJ: "Джібуті"
+    DK: "Данія"
+    DM: "Домінік"
+    DO: "Домініканська Республіка"
+    DZ: "Алжир"
+    EA: "Сеута і Мелілья"
+    EC: "Еквадор"
+    EE: "Естонія"
+    EG: "Єгипет"
+    EH: "Західна Сахара"
+    ER: "Еритрея"
+    ES: "Іспанія"
+    ET: "Ефіопія"
+    EU: "Європейський Союз"
+    FI: "Фінляндія"
+    FJ: "Фіджі"
+    FK: "Фолклендські острови"
+    FK: "Фолклендські [Мальвінські] острови"
+    FM: "Мікронезія"
+    FM: "Мікронезія Федеративні Штати"
+    FO: "Фарерські острови"
+    FR: "Франція"
+    GA: "Габон"
+    GB: "Велика Британія"
+    GD: "Гренада"
+    GE: "Грузія"
+    GF: "Французька Гвіана"
+    GG: "Гернсі"
+    GH: "Гана"
+    GI: "Гібралтар"
+    GL: "Гренландія"
+    GM: "Гамбія"
+    GN: "Гвінея"
+    GP: "Гваделупа"
+    GQ: "Екваторіальна Гвінея"
+    GR: "Греція"
+    GS: "Південна Джорджія та Південні Сандвічеві Острови"
+    GT: "Гватемала"
+    GU: "Гуам"
+    GW: "Гвінея-Біссау"
+    GY: "Гайана"
+    HK: "Гонконґ О.А.Р. Китаю"
+    HK: "Гонконґ"
+    HM: "Острови Херд і Мак-Дональд"
+    HN: "Гондурас"
+    HR: "Хорватія"
+    HT: "Гаїті"
+    HU: "Угорщина"
+    IC: "Канарські острови"
+    ID: "Індонезія"
+    IE: "Ірландія"
+    IL: "Ізраїль"
+    IM: "Острів Мен"
+    IN: "Індія"
+    IO: "Британські території Індійського океану"
+    IQ: "Ірак"
+    IR: "Іран"
+    IS: "Ісландія"
+    IT: "Італія"
+    JE: "Джерсі"
+    JM: "Ямайка"
+    JO: "Йорданія"
+    JP: "Японія"
+    KE: "Кенія"
+    KG: "Киргизстан"
+    KH: "Камбоджа"
+    KI: "Кірибаті"
+    KM: "Коморські Острови"
+    KN: "Сент-Кітс і Невіс"
+    KP: "Північна Корея"
+    KR: "Південна Корея"
+    KW: "Кувейт"
+    KY: "Кайманові острови"
+    KZ: "Казахстан"
+    LA: "Лаос"
+    LB: "Ліван"
+    LC: "Сент-Люсія"
+    LI: "Ліхтенштейн"
+    LK: "Шрі-Ланка"
+    LR: "Ліберія"
+    LS: "Лесото"
+    LT: "Литва"
+    LU: "Люксембург"
+    LV: "Латвія"
+    LY: "Лівія"
+    MA: "Марокко"
+    MC: "Монако"
+    MD: "Молдова"
+    ME: "Чорногорія"
+    MF: "Острів Святого Мартіна"
+    MG: "Мадагаскар"
+    MH: "Маршаллові Острови"
+    MK: "Македонія"
+    MK: "Македонія [КЮРМ]"
+    ML: "Малі"
+    MM: "Мʼянма [Бірма]"
+    MN: "Монголія"
+    MO: "Макао О.А.Р. Китаю"
+    MO: "Макао"
+    MP: "Північні Маріанські Острови"
+    MQ: "Мартиніка"
+    MR: "Мавританія"
+    MS: "Монсеррат"
+    MT: "Мальта"
+    MU: "Маврикій"
+    MV: "Мальдіви"
+    MW: "Малаві"
+    MX: "Мексика"
+    MY: "Малайзія"
+    MZ: "Мозамбік"
+    NA: "Намібія"
+    NC: "Нова Каледонія"
+    NE: "Нігер"
+    NF: "Острів Норфолк"
+    NG: "Нігерія"
+    NI: "Нікарагуа"
+    NL: "Нідерланди"
+    'NO': "Норвегія"
+    NP: "Непал"
+    NR: "Науру"
+    NU: "Нія"
+    NZ: "Нова Зеландія"
+    OM: "Оман"
+    PA: "Панама"
+    PE: "Перу"
+    PF: "Французька Полінезія"
+    PG: "Папуа Нова Гвінея"
+    PH: "Філіппіни"
+    PK: "Пакистан"
+    PL: "Польща"
+    PM: "Сен-Пʼєр і Мікелон"
+    PN: "Острови Піткерн"
+    PR: "Пуерто-Ріко"
+    PS: "Палестина"
+    PT: "Португалія"
+    PW: "Палау"
+    PY: "Парагвай"
+    QA: "Катар"
+    QO: "Інша Океанія"
+    RE: "Реюньйон"
+    RO: "Румунія"
+    RS: "Сербія"
+    RU: "Росія"
+    RW: "Руанда"
+    SA: "Саудівська Аравія"
+    SB: "Соломонові Острови"
+    SC: "Сейшели"
+    SD: "Судан"
+    SE: "Швеція"
+    SG: "Сінгапур"
+    SH: "Острів Святої Єлени"
+    SI: "Словенія"
+    SJ: "Острови Свальбард та Ян-Маєн"
+    SK: "Словакія"
+    SL: "Сьєрра-Леоне"
+    SM: "Сан-Марино"
+    SN: "Сенегал"
+    SO: "Сомалі"
+    SR: "Суринам"
+    SS: "Південний Судан"
+    ST: "Сан-Томе і Прінсіпі"
+    SV: "Сальвадор"
+    SX: "Сінт-Мартен"
+    SY: "Сирія"
+    SZ: "Свазіленд"
+    TA: "Трістан-да-Кунья"
+    TC: "Теркс і Кайкос"
+    TD: "Чад"
+    TF: "Французькі Південні Території"
+    TG: "Того"
+    TH: "Таїланд"
+    TJ: "Таджикистан"
+    TK: "Токелау"
+    TL: "Тімор-Лешті"
+    TL: "Східний Тімор"
+    TM: "Туркменистан"
+    TN: "Туніс"
+    TO: "Тонга"
+    TR: "Туреччина"
+    TT: "Тринідад і Тобаго"
+    TV: "Тувалу"
+    TW: "Тайвань"
+    TZ: "Танзанія"
+    UA: "Україна"
+    UG: "Уганда"
+    UM: "Віддалені Острови США"
+    US: "США"
+    UY: "Уругвай"
+    UZ: "Узбекистан"
+    VA: "Ватикан"
+    VC: "Сент-Вінсент і Гренадини"
+    VE: "Венесуела"
+    VG: "Віргінські острови Британії"
+    VI: "Віргінські острови США"
+    VN: "Вʼєтнам"
+    VU: "Вануату"
+    WF: "Уолліс і Футуна"
+    WS: "Самоа"
+    YE: "Ємен"
+    YT: "Майот"
+    ZA: "ПАР"
+    ZM: "Замбія"
+    ZW: "Зімбабве"
+    ZZ: "Невідомий регіон"
+
+  languages:
+    names:
+
+      ab: Abjasio
+      aa: Afar
+      af: Afrik?ans
+      ay: Aimara
+      sq: Alban?s
+      de: Alem?n
+      am: Am?rico
+      ar: ?rabe
+      hy: Armenio
+      as: Asam?s
+      az: Azerbaiyano
+      bh: Bahrein?
+      ba: Baskir
+      bn: Bengal?
+      be: Bielorruso
+      my: Birmano
+      bi: Bislama
+      br: Bret?n
+      bg: B?lgaro
+      dz: Butan?s
+      ks: Cachemiro
+      km: Camboyano
+      ca: Catal?n
+      cs: Checo
+      zh: Chino
+      si: Cingal?s
+      ko: Coreano
+      co: Corso
+      hr: Croata
+      da: Dan?s
+      sk: Eslovaco
+      sl: Esloveno
+      es: Іспанська
+      eo: Esperanto
+      et: Estonio
+      fo: Fero?s
+      fi: Fin?s
+      fj: Fiyiano
+      fr: Franc?s
+      fy: Fris?n
+      gd: Ga?lico escoc?s
+      cy: Gal?s
+      gl: Gallego
+      ka: Georgiano
+      el: Griego
+      kl: Groenland?s
+      gn: Guaran?
+      gu: Gujarati
+      ha: Hausa
+      he: Hebreo
+      hi: Hindi
+      hu: H?ngaro
+      id: Indonesio
+      en: Англійська
+      ia: Interlingua
+      iu: Inuktitut
+      ik: Inupiaq
+      ga: Irland?s
+      is: Island?s
+      it: Italiano
+      ja: Japon?s
+      jw: Javan?s
+      kn: Kannada
+      kk: Kazajo
+      rw: Kinyarwanda
+      ky: Kirgu?s
+      rn: Kirundi
+      ku: Kurdo
+      lo: Lao
+      la: Lat?n
+      lv: Let?n
+      ln: Lingala
+      lt: Lituano
+      mk: Macedonio
+      ml: Malabar
+      ms: Malayo
+      mg: Malgache
+      mt: Malt?s
+      mi: Maor?
+      mr: Marat?
+      mo: Moldavo
+      mn: Mongol
+      na: Nauruano
+      nl: Neerland?s
+      ne: Nepal?
+      no: Noruego
+      oc: Occitano
+      or: Oriya
+      om: Oromo
+      pa: Panyab?
+      ps: Pashto
+      fa: Persa
+      pl: Polaco
+      pt: Portugu?s
+      qu: Quechua
+      rm: Reto rom?nico
+      ro: Rumano
+      ru: Російська
+      sm: Samoano
+      sg: Sango
+      sa: S?nscrito
+      sr: Serbio
+      sh: Serbo-Croatian
+      st: Sesotho
+      tn: Setsuana
+      sn: Shona
+      sd: Sindhi
+      so: Somal?
+      ss: Suazi
+      sv: Sueco
+      su: Sundan?s
+      sw: Swahili
+      tl: Tagalog
+      th: Tailand?s
+      ta: Tamil
+      tt: T?rtaro
+      tg: Tayiko
+      te: Telug?
+      bo: Tibetano
+      ti: Tigri?a
+      to: Tonga
+      ts: Tsonga
+      tr: Turco
+      tk: Turcomano
+      tw: Twi
+      uk: Українська
+      ug: Uigur
+      ur: Urdu
+      uz: Uzbeko
+      eu: Vasco
+      vi: Vietnamita
+      vo: Volap?k
+      wo: Wolof
+      xh: Xhosa
+      yi: Yidis
+      yo: Yoruba
+      za: Zhuang
+      zu: Zul?
+
+  timezones:
+      "American Samoa": "Американское Самоа" # -11:00
+      "International Date Line West": "Международная линия перемены дат" # -11:00
+      "Midway Island": "Остров Мидуэй" # -11:00
+      "Hawaii": "Гавайи" # -10:00
+      "Alaska": "Аляска" # -09:00
+      "Pacific Time (US & Canada)": "Североамериканское тихоокеанское время" # -08:00
+      "Tijuana": "Тихуана" # -08:00
+      "Arizona": "Аризона" # -07:00
+      "Chihuahua": "Чиуауа" # -07:00
+      "Mazatlan": "Масатлан" # -07:00
+      "Mountain Time (US & Canada)": "Североамериканское горное время" # -07:00
+      "Central America": "Цетральная Америка" # -06:00
+      "Central Time (US & Canada)": "Североамериканское центральное время" # -06:00
+      "Guadalajara": "Гвадалахара" # -06:00
+      "Mexico City": "Мехико" # -06:00
+      "Monterrey": "Монтеррей" # -06:00
+      "Saskatchewan": "Саскачеван" # -06:00
+      "Bogota": "Богота" # -05:00
+      "Eastern Time (US & Canada)": "Североамериканское восточное время" # -05:00
+      "Indiana (East)": "Индиана" # -05:00
+      "Lima": "Лимо" # -05:00
+      "Quito": "Кито" # -05:00
+      "Caracas": "Каракас" # -04:30
+      "Atlantic Time (Canada)": "Североамериканское атлантическое время" # -04:00
+      "Georgetown": "Джорджтаун" # -04:00
+      "La Paz": "Ла-Пас" # -04:00
+      "Santiago": "Сантьяго" # -04:00
+      "Newfoundland": "Ньюфаундленд" # -03:30
+      "Brasilia": "Бразилиа" # -03:00
+      "Buenos Aires": "Буэенос-Айрес" # -03:00
+      "Greenland": "Гренландия" # -03:00
+      "Mid-Atlantic": "Центральноатлантическое время" # -02:00
+      "Azores": "Азорские острова" # -01:00
+      "Cape Verde Is.": "Кабо-Верде" # -01:00
+      "Casablanca": "Касабланка" # +00:00
+      "Dublin": "Дублин" # +00:00
+      "Edinburgh": "Эдинбург" # +00:00
+      "Lisbon": "Лиссабон" # +00:00
+      "London": "Лондон" # +00:00
+      "Monrovia": "Монровия" # +00:00
+      "UTC": "Всемирное координированное время (UTC)" # +00:00
+      "Amsterdam": "Амстердам" # +01:00
+      "Belgrade": "Белград" # +01:00
+      "Berlin": "Берлин" # +01:00
+      "Bern": "Берн" # +01:00
+      "Bratislava": "Братислава" # +01:00
+      "Brussels": "Брюссель" # +01:00
+      "Budapest": "Будапешт" # +01:00
+      "Copenhagen": "Копенгаген" # +01:00
+      "Ljubljana": "Любляна" # +01:00
+      "Madrid": "Мадрид" # +01:00
+      "Paris": "Пириж" # +01:00
+      "Prague": "Прага" # +01:00
+      "Rome": "Рим" # +01:00
+      "Sarajevo": "Сараево" # +01:00
+      "Skopje": "Скопье" # +01:00
+      "Stockholm": "Стокгольм" # +01:00
+      "Vienna": "Вена" # +01:00
+      "Warsaw": "Варшава" # +01:00
+      "West Central Africa": "Западноафриканское время" # +01:00
+      "Zagreb": "Загреб" # +01:00
+      "Athens": "Афины" # +02:00
+      "Bucharest": "Бухарест" # +02:00
+      "Cairo": "Каир" # +02:00
+      "Harare": "Хараре" # +02:00
+      "Helsinki": "Хельсинки" # +02:00
+      "Istanbul": "Стамбул" # +02:00
+      "Jerusalem": "Иерусалим" # +02:00
+      "Kyiv": "Киев" # +02:00
+      "Pretoria": "Претория" # +02:00
+      "Riga": "Рига" # +02:00
+      "Sofia": "София" # +02:00
+      "Tallinn": "Таллин" # +02:00
+      "Vilnius": "Вильнюс" # +02:00
+      "Baghdad": "Багдад" # +03:00
+      "Kuwait": "Кувейт" # +03:00
+      "Minsk": "Минск" # +03:00
+      "Nairobi": "Найроби" # +03:00
+      "Riyadh": "Эр-Рияд" # +03:00
+      "Tehran": "Тегеран" # +03:30
+      "Abu Dhabi": "Абу-Даби" # +04:00
+      "Baku": "Баку" # +04:00
+      "Moscow": "Москва" # +04:00
+      "Muscat": "Маскат" # +04:00
+      "St. Petersburg": "Санкт-Петербург" # +04:00
+      "Tbilisi": "Тбилиси" # +04:00
+      "Volgograd": "Волгоград" # +04:00
+      "Yerevan": "Ереван" # +04:00
+      "Kabul": "Кабул" # +04:30
+      "Islamabad": "Исламабад" # +05:00
+      "Karachi": "Карачи" # +05:00
+      "Tashkent": "Ташкент" # +05:00
+      "Chennai": "Ченнаи" # +05:30
+      "Kolkata": "Калькутта" # +05:30
+      "Mumbai": "Бомбей" # +05:30
+      "New Delhi": "Нью-Дели" # +05:30
+      "Sri Jayawardenepura": "Шри-Джаяварденепура-Котте" # +05:30
+      "Kathmandu": "Катманду" # +05:45
+      "Almaty": "Алма-Ата" # +06:00
+      "Astana": "Астана" # +06:00
+      "Dhaka": "Дакка" # +06:00
+      "Ekaterinburg": "Екатеринбург" # +06:00
+      "Rangoon": "Рангун" # +06:30
+      "Bangkok": "Бангкок" # +07:00
+      "Hanoi": "Ханой" # +07:00
+      "Jakarta": "Джакарта" # +07:00
+      "Novosibirsk": "Новосибирск" # +07:00
+      "Beijing": "Пекин" # +08:00
+      "Chongqing": "Чунцин" # +08:00
+      "Hong Kong": "Гонконг" # +08:00
+      "Krasnoyarsk": "Красноярск" # +08:00
+      "Kuala Lumpur": "Куала-Лумпур" # +08:00
+      "Perth": "Перт" # +08:00
+      "Singapore": "Сингапур" # +08:00
+      "Taipei": "Тайпей" # +08:00
+      "Ulaan Bataar": "Улан-Батор" # +08:00
+      "Urumqi": "Урумчи" # +08:00
+      "Irkutsk": "Иркутск" # +09:00
+      "Osaka": "Осака" # +09:00
+      "Sapporo": "Саппоро" # +09:00
+      "Seoul": "Сейл" # +09:00
+      "Tokyo": "Токио" # +09:00
+      "Adelaide": "Аделаида" # +09:30
+      "Darwin": "Дарвин" # +09:30
+      "Brisbane": "Брисбен" # +10:00
+      "Canberra": "Канберра" # +10:00
+      "Guam": "Гуам" # +10:00
+      "Hobart": "Хобарт" # +10:00
+      "Melbourne": "Мельбурн" # +10:00
+      "Port Moresby": "Порт-Морсби" # +10:00
+      "Sydney": "Сидней" # +10:00
+      "Yakutsk": "Якутск" # +10:00
+      "New Caledonia": "Новая Каледония" # +11:00
+      "Vladivostok": "Владивосток" # +11:00
+      "Auckland": "Окленд" # +12:00
+      "Fiji": "Фиджи" # +12:00
+      "Kamchatka": "Камчатка" # +12:00
+      "Magadan": "Магадан" # +12:00
+      "Marshall Is.": "Маршалловы острова" # +12:00
+      "Solomon Is.": "Саломоновы острова" # +12:00
+      "Wellington": "Веллингтон" # +12:00
+      "Nuku'alofa": "Нукуалофа" # +13:00
+      "Samoa": "Самоа" # +13:00
+      "Tokelau Is.": "Токелау" # +14:00
+      "Montevideo": "Монтевидео"
+      "Ulaanbaatar": "Улан-Батор"
+      "Chatham Is.": "Остров Чатем"
+
+  Birthday: "День народження"
+  Load_more: "Завантажити ще"
+  The_currency_of_your_account_is: "Валюта вашого рахунку"
+  Profile_picture_has_not_been_changed: "Картинка профілю не була змінена"
+  Your_currency_has_not_been_changed: "Ваша валюта не була змінена"
+  Time_Zone_has_not_been_changed: "Часовий пояс не був змінений"
+  Time_Zone_has_been_changed: "Часовий пояс був змінений"
+  The_fields_is_blank_please_enter_your_password: "Поля пусте введіть пароль"
+  Verify_number: "Перевірити номер"
+  Enter_your_mobile_number: "Введіть номер свого мобільного телефону"
+  Continue: "Продовжити"
+  Enter_pin_code: "Введіть код"
+  Verify: "Перевірити"
+  We_have_sent_a_message: "Ми відправили СМС с кодом"
+  The_field_is_blank_please_enter_your_number_and_click_Verify: "Поле не заповнене введіть свій номер і натисніть кнопку Перевірити"
+  When_my_balance_is_low: "Коли мій баланс нижче"
+  Language_was_not_specified: "Мова не була вказана"

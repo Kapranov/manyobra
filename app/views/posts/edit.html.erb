@@ -1,0 +1,4 @@
+<h1>Editing post <%= link_to 'New Post', new_blog_post_path, class: 'btn btn-primary btn-sm' %></h1>
+<%= link_to 'Show', blog_post_path(@post) %> |
+<%= link_to 'Back', blog_posts_path %>
+<%= render 'form' %>

@@ -1,0 +1,12 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<div class="fieldRow">
+    <%= label_tag 'currency', I18n.t('The_currency_of_your_account_is') + ' ' + I18n.t(@user.currency, :scope => 'currencies.names.long') %>
+</div>
+<%= form_for @user, url: change_currency_path, method: :post do |f| %>
+	<div class="fieldRow">
+	    <%= f.label :currency, I18n.t('Select_a_new_currency_if_you_want_to_change_the_current_currency') %>
+	    <%= f.select :currency, options_for_select(t("currencies.names.long").invert) %>
+	</div>
+	<%= f.submit :class => 'button blue' %>
+<% end %>

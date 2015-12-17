@@ -1,0 +1,425 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+
+<% content_for :css do %>
+    <%= stylesheet_link_tag "vendor/owl-carousel/owl.carousel" %>
+    <%= stylesheet_link_tag "vendor/owl-carousel/owl.theme" %>
+    <%= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+<% end %>
+
+<% content_for :js do %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+    <%= javascript_include_tag "vendor/owl-carousel/owl.carousel" %>
+    <%= javascript_include_tag "views/view.services.js" %>
+<% end %>
+<%# content_for :css do stylesheet_link_tag "flexslider" end %>
+    
+<section class="page-top">
+    <div class="slider-container">
+        <div class="slider page-top-slider" data-plugin-options='{"startheight": 420}'>
+            <ul>
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+                    <%= image_tag "slides/bg_white.jpg", :data => { :bgfit => 'cover', :bgposition => 'left top', :bgrepeat => 'no-repeat' } %>
+                    <div class="tp-caption sfb" data-x="right" data-hoffset="165" data-y="center" data-voffset="60" data-speed="1000" data-start="700" data-easing="Back.easeInOut" data-endspeed="300">
+                        <%= image_tag("slides/services/builder.png") %>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-top-info with-slider container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><%= link_to t('Home'), page_home_path %></li>
+                    <li class="active"><%= t'Services' %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h1><%= raw t'.page.slider_title' %></h1>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.extensive_repairs.title' %></h2>
+                <p><%= raw t 'pages.extensive_repairs.description' %></p>
+                <%= link_to t('Read_more'), service_page_extensive_repairs_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+                <%#= link_to t('.section.button.request'), page_contact_path(:subject => 'Reforma integral'), user: @user, :method => :post, class: 'btn btn-primary' %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/extensive_repairs.jpg", class: "img-responsive", alt: t('pages.extensive_repairs.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/extensive_repairs2.jpg", class: "img-responsive", alt: t('pages.extensive_repairs.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/extensive_repairs3.jpg", class: "img-responsive", alt: t('pages.extensive_repairs.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+     
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true, "autoplay": 3300 }'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_kitchen.jpg", class: "img-responsive", alt: t('pages.repair_of_kitchen.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_kitchen2.jpg", class: "img-responsive", alt: t('pages.repair_of_kitchen.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_kitchen3.jpg", class: "img-responsive", alt: t('pages.repair_of_kitchen.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                 
+
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <h2><%= t'pages.repair_of_kitchen.title' %></h2>
+                <p><%= raw t 'pages.repair_of_kitchen.description' %></p>
+                <%= link_to t('Read_more'), service_page_repair_of_kitchen_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div>
+        </div>
+    </div>
+</section>
+ 
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.repair_of_bathrooms.title' %></h2>
+                <p><%= raw t 'pages.repair_of_bathrooms.description' %></p>
+                <%= link_to t('Read_more'), service_page_repair_of_bathrooms_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_bathrooms.jpg", class: "img-responsive", alt: t('pages.repair_of_bathrooms.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_bathrooms2.jpg", class: "img-responsive", alt: t('pages.repair_of_bathrooms.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_bathrooms3.jpg", class: "img-responsive", alt: t('pages.repair_of_bathrooms.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+ 
+<section class="services" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_an_electrical_wiring.jpg", class: "img-responsive", alt: t('pages.installation_of_an_electrical_wiring.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_an_electrical_wiring2.jpg", class: "img-responsive", alt: t('pages.installation_of_an_electrical_wiring.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_an_electrical_wiring3.jpg", class: "img-responsive", alt: t('pages.installation_of_an_electrical_wiring.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <h2><%= t'pages.installation_of_an_electrical_wiring.title' %></h2>
+                <p><%= raw t 'pages.installation_of_an_electrical_wiring.description' %></p>
+                <%= link_to t('Read_more'), service_page_installation_of_an_electrical_wiring_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.installation_of_plumbing.title' %></h2>
+                <p><%= raw t 'pages.installation_of_plumbing.description' %></p>
+                <%= link_to t('Read_more'), service_page_installation_of_plumbing_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_plumbing.jpg", class: "img-responsive", alt: t('pages.installation_of_plumbing.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_plumbing2.jpg", class: "img-responsive", alt: t('pages.installation_of_plumbing.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/installation_of_plumbing3.jpg", size: "555x350",class: "img-responsive", alt: t('pages.installation_of_plumbing.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+ 
+<section class="services" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_office_and_industrial_premises.jpg", class: "img-responsive", alt: t('pages.repair_of_office_and_industrial_premises.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_office_and_industrial_premises2.jpg", class: "img-responsive", alt: t('pages.repair_of_office_and_industrial_premises.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/repair_of_office_and_industrial_premises3.jpg", class: "img-responsive", alt: t('pages.repair_of_office_and_industrial_premises.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <h2><%= t'pages.repair_of_office_and_industrial_premises.title' %></h2>
+                <p><%= raw t 'pages.repair_of_office_and_industrial_premises.description' %></p>
+                <%= link_to t('Read_more'), service_page_repair_of_office_and_industrial_premises_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.construction.title' %></h2>
+                <p><%= raw t 'pages.construction.description' %></p>
+                <%= link_to t('Read_more'), service_page_construction_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/construction.jpg", class: "img-responsive", alt: t('pages.construction.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/construction2.jpg", class: "img-responsive", alt: t('pages.construction.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/construction3.jpg", class: "img-responsive", alt: t('pages.construction.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+ 
+<section class="services" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <li><%= image_tag "services/urgent_repair.jpg", class: "img-responsive", alt: t('pages.urgent_repair.title') %></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <h2><%= t'pages.urgent_repair.title' %></h2>
+                <p><%= raw t 'pages.urgent_repair.description' %></p>
+                <%= link_to t('Read_more'), service_page_urgent_repair_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.registration_of_licenses.title' %></h2>
+                <p><%= raw t 'pages.registration_of_licenses.description' %></p>
+                <%= link_to t('Read_more'), service_page_registration_of_licenses_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/registration_of_licenses.jpg", class: "img-responsive", alt: t('pages.registration_of_licenses.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/registration_of_licenses2.jpg", class: "img-responsive", alt: t('pages.registration_of_licenses.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/registration_of_licenses3.jpg", class: "img-responsive", alt: t('pages.registration_of_licenses.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+ 
+<section class="services" style="background-color: #fff;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/drafting_projects_of_architectural_and_engineering.jpg", class: "img-responsive", alt: t('pages.drafting_projects_of_architectural_and_engineering.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/drafting_projects_of_architectural_and_engineering2.jpg", class: "img-responsive", alt: t('pages.drafting_projects_of_architectural_and_engineering.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <h2><%= t'pages.drafting_projects_of_architectural_and_engineering.title' %></h2>
+                <p><%= raw t 'pages.drafting_projects_of_architectural_and_engineering.description' %></p>
+                <%= link_to t('Read_more'), service_page_drafting_projects_of_architectural_and_engineering_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services" style="background-color: #f2f2f2;">
+    <div class="container">
+        <div class="row">
+            <div data-appear-animation="fadeInLeft" class="col-md-6 appear-animation">
+                <h2><%= t'pages.reforms_in_neighboring_communities.title' %></h2>
+                <p><%= raw t 'pages.reforms_in_neighboring_communities.description' %></p>
+                <%= link_to t('Read_more'), service_page_reforms_in_neighboring_communities_path, class: 'btn btn-primary' %>
+                <%= link_to content_tag(:i, "#", :rel => "nofollow", class: "fa fa-phone") + ' ' + t('.section.button.request'), "#", :rel => "nofollow", :remote => true, :data => { :toggle => 'modal', :target => '#modal-window' }, class: "btn btn-success", title: t('.section.button.request') %>
+            </div> 
+            <div data-appear-animation="fadeInRight" class="col-md-6 appear-animation">
+                <div class="owl-carousel" data-plugin-options='{"items": 1, "autoHeight": true}'>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/reforms_in_neighboring_communities.jpg", class: "img-responsive", alt: t('pages.reforms_in_neighboring_communities.title') %>
+                       </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/reforms_in_neighboring_communities2.jpg", class: "img-responsive", alt: t('pages.reforms_in_neighboring_communities.title') %>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="thumbnail">
+                            <%= image_tag "services/reforms_in_neighboring_communities3.jpg", class: "img-responsive", alt: t('pages.reforms_in_neighboring_communities.title') %>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+</section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"><%= raw t'.modal.title' %></h4>
+            </div>
+            <div class="modal-body">
+                <p><%= t'.modal.text' %></p>
+                <%= form_for @message, :url => page_contact_path do |f| %>
+                <%= f.hidden_field :body, value: "Cliente ha solicitado la Llamada, con lenguaje en la pagina #{I18n.locale}" %>
+                <%= f.hidden_field :email, value: "info@manyobra.com" %>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <%= f.label :name, t('.modal.form.name') %>
+                            <%= f.text_field :name, class: 'form-control' %>
+                        </div>
+                        <div class="col-md-6">
+                            <%= f.label :phone, t('.modal.form.phone') %>
+                            <%= f.text_field :phone, class: 'form-control' %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <%= f.submit t('.modal.form.submit'), class: 'btn btn-success' %>
+                <% end %>
+                <button data-dismiss="modal" class="btn btn-default" type="button"><%= t('.modal.form.close') %></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Modal -->

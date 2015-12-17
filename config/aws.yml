@@ -1,0 +1,9 @@
+development:
+  bucket: Zetfon_Avatars
+  access_key_id: AKIAINFAZYX52KVERGOA
+  secret_access_key: 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
+
+production:
+  bucket: Zetfon_Avatars
+  access_key_id: AKIAINFAZYX52KVERGOA
+  secret_access_key: 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

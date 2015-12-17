@@ -1,0 +1,46 @@
+<% content_for :title do t'.title' end %>
+<% content_for :description do t'.description' end %>
+<% content_for :keyword do t'.keyword' end %>
+<%=  @referal %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row featured-boxes">
+                <div class="col-md-6">
+                    <div class="featured-box default">
+                        <div class="box-content">
+                        <h4><%= t'.title' %></h4>
+                        <%= form_tag sessions_path do %>
+                            <div class="row">
+                                <div class="form-group">
+                                    <div class="col-md-6">
+                                        <%= label_tag :email, t('.form.email') %>
+                                        <%= text_field_tag :email, params[:email], class: "form-control" %>  
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= label_tag :password, t('.form.password') %>
+                                        <%= password_field_tag :password, params[:password], class: "form-control" %>
+                                        <p><%= link_to t('.form.forgot'), new_password_reset_path, :rel => "nofollow" %></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-6">
+                                        <%= check_box_tag :remember_me, 1, params[:remember_me] %>
+                                        <%= label_tag :remember_met, t('.form.remember_me') %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= submit_tag t('.form.submit'), class: 'btn btn-primary btn-lg pull-right' %>
+                                    </div>
+                                </div>
+                                <p><%= t'.form.no_account_yet' %> - <%= link_to t('.form.create_one'), new_user_path, :rel => "nofollow" %></p>
+                            </div>
+                        <% end %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

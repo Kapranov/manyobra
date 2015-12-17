@@ -1,0 +1,15 @@
+[2014-07-21 19:40:14,800][INFO ][node                     ] [Slipstream] version[0.90.6], pid[2078], build[e2a24ef/2013-11-04T13:44:16Z]
+[2014-07-21 19:40:14,801][INFO ][node                     ] [Slipstream] initializing ...
+[2014-07-21 19:40:14,811][INFO ][plugins                  ] [Slipstream] loaded [], sites []
+[2014-07-21 19:40:19,609][INFO ][node                     ] [Slipstream] initialized
+[2014-07-21 19:40:19,609][INFO ][node                     ] [Slipstream] starting ...
+[2014-07-21 19:40:21,384][INFO ][transport                ] [Slipstream] bound_address {inet[/0:0:0:0:0:0:0:0:9300]}, publish_address {inet[/188.226.173.69:9300]}
+[2014-07-21 19:40:25,586][INFO ][cluster.service          ] [Slipstream] new_master [Slipstream][9UB1OmP1SJicGfp3Op0LtQ][inet[/188.226.173.69:9300]], reason: zen-disco-join (elected_as_master)
+[2014-07-21 19:40:31,001][INFO ][discovery                ] [Slipstream] elasticsearch/9UB1OmP1SJicGfp3Op0LtQ
+[2014-07-21 19:40:41,523][INFO ][http                     ] [Slipstream] bound_address {inet[/0:0:0:0:0:0:0:0:9200]}, publish_address {inet[/188.226.173.69:9200]}
+[2014-07-21 19:40:42,037][INFO ][node                     ] [Slipstream] started
+[2014-07-21 19:40:49,994][INFO ][gateway                  ] [Slipstream] recovered [0] indices into cluster_state
+[2014-07-21 19:40:51,541][INFO ][node                     ] [Slipstream] stopping ...
+[2014-07-21 19:40:51,588][INFO ][node                     ] [Slipstream] stopped
+[2014-07-21 19:40:51,588][INFO ][node                     ] [Slipstream] closing ...
+[2014-07-21 19:40:51,597][INFO ][node                     ] [Slipstream] closed

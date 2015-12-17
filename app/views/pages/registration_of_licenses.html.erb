@@ -1,0 +1,69 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :twitter_card do 'product' end %>
+<% content_for :social_image do image_url "services/registration_of_licenses.jpg" end %>
+<% content_for :product_meta_twitter do %>
+<meta name="twitter:label1" content="">
+<meta name="twitter:data1" content="">
+<meta name="twitter:label2" content="">
+<meta name="twitter:data2" content="">
+<% end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+                <li><%= link_to t('Home'), page_home_path %></li>
+                <li><%= link_to t('Services'), page_services_path, rel: "up" %></li>
+                <li class="active"><%= t'.title' %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container page">
+    <div class="row">
+        <div class="col-md-6">
+            <h1><%= raw t '.title' %></h1>
+            <%= raw t '.content' %>
+        </div>
+        <div class="col-md-6">
+            <%= image_tag("services/registration_of_licenses.jpg", class: "img-responsive", alt: t('.page.title'), draggable: false) %>
+        </div>
+    </div>
+    <section data-appear-animation="fadeInDown" class="call-to-action featured appear-animation">
+        <div class="row">
+            <div class="center">
+                <h3><%= raw t'.orderservice.title' %> <%= link_to t('.orderservice.button'), page_contact_path, class: "btn btn-lg btn-primary", alt: t('.orderservice.button') %></h3>
+            </div>
+        </div>
+    </section>
+    <div class="row featured-boxes">
+        <div class="col-md-4 col-sm-6">
+            <div class="featured-box featured-box-primary">
+                <div class="box-content">
+                    <i class="icon-featured"><%= image_tag "services/bubbles/mini/extensive_repairs.png", class: "img-responsive", alt: "#{ t'pages.extensive_repairs.title' }" %></i>
+                    <h4><%= t'pages.extensive_repairs.title' %></h4>
+                    <p><%= raw t'pages.extensive_repairs.description' %></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="featured-box featured-box-primary">
+                <div class="box-content">
+                    <i class="icon-featured"><%= image_tag "services/bubbles/mini/installation_of_an_electrical_wiring.png", class: "img-responsive", alt: "#{ t'pages.installation_of_an_electrical_wiring.title' }" %></i>
+                    <h4><%= t'pages.installation_of_an_electrical_wiring.title' %></h4>
+                    <p><%= raw t'pages.installation_of_an_electrical_wiring.description' %></p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="featured-box featured-box-primary">
+                <div class="box-content">
+                    <i class="icon-featured"><%= image_tag "services/bubbles/mini/repair_of_kitchen.png", class: "img-responsive", alt: "#{ t'pages.repair_of_kitchen.title' }"  %></i>
+                    <h4><%= t'pages.repair_of_kitchen.title' %></h4>
+                    <p><%= raw t'pages.repair_of_kitchen.description' %></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

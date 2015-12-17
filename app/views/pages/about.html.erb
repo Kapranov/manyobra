@@ -1,0 +1,182 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :social_image do image_url "logo.png" end %>
+<% content_for :css do %>
+    <%= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+<% end %>
+
+<% content_for :js do %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+<% end %>
+
+<% content_for :heading do %>
+<section class="page-top">
+    <div class="slider-container">
+        <div class="slider page-top-slider" data-plugin-options='{"startheight": 420}'>
+            <ul>
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+                    <%= image_tag "slides/slide-clean-bg-red.jpg", :data => { :bgfit => 'cover', :bgposition => 'left top', :bgrepeat => 'no-repeat' } %>
+                    <div class="tp-caption sfb" data-x="right" data-hoffset="500" data-y="center" data-voffset="100" data-speed="1000" data-start="1" data-easing="Back.easeInOut" data-endspeed="300">
+                        <%= image_tag "slides/manyobra-about-slide.png" %>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-top-info with-slider container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><%= link_to t('Home'), page_home_path %></li>
+                    <li class="active"><%= t'.about_us' %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2><%= raw t '.title' %></h2>
+            </div>
+        </div>
+    </div>
+</section>
+<% end %>
+ 
+<%
+=begin
+%>
+<div class="container page">
+    <div class="row">
+        <div class="col-md-12">
+            <%= raw t '.content' %>
+        </div>
+    </div>
+</div>
+<%
+=end
+%>
+<div class="container page">
+    
+    <hr class="invisible" />
+    
+    <div class="row">
+        <div class="col-md-12 center">
+            <h1 ><%= raw t '.about_us' %></h1>
+        </div>
+    </div>
+
+    <hr class="invisible" />
+
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row featured-boxes secundary">
+            <div class="col-md-2">
+                <div data-appear-animation="bounceIn" data-appear-animation-delay="600" class="appear-animation">
+                    <div class="featured-box featured-box-primary">
+                        <div class="box-content">
+                            <i class="icon-featured fa fa-users"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h3 class="short dark"><%= raw t '.section.aboutus.family_business.title' %></h3>
+                <p><%= raw t '.section.aboutus.family_business.text' %></p>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row">
+            <div data-appear-animation="fadeIn" data-appear-animation-delay="800" class="appear-animation">
+                <div class="col-md-2 center push-bottom">
+                    <span class="icon-rounded"><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row featured-boxes secundary">
+            <div class="col-md-2">
+                <div data-appear-animation="bounceIn" data-appear-animation-delay="600" class="appear-animation">
+                    <div class="featured-box featured-box-primary">
+                        <div class="box-content">
+                            <i class="icon-featured fa fa-graduation-cap"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h3 class="short dark"><%= raw t '.section.aboutus.professionalism.title' %></h3>
+                <p><%= raw t '.section.aboutus.professionalism.text' %></p>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row">
+            <div data-appear-animation="fadeIn" data-appear-animation-delay="800" class="appear-animation">
+                <div class="col-md-2 center push-bottom">
+                    <span class="icon-rounded"><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row featured-boxes secundary">
+            <div class="col-md-2">
+                <div data-appear-animation="bounceIn" data-appear-animation-delay="600" class="appear-animation">
+                    <div class="featured-box featured-box-primary">
+                        <div class="box-content">
+                            <i class="icon-featured fa fa-building"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h3 class="short dark"><%= raw t '.section.aboutus.individual_approach.title' %></h3>
+                <p><%= raw t '.section.aboutus.individual_approach.text' %></p>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row">
+            <div data-appear-animation="fadeIn" data-appear-animation-delay="800" class="appear-animation">
+                <div class="col-md-2 center push-bottom">
+                    <span class="icon-rounded"><i class="fa fa-plus"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-appear-animation="fadeInDown" class="appear-animation">
+        <div class="row featured-boxes secundary">
+            <div class="col-md-2">
+                <div data-appear-animation="bounceIn" data-appear-animation-delay="600" class="appear-animation">
+                    <div class="featured-box featured-box-primary">
+                        <div class="box-content">
+                            <i class="icon-featured fa fa-clock-o"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h3 class="short dark"><%= raw t '.section.aboutus.quickness.title' %></h3>
+                <p><%= raw t '.section.aboutus.quickness.text' %></p>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="invisible" />
+    
+    <div class="row">
+        <div class="col-md-12">
+            <h4><%= raw t '.section.aboutus.workers.title' %></h4>
+            <p><%= raw t '.section.aboutus.workers.text' %></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <p><%= raw t '.section.aboutus.description.text' %></p>
+        </div>
+    </div>
+
+</div>

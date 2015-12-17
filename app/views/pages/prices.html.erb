@@ -1,0 +1,171 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+
+<% content_for :css do %>
+    <%= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+<% end %>
+
+<% content_for :js do %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+    <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+<% end %>
+
+<section class="page-top">
+    <div class="slider-container">
+        <div class="slider page-top-slider" data-plugin-options='{"startheight": 420}'>
+            <ul>
+                <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+                    <%= image_tag "slides/prices.jpg", data: { bgfit: 'cover', bgposition: 'left top', bgrepeat: 'no-repeat' }, alt: t('.page.title') %>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="page-top-info with-slider container">
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="breadcrumb">
+                    <li><%= link_to t('Home'), page_home_path %></li>
+                    <li class="active"><%= t'Services' %></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h2><%= raw t'.page.slider_title' %></h2>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 center"> 
+            <h1><%= raw t'.page.slider_title' %></h1>
+        </div>
+        <div class="col-md-12">  
+            <% if @ordercall.errors.any? %>
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="error_explanation">
+                        <h4><%= t('.email.alert.error', error: pluralize(@ordercall.errors.count, "error"), name: @ordercall.name) %></h4>
+                        <ul class="list-unstyled">
+                          <% @ordercall.errors.full_messages.each do |ordercall| %>
+                            <li><i class='fa fa-check'></i> <%= ordercall %></li>
+                          <% end %>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <% end %>
+                <p class="lead dark"><%= t'.paragraph1' %></p>
+                <p class="dark"><%= t'.paragraph2' %></p>
+                <p class="dark"><%= t'.paragraph3' %></p>
+                <%= raw t'.list' %>
+        </div>
+
+        <hr class="invisible" />
+        
+        <div class="center">
+            <%= link_to content_tag(:i, nil, class: "fa fa-phone") + ' ' + t('.section.button.request'), order_call_path, :remote => true, :data => { :toggle => 'modal', :target => '#modal-window', 'appear-animation' => 'fadeInDown' }, class: "btn btn-lg btn-primary appear-animation", title: t('.section.button.request') %>
+        </div>
+    </div>
+</div>
+
+<hr class="invisible" />
+
+<div class="container">
+    <div class="row">
+        <div class="center">
+          <h2><%= t('.section_faq.title') %></h2>
+        </div>
+    </div>
+    <div id="pricing-faq" class="row">
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li>
+                    <h3><%= t('.why_choose_manyobra.question') %></h3>
+                    <%= raw t'.why_choose_manyobra.answer' %>
+                </li>
+                <li>
+                    <h3><%= t('.guarantees_of_quality.question') %></h3>
+                    <p class="dark"><%= t('.guarantees_of_quality.answer') %></p>
+                </li>
+
+                <li>
+                    <h3><%= t('.request_budget.question') %></h3>
+                    <p class="dark"><%= t('.request_budget.answer') %></p>
+                </li>
+
+                <li>
+                    <h3><%= t('.change_time_of_visit.question') %></h3>
+                    <p class="dark"><%= t('.change_time_of_visit.answer') %></p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6">
+            <ul class="list-unstyled">
+                <li>
+                    <h3><%= t('.what_kind_of_services_offered.question') %></h3>
+                    <p class="dark"><%= t('.what_kind_of_services_offered.answer') %></p>
+                </li>
+
+                <li>
+                    <h3><%= t('.time_to_give_a_budget.question') %></h3>
+                    <p class="dark"><%= t('.time_to_give_a_budget.answer') %></p>
+                </li>
+
+                <li>
+                    <h3><%= t('.warranty_on_work.question') %></h3>
+                    <p class="dark"><%= t('.warranty_on_work.answer') %></p>
+                </li>
+
+                <li>
+                    <h3><%= t('.hours_of_operation.question') %></h3>
+                    <p class="dark"><%= t('.hours_of_operation.answer') %></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <section data-appear-animation="fadeInDown" class="call-to-action featured footer appear-animation">
+        <div class="row">
+            <div class="center">
+                <h3><%= raw t'.section.how_we_can_help.title' %> <%= link_to t('.section.how_we_can_help.button'), page_contact_path, class: "btn btn-lg btn-primary appear-animation bounceIn appear-animation-visible", alt: t('.section.how_we_can_help.button') %></h3>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="modal-window" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"><%= raw t'.modal.title' %></h4>
+            </div>
+            <div class="modal-body">
+                <p><%= t'.modal.text' %></p>
+                <%= form_for @ordercall, :url => page_prices_path do |f| %>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="col-md-6">
+                            <%= f.label :name, t('.modal.form.name') %>
+                            <%= f.text_field :name, class: 'form-control' %>
+                        </div>
+                        <div class="col-md-6">
+                            <%= f.label :phone, t('.modal.form.phone') %>
+                            <%= f.text_field :phone, class: 'form-control' %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <%= f.submit t('.modal.form.submit'), class: 'btn btn-success' %>
+                <% end %>
+                <button data-dismiss="modal" class="btn btn-default" type="button"><%= t('.modal.form.close') %></button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- / Modal -->

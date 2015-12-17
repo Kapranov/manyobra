@@ -1,0 +1,480 @@
+F, [2014-07-21T14:36:09.037465 #1935] FATAL -- : error adding listener addr=/tmp/sockets/unicorn.fedosin.socket
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `initialize': No such file or directory - connect(2) for "/tmp/sockets/unicorn.fedosin.socket" (Errno::ENOENT)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `new'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `bind_listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-21T14:45:01.214601 #2163]  INFO -- : listening on addr=/tmp/unicorn.fedosin.socket fd=10
+I, [2014-07-21T14:45:01.215127 #2163]  INFO -- : worker=0 spawning...
+I, [2014-07-21T14:45:01.218367 #2163]  INFO -- : worker=1 spawning...
+I, [2014-07-21T14:45:01.222993 #2163]  INFO -- : master process ready
+I, [2014-07-21T14:45:01.229276 #2166]  INFO -- : worker=0 spawned pid=2166
+I, [2014-07-21T14:45:01.229632 #2166]  INFO -- : Refreshing Gem list
+I, [2014-07-21T14:45:01.234500 #2169]  INFO -- : worker=1 spawned pid=2169
+I, [2014-07-21T14:45:01.234842 #2169]  INFO -- : Refreshing Gem list
+I, [2014-07-21T14:45:09.750442 #2166]  INFO -- : worker=0 ready
+I, [2014-07-21T14:45:09.766292 #2169]  INFO -- : worker=1 ready
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:2163 (or pid=/home/rails/fedosin/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-21T15:21:24.038524 #2163]  INFO -- : reaped #<Process::Status: pid 2166 exit 0> worker=0
+I, [2014-07-21T15:21:24.038982 #2163]  INFO -- : reaped #<Process::Status: pid 2169 exit 0> worker=1
+I, [2014-07-21T15:21:24.039230 #2163]  INFO -- : master complete
+I, [2014-07-21T15:29:10.839858 #3135]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T15:29:10.840349 #3135]  INFO -- : worker=0 spawning...
+I, [2014-07-21T15:29:10.845800 #3135]  INFO -- : worker=1 spawning...
+I, [2014-07-21T15:29:10.846977 #3135]  INFO -- : master process ready
+I, [2014-07-21T15:29:10.854446 #3138]  INFO -- : worker=0 spawned pid=3138
+I, [2014-07-21T15:29:10.854719 #3138]  INFO -- : Refreshing Gem list
+I, [2014-07-21T15:29:10.862249 #3140]  INFO -- : worker=1 spawned pid=3140
+I, [2014-07-21T15:29:10.862523 #3140]  INFO -- : Refreshing Gem list
+I, [2014-07-21T15:29:17.425957 #3140]  INFO -- : worker=1 ready
+I, [2014-07-21T15:29:17.432279 #3138]  INFO -- : worker=0 ready
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:3135 (or pid=/home/rails/fedosin/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-21T15:31:47.728789 #3135]  INFO -- : reaped #<Process::Status: pid 3138 exit 0> worker=0
+I, [2014-07-21T15:31:47.728989 #3135]  INFO -- : reaped #<Process::Status: pid 3140 exit 0> worker=1
+I, [2014-07-21T15:31:47.729170 #3135]  INFO -- : master complete
+I, [2014-07-21T15:31:53.217239 #3237]  INFO -- : unlinking existing socket=/tmp/unicorn.fedosin.sock
+I, [2014-07-21T15:31:53.217813 #3237]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T15:31:53.218109 #3237]  INFO -- : worker=0 spawning...
+I, [2014-07-21T15:31:53.219267 #3237]  INFO -- : worker=1 spawning...
+I, [2014-07-21T15:31:53.222092 #3240]  INFO -- : worker=0 spawned pid=3240
+I, [2014-07-21T15:31:53.222379 #3240]  INFO -- : Refreshing Gem list
+I, [2014-07-21T15:31:53.225884 #3237]  INFO -- : master process ready
+I, [2014-07-21T15:31:53.242310 #3243]  INFO -- : worker=1 spawned pid=3243
+I, [2014-07-21T15:31:53.242664 #3243]  INFO -- : Refreshing Gem list
+I, [2014-07-21T15:31:58.296712 #3243]  INFO -- : worker=1 ready
+I, [2014-07-21T15:31:58.385208 #3240]  INFO -- : worker=0 ready
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:206:in `pid=': Already running on PID:3237 (or pid=/home/rails/fedosin/tmp/pids/unicorn.pid is stale) (ArgumentError)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:135:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn:126:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-21T16:05:29.608711 #4284]  INFO -- : pid=/home/rails/fedosin/tmp/pids/unicorn.pid possibly stale, got EPERM signalling PID:3237
+E, [2014-07-21T16:05:29.615168 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:05:29.615246 #4284] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2014-07-21T16:05:30.116039 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:05:30.116162 #4284] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2014-07-21T16:05:30.617170 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:05:30.617321 #4284] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2014-07-21T16:05:31.118090 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:05:31.118216 #4284] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2014-07-21T16:05:31.618949 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:05:31.619097 #4284] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2014-07-21T16:05:32.119602 #4284] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `initialize': Address already in use - connect(2) for "/tmp/unicorn.fedosin.sock" (Errno::EADDRINUSE)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `new'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `bind_listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-07-21T16:15:58.966924 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:15:58.967248 #4765] ERROR -- : retrying in 0.5 seconds (4 tries left)
+E, [2014-07-21T16:15:59.468015 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:15:59.468145 #4765] ERROR -- : retrying in 0.5 seconds (3 tries left)
+E, [2014-07-21T16:15:59.968894 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:15:59.969326 #4765] ERROR -- : retrying in 0.5 seconds (2 tries left)
+E, [2014-07-21T16:16:00.470105 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:16:00.470232 #4765] ERROR -- : retrying in 0.5 seconds (1 tries left)
+E, [2014-07-21T16:16:00.970983 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+E, [2014-07-21T16:16:00.971117 #4765] ERROR -- : retrying in 0.5 seconds (0 tries left)
+E, [2014-07-21T16:16:01.471854 #4765] ERROR -- : adding listener failed addr=/tmp/unicorn.fedosin.sock (in use)
+/usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `initialize': Address already in use - connect(2) for "/tmp/unicorn.fedosin.sock" (Errno::EADDRINUSE)
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `new'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/socket_helper.rb:158:in `bind_listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:242:in `listen'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `block in bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `each'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:809:in `bind_new_listeners!'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:138:in `start'
+	from /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+	from /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-21T16:17:23.417529 #3237]  INFO -- : reaped #<Process::Status: pid 3240 exit 0> worker=0
+I, [2014-07-21T16:17:23.418008 #3237]  INFO -- : reaped #<Process::Status: pid 3243 exit 0> worker=1
+I, [2014-07-21T16:17:23.418315 #3237]  INFO -- : master complete
+I, [2014-07-21T16:28:13.758104 #1711]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T16:28:13.758836 #1711]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:28:13.763215 #1711]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:28:13.766914 #1711]  INFO -- : master process ready
+I, [2014-07-21T16:28:13.771806 #1714]  INFO -- : worker=0 spawned pid=1714
+I, [2014-07-21T16:28:13.775464 #1717]  INFO -- : worker=1 spawned pid=1717
+I, [2014-07-21T16:28:13.775767 #1717]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:28:13.783658 #1714]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:28:20.938761 #1717]  INFO -- : worker=1 ready
+I, [2014-07-21T16:28:20.942822 #1714]  INFO -- : worker=0 ready
+I, [2014-07-21T16:32:39.831790 #1711]  INFO -- : reaped #<Process::Status: pid 1714 exit 0> worker=0
+I, [2014-07-21T16:32:39.832815 #1711]  INFO -- : reaped #<Process::Status: pid 1717 exit 0> worker=1
+I, [2014-07-21T16:32:39.832990 #1711]  INFO -- : master complete
+I, [2014-07-21T16:32:42.524255 #1896]  INFO -- : unlinking existing socket=/tmp/unicorn.fedosin.sock
+I, [2014-07-21T16:32:42.530627 #1896]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T16:32:42.531692 #1896]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T16:32:42.531994 #1896]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:32:42.533491 #1896]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:32:42.538951 #1896]  INFO -- : master process ready
+I, [2014-07-21T16:32:42.554794 #1899]  INFO -- : worker=0 spawned pid=1899
+I, [2014-07-21T16:32:42.555182 #1899]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:32:42.556760 #1901]  INFO -- : worker=1 spawned pid=1901
+I, [2014-07-21T16:32:42.557047 #1901]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:32:49.146705 #1899]  INFO -- : worker=0 ready
+I, [2014-07-21T16:32:49.152409 #1901]  INFO -- : worker=1 ready
+E, [2014-07-21T16:41:22.843034 #1896] ERROR -- : worker=1 PID:1901 timeout (39s > 30s), killing
+E, [2014-07-21T16:41:41.645715 #1896] ERROR -- : reaped #<Process::Status: pid 1901 SIGKILL (signal 9)> worker=1
+D, [2014-07-21T16:41:41.646807 #1896] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2014-07-21T16:41:41.647326 #1896]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:41:41.652056 #2079]  INFO -- : worker=1 spawned pid=2079
+I, [2014-07-21T16:41:41.652689 #2079]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:41:45.540880 #2079]  INFO -- : worker=1 ready
+I, [2014-07-21T16:42:45.782263 #1896]  INFO -- : reaped #<Process::Status: pid 2079 exit 0> worker=1
+I, [2014-07-21T16:42:45.883432 #1896]  INFO -- : reaped #<Process::Status: pid 1899 exit 0> worker=0
+I, [2014-07-21T16:42:45.883754 #1896]  INFO -- : master complete
+I, [2014-07-21T16:42:48.513298 #2313]  INFO -- : unlinking existing socket=/tmp/unicorn.fedosin.sock
+I, [2014-07-21T16:42:48.515288 #2313]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T16:42:48.515908 #2313]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T16:42:48.516373 #2313]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:42:48.519082 #2313]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:42:48.530894 #2313]  INFO -- : master process ready
+I, [2014-07-21T16:42:48.539241 #2319]  INFO -- : worker=1 spawned pid=2319
+I, [2014-07-21T16:42:48.539571 #2319]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:42:48.545069 #2316]  INFO -- : worker=0 spawned pid=2316
+I, [2014-07-21T16:42:48.545381 #2316]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:42:55.303287 #2319]  INFO -- : worker=1 ready
+I, [2014-07-21T16:42:55.379021 #2316]  INFO -- : worker=0 ready
+D, [2014-07-21T16:43:19.169204 #2313] DEBUG -- : waiting 16.0s after suspend/hibernation
+E, [2014-07-21T16:43:40.996433 #2313] ERROR -- : worker=0 PID:2316 timeout (35s > 30s), killing
+E, [2014-07-21T16:43:46.395124 #2313] ERROR -- : reaped #<Process::Status: pid 2316 SIGKILL (signal 9)> worker=0
+I, [2014-07-21T16:43:46.395666 #2313]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:43:46.400383 #2346]  INFO -- : worker=0 spawned pid=2346
+I, [2014-07-21T16:43:46.400976 #2346]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:43:50.507619 #2346]  INFO -- : worker=0 ready
+D, [2014-07-21T16:46:40.219830 #2313] DEBUG -- : waiting 16.0s after suspend/hibernation
+D, [2014-07-21T16:47:10.140452 #2313] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2014-07-21T16:51:53.191799 #2313]  INFO -- : reaped #<Process::Status: pid 2319 exit 0> worker=1
+I, [2014-07-21T16:51:53.192465 #2313]  INFO -- : reaped #<Process::Status: pid 2346 exit 0> worker=0
+I, [2014-07-21T16:51:53.192684 #2313]  INFO -- : master complete
+I, [2014-07-21T16:51:55.753527 #2747]  INFO -- : unlinking existing socket=/tmp/unicorn.fedosin.sock
+I, [2014-07-21T16:51:55.754128 #2747]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T16:51:55.754849 #2747]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T16:51:55.755278 #2747]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:51:55.756318 #2747]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:51:55.757412 #2750]  INFO -- : worker=0 spawned pid=2750
+I, [2014-07-21T16:51:55.757664 #2750]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:51:55.758521 #2747]  INFO -- : master process ready
+I, [2014-07-21T16:51:55.766920 #2753]  INFO -- : worker=1 spawned pid=2753
+I, [2014-07-21T16:51:55.767211 #2753]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:52:01.605347 #2750]  INFO -- : worker=0 ready
+I, [2014-07-21T16:52:01.614010 #2753]  INFO -- : worker=1 ready
+E, [2014-07-21T16:53:41.851044 #2747] ERROR -- : worker=1 PID:2753 timeout (31s > 30s), killing
+E, [2014-07-21T16:53:41.864619 #2747] ERROR -- : reaped #<Process::Status: pid 2753 SIGKILL (signal 9)> worker=1
+I, [2014-07-21T16:53:41.864977 #2747]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:53:41.867484 #2772]  INFO -- : worker=1 spawned pid=2772
+I, [2014-07-21T16:53:41.868021 #2772]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:53:44.666604 #2772]  INFO -- : worker=1 ready
+I, [2014-07-21T16:58:40.860128 #2747]  INFO -- : reaped #<Process::Status: pid 2750 exit 0> worker=0
+I, [2014-07-21T16:58:40.860483 #2747]  INFO -- : reaped #<Process::Status: pid 2772 exit 0> worker=1
+I, [2014-07-21T16:58:40.860676 #2747]  INFO -- : master complete
+I, [2014-07-21T16:58:43.370203 #2997]  INFO -- : listening on addr=/home/rails/fedosin/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T16:58:43.371098 #2997]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T16:58:43.371351 #2997]  INFO -- : worker=0 spawning...
+I, [2014-07-21T16:58:43.372679 #2997]  INFO -- : worker=1 spawning...
+I, [2014-07-21T16:58:43.374764 #3000]  INFO -- : worker=0 spawned pid=3000
+I, [2014-07-21T16:58:43.375009 #3000]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:58:43.378583 #2997]  INFO -- : master process ready
+I, [2014-07-21T16:58:43.395053 #3003]  INFO -- : worker=1 spawned pid=3003
+I, [2014-07-21T16:58:43.395414 #3003]  INFO -- : Refreshing Gem list
+I, [2014-07-21T16:58:49.540906 #3003]  INFO -- : worker=1 ready
+I, [2014-07-21T16:58:49.635181 #3000]  INFO -- : worker=0 ready
+E, [2014-07-21T17:00:32.485971 #2997] ERROR -- : worker=1 PID:3003 timeout (31s > 30s), killing
+E, [2014-07-21T17:00:32.501612 #2997] ERROR -- : reaped #<Process::Status: pid 3003 SIGKILL (signal 9)> worker=1
+I, [2014-07-21T17:00:32.502030 #2997]  INFO -- : worker=1 spawning...
+I, [2014-07-21T17:00:32.504757 #3056]  INFO -- : worker=1 spawned pid=3056
+I, [2014-07-21T17:00:32.505370 #3056]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:00:35.647731 #3056]  INFO -- : worker=1 ready
+E, [2014-07-21T17:16:19.930018 #2997] ERROR -- : worker=1 PID:3056 timeout (31s > 30s), killing
+E, [2014-07-21T17:16:19.945516 #2997] ERROR -- : reaped #<Process::Status: pid 3056 SIGKILL (signal 9)> worker=1
+I, [2014-07-21T17:16:19.945928 #2997]  INFO -- : worker=1 spawning...
+I, [2014-07-21T17:16:19.948597 #3326]  INFO -- : worker=1 spawned pid=3326
+I, [2014-07-21T17:16:19.949124 #3326]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:16:22.772857 #3326]  INFO -- : worker=1 ready
+E, [2014-07-21T17:17:28.016035 #2997] ERROR -- : worker=1 PID:3326 timeout (31s > 30s), killing
+E, [2014-07-21T17:17:28.026120 #2997] ERROR -- : reaped #<Process::Status: pid 3326 SIGKILL (signal 9)> worker=1
+I, [2014-07-21T17:17:28.026280 #2997]  INFO -- : worker=1 spawning...
+I, [2014-07-21T17:17:28.027916 #3341]  INFO -- : worker=1 spawned pid=3341
+I, [2014-07-21T17:17:28.028249 #3341]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:17:30.833932 #3341]  INFO -- : worker=1 ready
+E, [2014-07-21T17:19:43.163877 #2997] ERROR -- : worker=0 PID:3000 timeout (31s > 30s), killing
+E, [2014-07-21T17:19:43.175062 #2997] ERROR -- : reaped #<Process::Status: pid 3000 SIGKILL (signal 9)> worker=0
+I, [2014-07-21T17:19:43.175251 #2997]  INFO -- : worker=0 spawning...
+I, [2014-07-21T17:19:43.177360 #3345]  INFO -- : worker=0 spawned pid=3345
+I, [2014-07-21T17:19:43.177880 #3345]  INFO -- : Refreshing Gem list
+E, [2014-07-21T17:19:44.177241 #2997] ERROR -- : worker=1 PID:3341 timeout (31s > 30s), killing
+E, [2014-07-21T17:19:44.193516 #2997] ERROR -- : reaped #<Process::Status: pid 3341 SIGKILL (signal 9)> worker=1
+I, [2014-07-21T17:19:44.193672 #2997]  INFO -- : worker=1 spawning...
+I, [2014-07-21T17:19:44.198764 #3348]  INFO -- : worker=1 spawned pid=3348
+I, [2014-07-21T17:19:44.199116 #3348]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:19:47.630110 #3345]  INFO -- : worker=0 ready
+I, [2014-07-21T17:19:48.767364 #3348]  INFO -- : worker=1 ready
+E, [2014-07-21T17:26:11.534394 #2997] ERROR -- : worker=0 PID:3345 timeout (31s > 30s), killing
+E, [2014-07-21T17:26:11.535484 #2997] ERROR -- : worker=1 PID:3348 timeout (31s > 30s), killing
+E, [2014-07-21T17:26:11.578941 #2997] ERROR -- : reaped #<Process::Status: pid 3348 SIGKILL (signal 9)> worker=1
+E, [2014-07-21T17:26:11.579173 #2997] ERROR -- : worker=0 PID:3345 timeout (31s > 30s), killing
+I, [2014-07-21T17:26:11.579495 #2997]  INFO -- : worker=1 spawning...
+E, [2014-07-21T17:26:11.581376 #2997] ERROR -- : reaped #<Process::Status: pid 3345 SIGKILL (signal 9)> worker=0
+I, [2014-07-21T17:26:11.582344 #2997]  INFO -- : worker=0 spawning...
+I, [2014-07-21T17:26:11.587690 #3355]  INFO -- : worker=0 spawned pid=3355
+I, [2014-07-21T17:26:11.588521 #3355]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:26:11.585711 #3353]  INFO -- : worker=1 spawned pid=3353
+I, [2014-07-21T17:26:11.590340 #3353]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:26:17.368747 #3355]  INFO -- : worker=0 ready
+I, [2014-07-21T17:26:17.436729 #3353]  INFO -- : worker=1 ready
+I, [2014-07-21T17:44:51.616571 #2997]  INFO -- : reaped #<Process::Status: pid 3353 exit 0> worker=1
+I, [2014-07-21T17:44:51.617046 #2997]  INFO -- : reaped #<Process::Status: pid 3355 exit 0> worker=0
+I, [2014-07-21T17:44:51.617433 #2997]  INFO -- : master complete
+I, [2014-07-21T17:47:24.562313 #1535]  INFO -- : listening on addr=/home/rails/fedosin/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T17:47:24.563718 #1535]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T17:47:24.563955 #1535]  INFO -- : worker=0 spawning...
+I, [2014-07-21T17:47:24.565205 #1535]  INFO -- : worker=1 spawning...
+I, [2014-07-21T17:47:24.569653 #1535]  INFO -- : master process ready
+I, [2014-07-21T17:47:24.578220 #1538]  INFO -- : worker=0 spawned pid=1538
+I, [2014-07-21T17:47:24.578626 #1538]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:47:24.593146 #1540]  INFO -- : worker=1 spawned pid=1540
+I, [2014-07-21T17:47:24.593474 #1540]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:47:32.309423 #1540]  INFO -- : worker=1 ready
+I, [2014-07-21T17:47:32.316961 #1538]  INFO -- : worker=0 ready
+E, [2014-07-21T17:49:28.661549 #1535] ERROR -- : worker=0 PID:1538 timeout (31s > 30s), killing
+E, [2014-07-21T17:49:28.674628 #1535] ERROR -- : reaped #<Process::Status: pid 1538 SIGKILL (signal 9)> worker=0
+I, [2014-07-21T17:49:28.674903 #1535]  INFO -- : worker=0 spawning...
+I, [2014-07-21T17:49:28.676945 #1637]  INFO -- : worker=0 spawned pid=1637
+I, [2014-07-21T17:49:28.677382 #1637]  INFO -- : Refreshing Gem list
+I, [2014-07-21T17:49:32.259418 #1637]  INFO -- : worker=0 ready
+D, [2014-07-21T18:02:31.878599 #1535] DEBUG -- : waiting 16.0s after suspend/hibernation
+E, [2014-07-21T18:02:35.882238 #1535] ERROR -- : reaped #<Process::Status: pid 1637 SIGKILL (signal 9)> worker=0
+I, [2014-07-21T18:02:35.882711 #1535]  INFO -- : worker=0 spawning...
+I, [2014-07-21T18:02:35.888525 #1937]  INFO -- : worker=0 spawned pid=1937
+I, [2014-07-21T18:02:35.889998 #1937]  INFO -- : Refreshing Gem list
+I, [2014-07-21T18:02:41.075074 #1937]  INFO -- : worker=0 ready
+D, [2014-07-21T18:05:02.965195 #1535] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2014-07-21T18:28:06.485380 #1535]  INFO -- : reaped #<Process::Status: pid 1540 exit 0> worker=1
+I, [2014-07-21T18:28:06.486120 #1535]  INFO -- : reaped #<Process::Status: pid 1937 exit 0> worker=0
+I, [2014-07-21T18:28:06.486382 #1535]  INFO -- : master complete
+I, [2014-07-21T18:29:40.915120 #1463]  INFO -- : listening on addr=/home/rails/fedosin/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T18:29:40.921448 #1463]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T18:29:40.921780 #1463]  INFO -- : worker=0 spawning...
+I, [2014-07-21T18:29:40.922935 #1463]  INFO -- : worker=1 spawning...
+I, [2014-07-21T18:29:40.924232 #1466]  INFO -- : worker=0 spawned pid=1466
+I, [2014-07-21T18:29:40.925210 #1463]  INFO -- : master process ready
+I, [2014-07-21T18:29:40.936233 #1466]  INFO -- : Refreshing Gem list
+I, [2014-07-21T18:29:40.936019 #1469]  INFO -- : worker=1 spawned pid=1469
+I, [2014-07-21T18:29:40.940773 #1469]  INFO -- : Refreshing Gem list
+I, [2014-07-21T18:29:47.721434 #1469]  INFO -- : worker=1 ready
+I, [2014-07-21T18:29:47.728591 #1466]  INFO -- : worker=0 ready
+D, [2014-07-21T18:33:46.733081 #1463] DEBUG -- : waiting 16.0s after suspend/hibernation
+D, [2014-07-21T19:29:29.727161 #1463] DEBUG -- : waiting 16.0s after suspend/hibernation
+D, [2014-07-21T19:34:09.067178 #1463] DEBUG -- : waiting 16.0s after suspend/hibernation
+I, [2014-07-21T20:09:14.841237 #1511]  INFO -- : listening on addr=/home/rails/fedosin/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-21T20:09:14.854078 #1511]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-21T20:09:14.854322 #1511]  INFO -- : worker=0 spawning...
+I, [2014-07-21T20:09:14.855503 #1511]  INFO -- : worker=1 spawning...
+I, [2014-07-21T20:09:14.858653 #1511]  INFO -- : master process ready
+I, [2014-07-21T20:09:14.867365 #1514]  INFO -- : worker=0 spawned pid=1514
+I, [2014-07-21T20:09:14.867693 #1514]  INFO -- : Refreshing Gem list
+I, [2014-07-21T20:09:14.879006 #1516]  INFO -- : worker=1 spawned pid=1516
+I, [2014-07-21T20:09:14.879320 #1516]  INFO -- : Refreshing Gem list
+I, [2014-07-21T20:09:20.985153 #1514]  INFO -- : worker=0 ready
+I, [2014-07-21T20:09:21.186072 #1516]  INFO -- : worker=1 ready
+E, [2014-07-22T04:02:37.581829 #1511] ERROR -- : worker=0 PID:1514 timeout (31s > 30s), killing
+E, [2014-07-22T04:02:37.597634 #1511] ERROR -- : reaped #<Process::Status: pid 1514 SIGKILL (signal 9)> worker=0
+I, [2014-07-22T04:02:37.597990 #1511]  INFO -- : worker=0 spawning...
+I, [2014-07-22T04:02:37.600963 #2561]  INFO -- : worker=0 spawned pid=2561
+I, [2014-07-22T04:02:37.601538 #2561]  INFO -- : Refreshing Gem list
+I, [2014-07-22T04:02:40.491250 #2561]  INFO -- : worker=0 ready
+E, [2014-07-22T04:09:26.987223 #1511] ERROR -- : worker=1 PID:1516 timeout (31s > 30s), killing
+E, [2014-07-22T04:09:26.987455 #1511] ERROR -- : worker=0 PID:2561 timeout (31s > 30s), killing
+E, [2014-07-22T04:09:27.007515 #1511] ERROR -- : reaped #<Process::Status: pid 2561 SIGKILL (signal 9)> worker=0
+E, [2014-07-22T04:09:27.007635 #1511] ERROR -- : worker=1 PID:1516 timeout (32s > 30s), killing
+I, [2014-07-22T04:09:27.007806 #1511]  INFO -- : worker=0 spawning...
+E, [2014-07-22T04:09:27.009085 #1511] ERROR -- : reaped #<Process::Status: pid 1516 SIGKILL (signal 9)> worker=1
+I, [2014-07-22T04:09:27.009357 #1511]  INFO -- : worker=1 spawning...
+I, [2014-07-22T04:09:27.011015 #2565]  INFO -- : worker=0 spawned pid=2565
+I, [2014-07-22T04:09:27.011329 #2565]  INFO -- : Refreshing Gem list
+I, [2014-07-22T04:09:27.015084 #2567]  INFO -- : worker=1 spawned pid=2567
+I, [2014-07-22T04:09:27.015537 #2567]  INFO -- : Refreshing Gem list
+I, [2014-07-22T04:09:32.805552 #2565]  INFO -- : worker=0 ready
+I, [2014-07-22T04:09:32.865752 #2567]  INFO -- : worker=1 ready
+E, [2014-07-22T08:24:13.940846 #1511] ERROR -- : worker=1 PID:2567 timeout (31s > 30s), killing
+E, [2014-07-22T08:24:13.959441 #1511] ERROR -- : reaped #<Process::Status: pid 2567 SIGKILL (signal 9)> worker=1
+I, [2014-07-22T08:24:13.959753 #1511]  INFO -- : worker=1 spawning...
+I, [2014-07-22T08:24:13.964232 #3270]  INFO -- : worker=1 spawned pid=3270
+I, [2014-07-22T08:24:13.965143 #3270]  INFO -- : Refreshing Gem list
+I, [2014-07-22T08:24:17.714780 #3270]  INFO -- : worker=1 ready
+E, [2014-07-22T08:24:40.968312 #1511] ERROR -- : worker=0 PID:2565 timeout (31s > 30s), killing
+E, [2014-07-22T08:24:40.986227 #1511] ERROR -- : reaped #<Process::Status: pid 2565 SIGKILL (signal 9)> worker=0
+I, [2014-07-22T08:24:40.986492 #1511]  INFO -- : worker=0 spawning...
+I, [2014-07-22T08:24:40.988525 #3274]  INFO -- : worker=0 spawned pid=3274
+I, [2014-07-22T08:24:40.989080 #3274]  INFO -- : Refreshing Gem list
+I, [2014-07-22T08:24:44.007324 #3274]  INFO -- : worker=0 ready
+E, [2014-07-22T10:41:35.307668 #1511] ERROR -- : worker=1 PID:3270 timeout (31s > 30s), killing
+E, [2014-07-22T10:41:35.313898 #1511] ERROR -- : worker=0 PID:3274 timeout (31s > 30s), killing
+E, [2014-07-22T10:41:35.341447 #1511] ERROR -- : reaped #<Process::Status: pid 3274 SIGKILL (signal 9)> worker=0
+E, [2014-07-22T10:41:35.341627 #1511] ERROR -- : worker=1 PID:3270 timeout (31s > 30s), killing
+I, [2014-07-22T10:41:35.342220 #1511]  INFO -- : worker=0 spawning...
+E, [2014-07-22T10:41:35.344157 #1511] ERROR -- : reaped #<Process::Status: pid 3270 SIGKILL (signal 9)> worker=1
+I, [2014-07-22T10:41:35.344499 #1511]  INFO -- : worker=1 spawning...
+I, [2014-07-22T10:41:35.347456 #3285]  INFO -- : worker=0 spawned pid=3285
+I, [2014-07-22T10:41:35.348040 #3285]  INFO -- : Refreshing Gem list
+I, [2014-07-22T10:41:35.351131 #3287]  INFO -- : worker=1 spawned pid=3287
+I, [2014-07-22T10:41:35.351580 #3287]  INFO -- : Refreshing Gem list
+I, [2014-07-22T10:41:41.497346 #3287]  INFO -- : worker=1 ready
+I, [2014-07-22T10:41:41.567796 #3285]  INFO -- : worker=0 ready
+E, [2014-07-26T11:26:50.271186 #3287] ERROR -- : app error: XGET, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, and PATCH (ActionController::UnknownHttpMethod)
+E, [2014-07-26T11:26:50.273025 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/http/request.rb:318:in `check_method'
+E, [2014-07-26T11:26:50.273099 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/http/request.rb:92:in `request_method'
+E, [2014-07-26T11:26:50.273141 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:51:in `started_request_message'
+E, [2014-07-26T11:26:50.273214 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:37:in `call_app'
+E, [2014-07-26T11:26:50.273250 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+E, [2014-07-26T11:26:50.273314 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+E, [2014-07-26T11:26:50.273355 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+E, [2014-07-26T11:26:50.273392 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+E, [2014-07-26T11:26:50.298980 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+E, [2014-07-26T11:26:50.299064 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+E, [2014-07-26T11:26:50.299103 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+E, [2014-07-26T11:26:50.299140 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+E, [2014-07-26T11:26:50.299175 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+E, [2014-07-26T11:26:50.299210 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+E, [2014-07-26T11:26:50.299243 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+E, [2014-07-26T11:26:50.299296 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+E, [2014-07-26T11:26:50.299333 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+E, [2014-07-26T11:26:50.299367 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+E, [2014-07-26T11:26:50.299401 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+E, [2014-07-26T11:26:50.299435 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:536:in `maintain_worker_count'
+E, [2014-07-26T11:26:50.299469 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:294:in `join'
+E, [2014-07-26T11:26:50.299502 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+E, [2014-07-26T11:26:50.299536 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+E, [2014-07-26T11:26:50.299569 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+E, [2014-07-26T11:26:50.299601 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-07-26T11:26:50.299633 #3287] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-07-26T11:26:51.574134 #3285] ERROR -- : app error: XGET, accepted HTTP methods are OPTIONS, GET, HEAD, POST, PUT, DELETE, TRACE, CONNECT, PROPFIND, PROPPATCH, MKCOL, COPY, MOVE, LOCK, UNLOCK, VERSION-CONTROL, REPORT, CHECKOUT, CHECKIN, UNCHECKOUT, MKWORKSPACE, UPDATE, LABEL, MERGE, BASELINE-CONTROL, MKACTIVITY, ORDERPATCH, ACL, SEARCH, and PATCH (ActionController::UnknownHttpMethod)
+E, [2014-07-26T11:26:51.574296 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/http/request.rb:318:in `check_method'
+E, [2014-07-26T11:26:51.574341 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/http/request.rb:92:in `request_method'
+E, [2014-07-26T11:26:51.574378 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:51:in `started_request_message'
+E, [2014-07-26T11:26:51.574416 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:37:in `call_app'
+E, [2014-07-26T11:26:51.574457 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `block in call'
+E, [2014-07-26T11:26:51.574585 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+E, [2014-07-26T11:26:51.574622 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+E, [2014-07-26T11:26:51.574657 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/tagged_logging.rb:68:in `tagged'
+E, [2014-07-26T11:26:51.574692 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/rack/logger.rb:20:in `call'
+E, [2014-07-26T11:26:51.574725 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/actionpack-4.1.1/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+E, [2014-07-26T11:26:51.574847 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/methodoverride.rb:21:in `call'
+E, [2014-07-26T11:26:51.574886 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/runtime.rb:17:in `call'
+E, [2014-07-26T11:26:51.574921 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/activesupport-4.1.1/lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+E, [2014-07-26T11:26:51.574955 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/rack-1.5.2/lib/rack/sendfile.rb:112:in `call'
+E, [2014-07-26T11:26:51.574989 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/engine.rb:514:in `call'
+E, [2014-07-26T11:26:51.575050 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+E, [2014-07-26T11:26:51.575147 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+E, [2014-07-26T11:26:51.575183 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+E, [2014-07-26T11:26:51.575217 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+E, [2014-07-26T11:26:51.575319 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:536:in `maintain_worker_count'
+E, [2014-07-26T11:26:51.575356 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:294:in `join'
+E, [2014-07-26T11:26:51.575389 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+E, [2014-07-26T11:26:51.575423 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+E, [2014-07-26T11:26:51.575455 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+E, [2014-07-26T11:26:51.575594 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-07-26T11:26:51.575631 #3285] ERROR -- : /usr/local/rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-07-27T09:31:53.519373 #1511]  INFO -- : reaped #<Process::Status: pid 3285 exit 0> worker=0
+I, [2014-07-27T09:31:53.922264 #1511]  INFO -- : reaped #<Process::Status: pid 3287 exit 0> worker=1
+I, [2014-07-27T09:31:53.923976 #1511]  INFO -- : master complete
+I, [2014-07-27T09:31:56.344503 #20262]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-27T09:31:56.345724 #20262]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-27T09:31:56.350065 #20262]  INFO -- : worker=0 spawning...
+I, [2014-07-27T09:31:56.351521 #20262]  INFO -- : worker=1 spawning...
+I, [2014-07-27T09:31:56.352976 #20265]  INFO -- : worker=0 spawned pid=20265
+I, [2014-07-27T09:31:56.353297 #20265]  INFO -- : Refreshing Gem list
+I, [2014-07-27T09:31:56.354780 #20262]  INFO -- : master process ready
+I, [2014-07-27T09:31:56.368419 #20268]  INFO -- : worker=1 spawned pid=20268
+I, [2014-07-27T09:31:56.368776 #20268]  INFO -- : Refreshing Gem list
+I, [2014-07-27T09:32:03.526877 #20268]  INFO -- : worker=1 ready
+I, [2014-07-27T09:32:03.643554 #20265]  INFO -- : worker=0 ready
+I, [2014-07-27T09:53:46.169996 #20262]  INFO -- : reaped #<Process::Status: pid 20265 exit 0> worker=0
+I, [2014-07-27T09:53:46.170330 #20262]  INFO -- : reaped #<Process::Status: pid 20268 exit 0> worker=1
+I, [2014-07-27T09:53:46.170533 #20262]  INFO -- : master complete
+I, [2014-07-27T09:55:24.557840 #1334]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-27T09:55:24.562114 #1334]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-27T09:55:24.562524 #1334]  INFO -- : worker=0 spawning...
+I, [2014-07-27T09:55:24.564093 #1334]  INFO -- : worker=1 spawning...
+I, [2014-07-27T09:55:24.570061 #1334]  INFO -- : master process ready
+I, [2014-07-27T09:55:24.578705 #1337]  INFO -- : worker=0 spawned pid=1337
+I, [2014-07-27T09:55:24.579233 #1337]  INFO -- : Refreshing Gem list
+I, [2014-07-27T09:55:24.586458 #1339]  INFO -- : worker=1 spawned pid=1339
+I, [2014-07-27T09:55:24.586944 #1339]  INFO -- : Refreshing Gem list
+I, [2014-07-27T09:55:31.656121 #1337]  INFO -- : worker=0 ready
+I, [2014-07-27T09:55:31.657357 #1339]  INFO -- : worker=1 ready
+E, [2014-07-27T13:22:07.000655 #1334] ERROR -- : worker=0 PID:1337 timeout (31s > 30s), killing
+E, [2014-07-27T13:22:07.139631 #1334] ERROR -- : reaped #<Process::Status: pid 1337 SIGKILL (signal 9)> worker=0
+I, [2014-07-27T13:22:07.141265 #1334]  INFO -- : worker=0 spawning...
+I, [2014-07-27T13:22:07.152627 #19572]  INFO -- : worker=0 spawned pid=19572
+I, [2014-07-27T13:22:07.154534 #19572]  INFO -- : Refreshing Gem list
+I, [2014-07-27T13:22:12.085083 #19572]  INFO -- : worker=0 ready
+E, [2014-07-27T13:22:12.153816 #1334] ERROR -- : worker=1 PID:1339 timeout (31s > 30s), killing
+E, [2014-07-27T13:22:12.201919 #1334] ERROR -- : reaped #<Process::Status: pid 1339 SIGKILL (signal 9)> worker=1
+I, [2014-07-27T13:22:12.202531 #1334]  INFO -- : worker=1 spawning...
+I, [2014-07-27T13:22:12.212094 #19576]  INFO -- : worker=1 spawned pid=19576
+I, [2014-07-27T13:22:12.217411 #19576]  INFO -- : Refreshing Gem list
+I, [2014-07-27T13:22:17.017236 #19576]  INFO -- : worker=1 ready
+I, [2014-07-27T14:09:21.667369 #1334]  INFO -- : reaped #<Process::Status: pid 19572 exit 0> worker=0
+I, [2014-07-27T14:09:21.675622 #1334]  INFO -- : reaped #<Process::Status: pid 19576 exit 0> worker=1
+I, [2014-07-27T14:09:21.689192 #1334]  INFO -- : master complete
+I, [2014-07-27T14:34:01.343979 #1561]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-27T14:34:01.344686 #1561]  INFO -- : worker=0 spawning...
+I, [2014-07-27T14:34:01.363010 #1561]  INFO -- : worker=1 spawning...
+I, [2014-07-27T14:34:01.367509 #1561]  INFO -- : master process ready
+I, [2014-07-27T14:34:01.375208 #1564]  INFO -- : worker=0 spawned pid=1564
+I, [2014-07-27T14:34:01.375523 #1564]  INFO -- : Refreshing Gem list
+I, [2014-07-27T14:34:01.377069 #1567]  INFO -- : worker=1 spawned pid=1567
+I, [2014-07-27T14:34:01.377308 #1567]  INFO -- : Refreshing Gem list
+I, [2014-07-27T14:34:08.739640 #1567]  INFO -- : worker=1 ready
+I, [2014-07-27T14:34:08.758349 #1564]  INFO -- : worker=0 ready
+I, [2014-07-27T16:12:04.157679 #1561]  INFO -- : reaped #<Process::Status: pid 1564 exit 0> worker=0
+I, [2014-07-27T16:12:04.162592 #1561]  INFO -- : reaped #<Process::Status: pid 1567 exit 0> worker=1
+I, [2014-07-27T16:12:04.165042 #1561]  INFO -- : master complete
+I, [2014-07-27T16:26:14.720304 #1712]  INFO -- : listening on addr=/tmp/unicorn.fedosin.sock fd=10
+I, [2014-07-27T16:26:14.721111 #1712]  INFO -- : worker=0 spawning...
+I, [2014-07-27T16:26:14.726526 #1712]  INFO -- : worker=1 spawning...
+I, [2014-07-27T16:26:14.730795 #1712]  INFO -- : master process ready
+I, [2014-07-27T16:26:14.738380 #1715]  INFO -- : worker=0 spawned pid=1715
+I, [2014-07-27T16:26:14.738791 #1715]  INFO -- : Refreshing Gem list
+I, [2014-07-27T16:26:14.740929 #1718]  INFO -- : worker=1 spawned pid=1718
+I, [2014-07-27T16:26:14.741238 #1718]  INFO -- : Refreshing Gem list
+I, [2014-07-27T16:26:21.618360 #1715]  INFO -- : worker=0 ready
+I, [2014-07-27T16:26:21.622638 #1718]  INFO -- : worker=1 ready
+I, [2014-07-27T18:41:44.203892 #1712]  INFO -- : reaped #<Process::Status: pid 1715 exit 0> worker=0
+I, [2014-07-27T18:41:44.208882 #1712]  INFO -- : reaped #<Process::Status: pid 1718 exit 0> worker=1
+I, [2014-07-27T18:41:44.210761 #1712]  INFO -- : master complete

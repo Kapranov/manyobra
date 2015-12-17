@@ -1,0 +1,48 @@
+I, [2014-07-20T12:18:49.596211 #21974]  INFO -- : Refreshing Gem list
+I, [2014-07-20T12:18:53.112206 #21974]  INFO -- : listening on addr=/var/www/apps/fedosin/socket/.unicorn.sock fd=10
+I, [2014-07-20T12:18:53.112816 #21974]  INFO -- : listening on addr=0.0.0.0:8080 fd=11
+I, [2014-07-20T12:18:53.135672 #21974]  INFO -- : master process ready
+I, [2014-07-20T12:18:53.143726 #21978]  INFO -- : worker=0 ready
+I, [2014-07-20T12:18:53.144539 #21981]  INFO -- : worker=1 ready
+E, [2014-07-20T12:19:02.544963 #21978] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2014-07-20T12:19:02.545110 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:440:in `validate_secret_key_config!'
+E, [2014-07-20T12:19:02.545157 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:195:in `env_config'
+E, [2014-07-20T12:19:02.545194 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/engine.rb:510:in `call'
+E, [2014-07-20T12:19:02.545228 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+E, [2014-07-20T12:19:02.545262 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+E, [2014-07-20T12:19:02.545296 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+E, [2014-07-20T12:19:02.545330 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+E, [2014-07-20T12:19:02.545364 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+E, [2014-07-20T12:19:02.545398 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+E, [2014-07-20T12:19:02.545432 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+E, [2014-07-20T12:19:02.545465 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+E, [2014-07-20T12:19:02.545499 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-07-20T12:19:02.545532 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-07-20T12:19:07.149217 #21978] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2014-07-20T12:19:07.149359 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:440:in `validate_secret_key_config!'
+E, [2014-07-20T12:19:07.149469 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:195:in `env_config'
+E, [2014-07-20T12:19:07.149512 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/engine.rb:510:in `call'
+E, [2014-07-20T12:19:07.149548 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+E, [2014-07-20T12:19:07.149582 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+E, [2014-07-20T12:19:07.149616 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+E, [2014-07-20T12:19:07.149682 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+E, [2014-07-20T12:19:07.149732 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+E, [2014-07-20T12:19:07.149804 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+E, [2014-07-20T12:19:07.149838 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+E, [2014-07-20T12:19:07.149897 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+E, [2014-07-20T12:19:07.149935 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-07-20T12:19:07.149979 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'
+E, [2014-07-20T12:20:55.589014 #21978] ERROR -- : app error: Missing `secret_key_base` for 'production' environment, set this value in `config/secrets.yml` (RuntimeError)
+E, [2014-07-20T12:20:55.589159 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:440:in `validate_secret_key_config!'
+E, [2014-07-20T12:20:55.589203 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:195:in `env_config'
+E, [2014-07-20T12:20:55.589240 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/engine.rb:510:in `call'
+E, [2014-07-20T12:20:55.589277 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/railties-4.1.1/lib/rails/application.rb:144:in `call'
+E, [2014-07-20T12:20:55.589312 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:576:in `process_client'
+E, [2014-07-20T12:20:55.589387 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:670:in `worker_loop'
+E, [2014-07-20T12:20:55.589424 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:525:in `spawn_missing_workers'
+E, [2014-07-20T12:20:55.589457 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/lib/unicorn/http_server.rb:140:in `start'
+E, [2014-07-20T12:20:55.589490 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/gems/unicorn-4.8.3/bin/unicorn_rails:209:in `<top (required)>'
+E, [2014-07-20T12:20:55.589523 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `load'
+E, [2014-07-20T12:20:55.589555 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/unicorn_rails:23:in `<main>'
+E, [2014-07-20T12:20:55.589588 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `eval'
+E, [2014-07-20T12:20:55.589620 #21978] ERROR -- : /home/deploy/.rvm/gems/ruby-2.1.1/bin/ruby_executable_hooks:15:in `<main>'

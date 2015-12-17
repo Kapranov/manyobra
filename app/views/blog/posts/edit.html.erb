@@ -1,0 +1,4 @@
+<h1>Editing post <%= link_to 'New Post', new_blog_post_path, class: 'btn btn-primary btn-sm' %> <%= link_to 'Destroy', @blog_post, :method => :delete, :confirm => "Are you sure?" %></h1>
+<%#= link_to 'Show', blog_post_path(@blog_post) %> |
+<%= link_to 'Back', blog_posts_path %>
+<%= render 'form' %>

@@ -1,0 +1,9 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<%= form_for @user, url: change_language_path, method: :post do |f| %>
+    <div class="fieldRow">
+        <%= f.label :language%>                 
+        <%= f.select :language, options_for_select(t("options_for_select_language").invert) %>
+    </div>
+<%= f.submit :class => 'button blue' %>
+<% end %>

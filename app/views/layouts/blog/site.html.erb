@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<!--[if IE 8]>          <html lang="<%= I18n.locale %>" class="ie ie8"> <![endif]-->
+<!--[if IE 9]>          <html lang="<%= I18n.locale %>" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html lang="<%= I18n.locale %>"> <!--<![endif]-->
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <title><%= content_for?(:title) ? yield(:title) : "Manyobra" %> - Manyobra</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="Артем Фудосін - Адвокат" />
+    <meta name="author" content="Manyobra.com" />
+    <meta name="language" content="<%= I18n.t(I18n.locale, :scope => 'languages.names') %>">
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Web Fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,cyrillic|Alegreya|Alegreya+SC|Oswald:400,300" rel="stylesheet" type="text/css" />-->
+    <!-- Libs CSS -->
+    <%= stylesheet_link_tag "bootstrap" %>
+    <%= stylesheet_link_tag "skin" %>
+    <%= stylesheet_link_tag "fonts/font-awesome/css/font-awesome" %>
+    <%= stylesheet_link_tag "vendor/owl-carousel/owl.carousel" %>
+    <%= stylesheet_link_tag "vendor/owl-carousel/owl.theme" %>
+    <%= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+    <%= stylesheet_link_tag "vendor/isotope/jquery.isotope" %>
+    <%= stylesheet_link_tag "vendor/magnific-popup/magnific-popup" %>
+    <%= stylesheet_link_tag "theme" %>
+    <%= stylesheet_link_tag "theme-elements" %>
+    <%= stylesheet_link_tag "theme-animate" %>
+    <%= stylesheet_link_tag "skin" %>
+    <%= stylesheet_link_tag "theme-responsive" %>
+    <!-- Head Libs -->
+    <script src="vendor/modernizr.js"></script>
+    <!--[if IE]>
+        <link rel="stylesheet" href="ie.css">
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= yield :head %>
+</head>
+        <body>
+            <div class="body">
+                <header>
+                    <div class="container">
+                    
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                        <%#= link_to(image_tag("logo.png", itemprop: "logo", role: "banner", alt: "Manyobra logo"), page_home_path, itemprop: "url", title: t('Home')) %>
+                    </div>
+                    
+                    <div class="navbar-collapse nav-main-collapse collapse">
+                        <nav class="nav-main mega-menu" role="navigation">
+                            <ul class="nav nav-pills nav-main" id="mainMenu">
+                                <li><%= link_to t('Home'), home_path %></li>
+                                <li><%= link_to t('Services'), controller: :pages, action: :services %></li>
+                                <li><%= link_to t('Prices'), controller: :pages, action: :prices %></li>
+                                <li><%= link_to t('Blog'), controller: :pages, action: :services %></li>
+                                <li><%= link_to t('About_me'), controller: :pages, action: :about %></li>
+                                <li><%= link_to t('Contact'), controller: :pages, action: :contact %></li>
+                                <% if current_user.nil? %>
+                                <li><%= link_to t('Login'), controller: :sessions, action: :new %></li>
+                                <li><%= link_to t('Sign_Up'), controller: :users, action: :new %></li>
+                                <% else %>
+                                <li><%= link_to current_user.first_name, controller: :users, action: :profile  %></li>
+                                <li><%= link_to t('Logout'), controller: :sessions, action: :destroy  %></li>
+                                <% end %>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="icon icon-bars"></i>
+                    </button>
+                </div>
+            </header>
+            <div role="main" class="main">
+                <%= yield :heading %>
+                <% flash.each do |name, msg| %>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <%= content_tag(:div, raw(msg), :class => "alert alert-#{name}", :id => "#{name}") %>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+                <%= raw yield.html_safe %>
+            </div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            
+                            <p>Вам потрібен Адвокат? <a href="<%= contact_path %>" class="btn-flat btn-xs">Зв'яжіться зі мною <i class="icon icon-arrow-right"></i></a></p>
+                            <div class="contact-details">
+                                <ul class="contact">
+                                <li><i class="icon icon-map-marker"></i> <strong><%= t'Address' %>:</strong> 1234 вул, Київ, Україна</li>
+                                <li><i class="icon icon-phone"></i> <strong><%= t'Phone' %>:</strong> (380) 96 ХХХ-ХХХ-хх</li>
+                                <li><i class="icon icon-envelope"></i> <strong><%= t'Email' %>:</strong> <a href="mailto:manyobra@gmail.com">a.manyobra@gmail.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h3 class="shorter"><%= t'Products' %></h3>
+                            <div class="contact-details">
+                                <ul class="list-unstyled">
+                                <li><%= link_to t('Prices'), page_prices_path %></li>
+                                <li><%= link_to t('Services'), page_services_path %></li>
+                                <li><%= link_to t('Features'), features_path %></li>
+                                <li><%= link_to t('Customers'), customers_path %></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h3 class="shorter">Manyobra.com</h3>
+                            <div class="contact-details">
+                                <ul class="list-unstyled">
+                                <li><%= link_to t('About_me'), prices_path %></li>
+                                <li><%= link_to t('Blog'), blog_path %></li>
+                                <li><%= link_to t('Events'), events_path %></li>
+                                <li><%= link_to t('Customers'), customers_path %></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>Copyright &copy; <%= Time.now.year %>. Всі права захищені.</p>
+                            </div>
+                            <div class="col-md-4">
+                            <%= t'Language' %>:
+                            <%= link_to_unless_current t('English'), locale: "en" %> <span>&middot;</span> <%= link_to_unless_current t('Spanish'), locale: "es" %> <span>&middot;</span> <%= link_to_unless_current t('Ukranian'), locale: "uk" %> <span>&middot;</span> <%= link_to_unless_current t('Russian'), locale: "ru" %>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="social-icons">
+                                    <li><a href="http://www.twitter.com/" target="_blank" rel="tooltip" title="Twitter"><i class="icon icon-twitter"></i></a></li>
+                                    <li><a href="http://www.facebook.com/" target="_blank" rel="tooltip" title="Facebook"><i class="icon icon-facebook"></i></a></li>
+                                    <li><a href="http://www.google.com/" target="_blank" rel="tooltip" title="Google+"><i class="icon icon-google-plus"></i></a></li>
+                                    <li><a href="http://www.linkedin.com/" target="_blank" rel="tooltip" title="Linkedin"><i class="icon icon-linkedin"></i></a></li>
+                                </ul>
+                                <%#= link_to(image_tag("logo-footer.png", role: "banner", alt: "Manyobra logo"), class: "logo push-bottom", title: t('Home')) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Libs -->
+        <%= javascript_include_tag "vendor/jquery" %>
+        <%= javascript_include_tag "plugins" %>
+        <%= javascript_include_tag "vendor/jquery.easing" %>
+        <%= javascript_include_tag "vendor/jquery.appear" %>
+        <%= javascript_include_tag "vendor/jquery.cookie" %>
+        <%= javascript_include_tag "bootstrap" %>
+        <%= javascript_include_tag "vendor/masonry" %>
+        <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+        <%= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+        <%= javascript_include_tag "vendor/owl-carousel/owl.carousel" %>
+        <%= javascript_include_tag "vendor/magnific-popup/magnific-popup" %>
+        <%= javascript_include_tag "vendor/jquery.knob" %>
+        <%= javascript_include_tag "vendor/jquery.stellar" %>
+        <%= javascript_include_tag "vendor/jquery.validate" %>
+        <%= javascript_include_tag "vendor/isotope/jquery.isotope" %>
+        <%= javascript_include_tag "theme" %>
+        <%= yield :js %>
+ 
+        <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+         -->
+    </body>
+</html>

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<!--[if IE 8]>          <html lang="<%= I18n.locale %>" class="ie ie8"> <![endif]-->
+<!--[if IE 9]>          <html lang="<%= I18n.locale %>" class="ie ie9"> <![endif]-->
+<!--[if gt IE 9]><!-->  <html lang="<%= I18n.locale %>"> <!--<![endif]-->
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <title><%= content_for?(:title) ? yield(:title) : "Manyobra" %> - Manyobra</title>
+    <meta name="keywords" content="<%= content_for?(:keywords) ? yield(:keywords) : "" %>" />
+    <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "" %>" />
+    <meta name="author" content="Manyobra" />
+    <meta name="language" content="<%= I18n.t(I18n.locale, :scope => 'languages.names') %>">
+    <meta name="robots" content="index, follow">
+    <meta name="twitter:card" content="<%= content_for?(:twitter_card) ? yield(:twitter_card) : "summary" %>">
+    <meta name="twitter:site" content="Manyobra">
+    <meta name="twitter:creator" content="">
+    <meta name="twitter:domain" content="Manyobra.com">
+    <meta name="twitter:title" content="<%= content_for?(:title) ? yield(:title) : "" %>">
+    <meta name="twitter:image" content="<%= content_for?(:social_image) ? yield(:social_image) : "http://www.Manyobra.com/assets/slides/Manyobra-site.png" %>">
+    <meta name="twitter:description" content="<%= content_for?(:description) ? yield(:description) : "" %>">
+    <%= content_for?(:product_meta_twitter) ? yield(:product_meta_twitter) : "" %>
+
+    <meta name="og:site_name" content="Manyobra"/> 
+    <meta name="og:title" content="<%= content_for?(:title) ? yield(:title) : "" %>" />
+    <meta name="og:description" content="<%= content_for?(:description) ? yield(:description) : "" %>">
+    <meta name="og:locale" content="<%= I18n.locale %>" />
+    <meta name="og:url" content="<%= request.original_url %>" />
+    <meta name="article:author" content="https://www.facebook.com/manyobrasl" />
+    <meta name="og:image" content="<%= content_for?(:social_image) ? yield(:social_image) : "http://www.manyobra.com/assets/slides/Manyobra-site.png" %>" />
+
+    <!-- Geo Metas -->
+    <meta name="geo.region" content="ES-VC" />
+    <meta name="geo.placename" content="Ll&iacute;ria" />
+    <meta name="geo.position" content="39.622999;-0.590022" />
+    <meta name="ICBM" content="39.622999, -0.590022" />
+    <!-- Geo Metas End -->
+
+    <!-- Canonical Link -->
+    <link rel="canonical" href="<%= url_for(:only_path => false, locale: :es) %>"/>
+    <link rel="alternate" hreflang="en" href="<%= url_for(:only_path => false, locale: :en) %>"/>
+    <link rel="alternate" hreflang="ru" href="<%= url_for(:only_path => false, locale: :ru) %>"/>
+    <!-- Canonical Link End -->
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Web Fonts  -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700&subset=cyrillic-ext,latin' rel='stylesheet' type='text/css'>
+    <!-- <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,cyrillic|Alegreya|Alegreya+SC|Oswald:400,300" rel="stylesheet" type="text/css" />-->
+    <!-- Libs CSS -->
+   
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+    <%#= stylesheet_link_tag "bootstrap.min" %>
+    <%#= stylesheet_link_tag "skin" %>
+    <%= stylesheet_link_tag "font-awesome" %>
+    <%#= stylesheet_link_tag "vendor/owl-carousel/owl.carousel" %>
+    <%#= stylesheet_link_tag "vendor/owl-carousel/owl.theme" %>
+    <%#= stylesheet_link_tag "vendor/rs-plugin/css/settings" %>
+    <%#= stylesheet_link_tag "vendor/isotope/jquery.isotope" %>
+    <%#= stylesheet_link_tag "vendor/magnific-popup/magnific-popup" %>
+    <%= stylesheet_link_tag "theme" %>
+    <%= stylesheet_link_tag "theme-elements" %>
+    <%= stylesheet_link_tag "theme-animate" %>
+    <%= stylesheet_link_tag "skin" %>
+    <%= stylesheet_link_tag "theme-responsive" %>
+    <%= yield :css %>
+    <!-- Head Libs -->
+    <%= javascript_include_tag "vendor/modernizr", :async => true %>
+     
+    <!--[if IE]>
+        <%= stylesheet_link_tag "ie" %>
+    <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <%= yield :head %>
+    <meta name="google-site-verification" content="" />
+    <meta name="msvalidate.01" content="72208BB547EEE59347683A9CD01F7CD5" />
+</head>
+    <body class="header-top">
+        <div class="body">
+            <header>
+                <div class="header-top hidden-xs hidden-sm">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p>
+                                    <i class="fa fa-phone"></i>  (+34) 686-705-360 | (+34) 679-044-118
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <p>
+                                    <%= render "layouts/language_switch_links" %>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="social-icons">
+                                    <li><a href="" target="_blank" data-rel="tooltip" data-placement="bottom" title="Twitter" rel="nofollow"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/manyobrasl" target="_blank" data-rel="tooltip" data-placement="bottom" title="Facebook" rel="nofollow"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://plus.google.com/114327867221110014158" rel="publisher" target="_blank" data-rel="tooltip" data-placement="bottom" title="Google+" rel="nofollow"><i class="fa fa-google-plus"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div itemscope="" itemtype="http://schema.org/Organization">
+                        <div class="logo">
+                            <%= link_to(image_tag("logo.png", itemprop: "logo", role: "banner", alt: "Manyobra logo"), page_home_path, itemprop: "url", title: t('Home')) %>
+                        </div>
+                    </div>
+                    
+                    <div class="navbar-collapse nav-main-collapse collapse">
+                        <nav class="nav-main mega-menu" role="navigation">
+                            <ul class="nav nav-pills nav-main" id="mainMenu">
+                                <%= render "layouts/navigation_links" %>
+                                <% if current_user.nil? %>
+                                <li class="hidden-md"><%= link_to t('Authorization'), login_path, :rel => "nofollow" %></li>
+                                <li class="hidden-xs hidden-sm hidden-lg"><%= link_to content_tag(:i, nil, class: "fa fa-lock"), login_path %></li>
+                                <% else %>
+                                <li><%= link_to current_user.first_name, profile_path %></li>
+                                <li><%= link_to t('Logout'), logout_path %></li>
+                                <% end %>
+                            </ul>
+                        </nav>
+                    </div>
+                    <button class="btn btn-responsive-nav btn-inverse" data-toggle="collapse" data-target=".nav-main-collapse">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </header>
+            <div role="main" class="main">
+                <%= yield :heading %>
+                <% flash.each do |name, msg| %>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <%= content_tag(:div, raw(msg), class: "alert alert-#{name}", id: "#{name}") %>
+                            </div>
+                        </div>
+                    </div>
+                <% end %>
+                <%= raw yield.html_safe %>
+                <%= yield :footer %>
+            </div>
+            <footer id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <p class="white"><%= [t('pages.home.section.slider.random_text.one'), t('pages.home.section.slider.random_text.two'), t('pages.home.section.slider.random_text.three'), t('pages.home.section.slider.random_text.four'), t('pages.home.section.slider.random_text.five')].sample %> <br><a href="<%= page_contact_path %>" class="btn-flat"><%= raw t 'pages.contact.section.contact_us.title'%> <i class="fa fa-arrow-right"></i></a></p>
+                            <div class="navigation">
+                                <ul class="contact">
+                                    <li><i class="fa fa-mobile"></i> (+34) 686 705 360</li>
+                                    <li><i class="fa fa-mobile"></i> (+34) 679 044 118</li>
+                                    <li><i class="fa fa-phone"></i> (+34) 962 790 585</li>
+                                    <li><i class="fa fa-envelope"></i> <a href="mailto:info@manyobra.com" class="btn-flat">info@manyobra.com</a></li>
+                                    <li><i class="fa fa-skype"></i> <span data-rel="tooltip" title="Skype">manyobrasl</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4><%= t'Services' %></h4>
+                            <div class="navigation">
+                                <ul class="list-unstyled">
+                                <li><%= link_to t('Prices'), page_prices_path, title: t('.links_title.prices') %></li>
+                                <li><%= link_to t('Services'), page_services_path, title: t('.links_title.services') %></li>
+                                <li><%= link_to t('Offers'), page_offers_path, title: t('.links_title.offers') %></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <h4>Manyobra.com</h4>
+                            <div class="navigation">
+                                <ul class="list-unstyled">
+                                    <li><%= link_to t('About_us'), page_about_us_path, title: t('.links_title.about_us') %></li>
+                                    <li><%= link_to t('Blog'), blog_path, title: t('.links_title.blog')   %></li>
+                                    <li><%= link_to t('Contact'), page_contact_path, title: t('.links_title.contact'), :rel => "contact" %></li>
+                                    <li><%= link_to t('Sitemap'), page_sitemap_path, title: t('.links_title.sitemap')   %></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <h4><%= t('.section.posts.title').html_safe %></h4>
+                            <ul class="list-unstyled">
+                                <% Blog::Post.last(4).each do |blog_post| %>
+                                <li><%= link_to blog_post.title, blog_post_path(blog_post), title: blog_post.title %></li>
+                                <% end %>
+                            </ul>
+                            <%= link_to blog_path, class: 'btn-flat pull-right btn-xs' do %>
+                                <%= t('.section.posts.link') %>
+                                <%= content_tag(:i, nil, class: "fa fa-arrow-right") %>
+                            <% end %>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <p>&copy; <%= Time.now.year %>. <%= t('.section.сopyright') %>. <%= t'.section.made.title' %> - <a href="http://www.zettheme.com" target="_blank" data-rel="tooltip" title="<%= t'.section.made.creators'%>">Zettheme</a> <i class="fa fa-smile-o fa-lg"></i></p>
+                            </div>
+                            <div class="col-md-3">
+                                <p>
+                                    <%= render partial: "layouts/language_switch_links", :params => {:rel => 'dofollow', :tooltip_placement => 'bottom'} %>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="social-icons">
+                                    <li><a href="" target="_blank" data-rel="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://www.facebook.com/manyobrasl" target="_blank" data-rel="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="https://plus.google.com/114327867221110014158" target="_blank" data-rel="tooltip" title="Google+"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a data-rel="tooltip" title="Skype name: manyobrasl"><i class="fa fa-skype"></i></a></li>
+                                </ul>
+                                <%#= link_to(image_tag("logo-footer.png", role: "banner", alt: "Manyobra logo"), class: "logo push-bottom", title: t('Home')) %>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- Libs -->
+        <%= javascript_include_tag "vendor/jquery.min" %>
+        <%= javascript_include_tag "plugins" %>
+        <%= javascript_include_tag "vendor/jquery.easing" %>
+        <%= javascript_include_tag "vendor/jquery.appear" %>
+        <%#= javascript_include_tag "vendor/jquery.cookie" %>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+        <%#= javascript_include_tag "bootstrap" %>
+        <%#= javascript_include_tag "vendor/masonry" %>
+        <%#= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.plugins.min" %>
+        <%#= javascript_include_tag "vendor/rs-plugin/js/jquery.themepunch.revolution.min" %>
+        <%#= javascript_include_tag "vendor/owl-carousel/owl.carousel" %>
+        <%#= javascript_include_tag "vendor/magnific-popup/magnific-popup" %>
+        <%#= javascript_include_tag "vendor/jquery.knob" %>
+        <%#= javascript_include_tag "vendor/jquery.stellar" %>
+        <%= javascript_include_tag "vendor/jquery.validate" %>
+        <%#= javascript_include_tag "vendor/isotope/jquery.isotope" %>
+        <%= yield :js %>
+        <%= javascript_include_tag "theme" %>
+        <%= javascript_include_tag "theme.init" %>
+         
+ 
+        <!-- Google Analytics -->
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-35580323-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

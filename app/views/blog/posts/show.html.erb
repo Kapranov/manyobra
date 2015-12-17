@@ -1,0 +1,127 @@
+<% content_for :title do @blog_post.title end %>
+<% content_for :description do strip_tags(sanitize(@blog_post.content.truncate(250))) end %>
+<% content_for :image_link do @blog_post.image.url(:mini) end %>
+<% content_for :css do %>
+<!-- Current Page Styles -->
+<%= stylesheet_link_tag "theme-blog" %>
+<% end %>
+<section class="page-top-blog">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-9">
+                <article class="post post-large blog-single-post">
+                    <div class="post-content">
+                        <% if current_user#.try(admin?) %>
+                            <h2><%= @blog_post.title %> <%= link_to t('Edit'), edit_blog_post_path(@blog_post), class: 'btn btn-primary btn-sm' %></h2>
+                        <% else %>
+                            <h2><%= @blog_post.title %></h2>
+                        <% end %>
+                        <div class="post-meta">
+                            <span><i class="fa fa-calendar"></i> <%= l( @blog_post.created_at, format: :short ) %></span>
+                            <span></i> <% @blog_post.tags.each do |tag| %><%= link_to tag.name, blog_tag_path(tag) %><% end %></span>
+                            <span><i class="fa fa-comments"></i> <%= link_to t('.comments', :count => @blog_post.comments.count), { anchor: 'comments' }, data: { rel: 'tooltip' } , title: t('.comments.tooltip') %></span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+            <div class="col-md-3">
+                <div class="post-share">
+                    <h5><%= t'.share' %> <i class="fa fa-share"></i></h5>
+                    <ul class="post-share-icons">
+                        <li><a href="http://www.facebook.com/sharer/sharer.php?u=<%= request.original_url %>"><i class="fa fa-facebook"></i> <span>(<%= facebook_likes_count(request.original_url) %>)</span></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> <span>(0)</span></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i> <span>(0)</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="container page">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="blog-posts single-post">
+                <article class="post post-large blog-single-post"> 
+                    <div class="owl-carousel" data-plugin-options='{"items": 1, "transitionStyle": "fade", "autoHeight": true}'>
+                        <div>
+                            <div class="post-image single">
+                                <%= image_tag @blog_post.image.url(:large), class: 'img-thumbnail' %>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <%= (@blog_post.content).html_safe %>
+<%
+=begin
+ %>
+                        <div id="comments" class="post-block post-comments clearfix">
+                            <% if @blog_post.comments.count > 0 %>
+                            <h3>Comments (<span><%= @blog_post.comments.count %></span>)</h3>
+                            <% else %>    
+                            <h3>Comments (<span data-appear-animation="bounceIn" data-appear-animation-delay="200"><%= @blog_post.comments.count %></span>)</h3>
+                            <% end %>
+                            <ul class="comments">
+                                <%= render partial: 'blog/comments/comment', collection: @blog_post.comments %>
+                            </ul>
+                        </div>
+                        <div class="post-block post-leave-comment">
+                            <h3><%= t'.Leave_a_comment' %></h3>
+                            <%= render partial: 'blog/comments/form' %>
+                        </div>
+ <%
+=end
+ %>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <aside class="sidebar">
+                <%= form_tag blog_posts_path, :method => :get do %>
+                    <div class="input-group">
+                        <%= text_field_tag :search, params[:search], placeholder: t('.search'), class: 'form-control' %>
+                        <span class="input-group-btn">
+                            <%= button_tag content_tag(:i, nil, class: "fa fa-search"), :name => nil, class: 'btn btn-primary', type: 'submit' %>
+                        </span>
+                    </div>
+                <% end %>
+
+            <hr />
+
+                <h5><%= t'.categories.title' %></h5>
+                <ul class="nav nav-list primary push-bottom">
+                <% Blog::Category.all.each do |blog_category| %>
+                    <%= link_to content_tag(:span, blog_category.name, class: 'label label-dark'), blog_category_path(blog_category) %>
+                <% end %>
+                </ul>
+                <hr />
+
+                <h5><%= t'.tags' %></h5>
+                <% Blog::Tag.all.each do |tag| %>
+                    <%= link_to content_tag(:span, tag.name, class: 'label label-dark'), blog_tag_path(tag) %>
+                <% end %>
+                                
+                <hr />
+                                
+                <h5><%= t'.recents' %></h5>
+                <ul class="simple-post-list">
+                <% Blog::Post.last(5).each do |blog_post| %>  
+                    <li>
+                        <div class="post-image">
+                            <div class="img-thumbnail">
+                                <%= link_to(image_tag(blog_post.image.url(:mini), class: "img-responsive img-rounded"), blog_post_path(blog_post)) %>
+                            </div>
+                        </div>
+                        <div class="post-info">
+                            <%= link_to sanitize(blog_post.title.truncate(30)), blog_post_path(blog_post) %>
+                            <div class="post-meta">
+                                <span><i class="fa fa-calendar"></i> <%= l( blog_post.created_at, format: :short ) %></span>
+                            </div>
+                        </div>
+                    </li>
+                <% end %>
+                </ul>
+            </aside>
+        </div>
+    </div>
+</div>

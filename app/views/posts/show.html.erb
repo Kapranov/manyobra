@@ -1,0 +1,274 @@
+                <section class="page-top-blog">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-9">
+
+                                <article class="post post-large blog-single-post">
+
+                                    <div class="post-content">
+                                        <% if current_user#.admin? %>
+                                        <h2><%= @post.title %> <%= link_to t('Edit'), edit_post_path(@post), class: 'btn btn-primary btn-sm' %></h2>
+                                        <% else %>
+                                        <h2><%= @post.title %></h2>
+                                        <% end %>
+                                        <p>
+                                          Tags:
+                                          <% @post.tags.each do |tag| %>
+                                            <%= link_to tag.name, tag_path(tag) %>
+                                          <% end %>
+                                        </p>
+                                        <div class="post-meta">
+                                            <% date_created_post = @post.created_at %>
+                                            <span><i class="icon icon-calendar"></i><%= localize @post.created_at %></span>
+                                            <span><i class="icon icon-tag"></i> <% @post.tags.each do |tag| %><%= link_to tag.name, tag_path(tag) %><% end %></span>
+                                            <span><i class="icon icon-comments"></i> <a href="#"><%= @post.comments.count %> Comments</a></span>
+                                            <% if current_user %>
+                                            <%= link_to 'Edit', edit_post_path(@post) %>
+                                            <% end %>
+                                        </div>
+                                    </div>
+                                </article>
+
+                            </div>
+                            <div class="col-md-3">
+
+                                <div class="post-share">
+                                    <h5>Share this post <i class="icon icon-share"></i></h5>
+
+                                    <ul class="post-share-icons">
+                                        <li><a href="#"><i class="icon icon-facebook"></i> <span>(3)</span></a></li>
+                                        <li><a href="#"><i class="icon icon-twitter"></i> <span>(5)</span></a></li>
+                                        <li><a href="#"><i class="icon icon-google-plus"></i> <span>(1)</span></a></li>
+                                    </ul>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <div class="blog-posts single-post">
+
+                                <article class="post post-large blog-single-post"> 
+                                    <div class="owl-carousel" data-plugin-options='{"items": 1, "transitionStyle": "fade", "autoHeight": true}'>
+                                        <div>
+                                            <div class="post-image">
+                                                <%= image_tag @post.image.url %>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="post-content">
+
+                                        <%= simple_format @post.body %>
+
+                                        <div class="post-block post-comments clearfix">
+                                            <h3>Comments (<%= @post.comments.count %>)</h3>
+
+                                            <ul class="comments">
+                                                <%= render :partial => @post %>
+                                            </ul>
+ 
+                                        </div>
+
+                                        <div class="post-block post-leave-comment">
+                                            <h3>Leave a comment</h3>
+                                            <%= form_for [@post, Comment.new] do |f| %>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-md-6">
+                                                            <label>Your name *</label>
+                                                            <input type="text" value="" maxlength="100" class="form-control" name="name" id="name" />
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <label>Your email address *</label>
+                                                            <input type="email" value="" maxlength="100" class="form-control" name="email" id="email" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="form-group">
+                                                        <div class="col-md-12">
+                                                            <%= f.label :body, "New comment" %>
+                                                            <%= f.text_area :body, maxlength: "5000", rows: "10", class: "form-control" %>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <%= f.submit "Add comment", class: "btn btn-primary btn-lg" %>
+                                                    </div>
+                                                </div>
+                                            <% end %>
+                                        </div>
+
+                                    </div>
+                                </article>
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <aside class="sidebar">
+
+                                <form />
+                                    <div class="input-group">
+                                        <input class="form-control" placeholder="Search..." name="s" id="s" type="text" />
+                                        <span class="input-group-btn">
+                                            <button type="submit" class="btn btn-primary"><i class="icon icon-search"></i></button>
+                                        </span>
+                                    </div>
+                                </form>
+
+                                <hr />
+
+                                <h5>About Us</h5>
+                                <p>Nulla nunc dui, tristique in semper vel, congue sed ligula. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. Nulla nunc dui, tristique in semper vel. Nam dolor ligula, faucibus id sodales in, auctor fringilla libero. </p>
+
+                                <hr />
+
+                                <h5>Categories</h5>
+                                <ul class="nav nav-list primary push-bottom">
+                                    <li><a href="#">Design</a></li>
+                                    <li><a href="#">Photos</a></li>
+                                    <li><a href="#">Videos</a></li>
+                                    <li><a href="#">Lifestyle</a></li>
+                                    <li><a href="#">Technology</a></li>
+                                </ul>
+
+                                <hr />
+
+                                <h5>Tags</h5>
+
+                                <a href="#"><span class="label label-dark">Design</span></a>
+                                <a href="#"><span class="label label-dark">Photos</span></a>
+                                <a href="#"><span class="label label-dark">Videos</span></a>
+                                <a href="#"><span class="label label-dark">Lifestyle</span></a>
+                                <a href="#"><span class="label label-dark">Technology</span></a>
+                                <a href="#"><span class="label label-dark">Design</span></a>
+                                <a href="#"><span class="label label-dark">Photos</span></a>
+                                <a href="#"><span class="label label-dark">Videos</span></a>
+                                <a href="#"><span class="label label-dark">Lifestyle</span></a>
+                                <a href="#"><span class="label label-dark">Photos</span></a>
+                                <a href="#"><span class="label label-dark">Videos</span></a>
+
+                                <hr />
+
+                                <div class="tabs">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active"><a href="#popularPosts" data-toggle="tab"><i class="icon icon-star"></i> Popular</a></li>
+                                        <li><a href="#recentPosts" data-toggle="tab">Recent</a></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="popularPosts">
+                                            <ul class="simple-post-list">
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-1.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-2.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Vitae Nibh Un Odiosters</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-3.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Odiosters Nullam Vitae</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="tab-pane" id="recentPosts">
+                                            <ul class="simple-post-list">
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-2.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Vitae Nibh Un Odiosters</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-3.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Odiosters Nullam Vitae</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="post-image">
+                                                        <div class="img-thumbnail">
+                                                            <a href="blog-post.html">
+                                                                <img src="img/blog/blog-thumb-1.jpg" alt="" />
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="post-info">
+                                                        <a href="blog-post.html">Nullam Vitae Nibh Un Odiosters</a>
+                                                        <div class="post-meta">
+                                                             Jan 10, 2013
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </aside>
+                        </div>
+                    </div>
+
+                </div>

@@ -1,0 +1,30 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% content_for :keywords do t'.page.keywords' end %>
+<% content_for :twitter_card do 'product' end %>
+<% content_for :social_image do image_url "services/personal_lawyer.jpg" end %>
+<% content_for :product_meta_twitter do %>
+<meta name="twitter:label1" content="">
+<meta name="twitter:data1" content="">
+<meta name="twitter:label2" content="">
+<meta name="twitter:data2" content="">
+<% end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="breadcrumb">
+                <li><%= link_to t('Home'), page_home_path %></li>
+                <li><%= link_to t('Services'), page_services_path, :rel => "up" %></li>
+                <li class="active"><%= t'.title' %></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container page">
+    <div class="row">
+        <div class="col-md-12">
+            <h1><%= raw t '.title' %></h1>
+            <%= raw t '.content' %>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row featured-boxes">
+                <div class="col-md-6">
+                    <div class="featured-box default">
+                        <div class="box-content">
+                        <h4><%= t'.title' %></h4>
+                        <%= form_tag password_resets_path, :method => :post do %>
+                        <div class="row">
+                            <div class="form-group">
+                                <div class="col-md-12">
+                                    <%= label_tag :email, t('.form.email') %>
+                                    <%= text_field_tag :email, params[:email], class: "form-control" %>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <%= submit_tag t('.form.submit'), class: 'btn btn-primary btn-lg pull-right' %>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

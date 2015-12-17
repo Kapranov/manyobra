@@ -1,0 +1,141 @@
+<% content_for :title do t'.title' end %>
+<% content_for :description do t'.description' end %>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row featured-boxes">
+                <div class="col-md-6">
+                    <div class="featured-box default">
+                        <div class="box-content">
+                        <h4><%= t('.title', default: 'Register_An_Account') %></h4>
+                        <%= form_for @user do |f| %>
+                            <% if @user.errors.any? %>
+                                <div class="error_messages">
+                                    <h2>Form is invalid</h2>
+                                    <ul>
+                                    <% @user.errors.full_messages.each do |message| %>
+                                        <li><%= message %></li>
+                                    <% end %>
+                                   </ul>
+                                </div>
+                            <% end %>
+
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-6">
+                                        <%= f.label :first_name, t('.form.first_name')%>
+                                        <%= f.text_field :first_name, class: "form-control" %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= f.label :last_name, t('.form.last_name')%>
+                                        <%= f.text_field :last_name, class: "form-control" %>
+                                    </div> 
+                                </div>  
+                            </div>
+
+                            <div class="row">
+                                <div class="form-group"> 
+                                    <div class="col-md-12">
+                                        <%= f.label :email, t('.form.email') %>
+                                        <%= f.text_field :email, class: "form-control" %>
+                                        <p class="help-block"><%= t'form.username' %></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-6">
+                                        <%= f.label :password, t('.form.password') %>
+                                        <%= f.password_field :password, class: "form-control" %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= f.label :password_confirmation, t('.form.password_confirmation') %>
+                                        <%= f.password_field :password_confirmation, class: "form-control" %>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <p class="help-block"><%= t'.form.password.help-block' %></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= f.label :birthday, t('.form.birthday') %> 
+                                        <%= f.date_select :birthday, { :start_year => Time.now.year - 10, :end_year => Time.now.year - 120, :prompt => true } %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">            
+                                    <div class="col-md-12">
+                                        <%= f.label :gender, t('.form.gender') %>
+                                        <%= f.select :gender, options_for_select(t("options_for_select_gender").invert), { :prompt => true }, class: "form-control" %>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= f.label :country, t('.form.country') %>
+                                        <%= f.country_select :country, { priority: %w(UA RU),  :prompt => true }, class: "form-control" %>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= f.label :language, t('.form.language') %>
+                                        <%= f.select :language, options_for_select(t("options_for_select_language").invert), { :prompt => true }, class: "form-control" %>
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+
+                            <%= f.fields_for :profile do |p| %>
+                            <h3>Profile Details</h3>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= p.label :twitter_name %>
+                                        <%= p.text_field :twitter_name %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= p.label :github_name %>
+                                        <%= p.text_field :github_name %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-12">
+                                        <%= p.label :bio %>
+                                        <%= p.text_area :bio, rows: 5, cols: 40 %>
+                                    </div>
+                                </div>
+                            </div>
+                            <% end %>
+                            <div class="row">
+                                <div class="form-group">  
+                                    <div class="col-md-6">
+                                        <%= f.check_box :subscribed, class: "pull-buttom" %>
+                                        <%= f.label :subscribed, "Subscribe to our mailing list." %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= f.submit t('.form.submit'), class: 'btn btn-primary btn-lg pull-right' %>
+                                    </div>
+                                </div>
+                            </div>
+                            <% end %>
+                            <p><%= t'.form.already_have_an_account' %> - <%= link_to t('.form.signin'), login_path %></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

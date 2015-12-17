@@ -1,0 +1,222 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<% 
+    case @full_name.length
+    when 0..20
+      fontSizeFullName = 24
+    when 20..25
+      fontSizeFullName = 20
+    when 25..30
+      font_sizefull_name = 16
+    when 30..35
+      fontSizeFullName = 13
+    else
+      fontSizeFullName = 11
+    end
+
+    retrans = t'Change_profile_picture'
+
+    case retrans.length
+    when 0..20
+      fontSizeRetrans = 24
+    when 20..25
+      fontSizeRetrans = 20
+    when 25..30
+      fontSizeRetrans = 16
+    when 30..35
+      fontSizeRetrans = 13
+    else
+      fontSizeRetrans = 11
+    end
+ 
+#    qntydids = @user.dids.count 
+ %>
+
+ <div class="container">
+    <div class="row">
+    <script>
+        $(document).ready(function () {
+            $("#overviewAvatarContainer").hover(function () {
+                $("#overviewProfileCompleteness.userName").slideToggle(200, function () {
+                    $("#overviewProfileCompleteness.goToProfile").slideToggle(200);
+                });
+            }, function () {
+                $("#overviewProfileCompleteness.goToProfile").slideToggle(200, function () {
+                    $("#overviewProfileCompleteness.userName").slideToggle(200);
+                });
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#creditDetails").hover(function () {
+                $(".credit").animate({"left": "-=50px"}, "slow", function () {
+                    $(".lastBuyCredit").fadeIn(300);
+                });
+            }, function () {
+                $(".lastBuyCredit").fadeOut(300, function () {
+                    $("#credit").fadeIn(300);
+                });
+            });
+        });
+    </script>
+
+    <aside class="col-md-3" role="complementary">
+        <div class="animated fadeIn" id="overviewAvatarContainer">
+            <%= image_tag @user.avatar.url(:original) %>
+            <div id="overviewProfileCompleteness" class="userName">
+               <div  style="font-size:<%= fontSizeFullName %>px;" class="overviewZetfonName"><%= truncate(@full_name, length: 17) %></div>
+            </div>
+            <div id="overviewProfileCompleteness" class="goToProfile">
+                <div style="font-size:<%= fontSizeRetrans %>px;" class="overviewZetfonName"><%= link_to truncate(retrans), avatar_path, :title => t('Change_profile_picture') %></div>
+            </div>
+        </div> 
+        <ul class="subscriptions">
+            <li><%#= link_to I18n.t('Redeem_a_voucher'), {:controller => :vouchers, :action => :redeem_voucher}, :title => t('Redeem_your_voucher_or_gift_card') %></li>
+            <li><%#= link_to I18n.t('Send_SMS'), {:controller => :sms, :action => :sms}, :title => t('Send_SMS') %></li>
+            <li><%= link_to I18n.t('Change_password'), {:controller => :passwords, :action => :new}, :title => t('Change_password_of_your_account') %></li>
+            <li><div class="spacer"></div></li>
+            <%# if qntydids > 0 %>
+                <%# if qntydids > 1 %>
+                <li><%= t'Your_virtual_numbers' %>:</li>
+                <%# else %>
+                <li><%= t'Your_virtual_number' %>:</li>
+                <%# end %>
+            <%# else %>
+            <li><%#= link_to I18n.t('Subscribe_to_a_virtual_number'), {:controller => :vouchers, :action => :redeem_voucher}, :title => I18n.t('Subscribe_to_a_virtual_number') %></li>
+            <%# end %>
+             <%# current_user.dids.first(3).each{ |did, i| %>
+            <li><%#= did.did %></li>
+            <%# } %>
+            <%# if qntydids > 3 %>
+            <li><%#= link_to I18n.t('See_all'), :controller => :dids, :action => :personal_dids %></li>
+             <li><a href="<%# Web_Dir %>/dids/personal_dids"  title="<%# t'See all your virtual numbers' %>, <%# t 'in total you have' %> <%#= @user.dids.count %>"><%# t 'See all' %></a></li>    
+            <%# end %>
+        </ul>
+    </aside>
+    <div class="col-md-6">
+    <section id="creditDetails" class='creditDetails'>
+        <% 
+        case @user.balance
+        when 0..2
+          color = 'red'
+        when 2..4
+          color = 'yellow'
+        else
+          color = 'normal'
+        end
+        %>
+        <% if not current_user.balance <4 %>
+        <span id="credit" class="credit" title=""><%= number_to_currency(@user.balance.to_f) %><%#= I18n.t(current_user.currency.name, :scope => 'currencies.symbol') %></span>
+        <a class="button blue" href="#" title="<%= t'Buy_Credit' %>"><%= t'Buy_Credit' %></a>
+        <% else %>
+        <span id="credit" class="animatedCredit pulse credit low" title=""><%= number_to_currency(@user.balance.to_f) %><%#= I18n.t(current_user.currency.name, :scope => 'currencies.symbol') %></span>
+        <a class="animatedBuyCredit pulse button blue" href="#" title="<%= t'Buy_Credit' %>"><%= t'Buy_Credit' %></a>
+        <% end %>
+
+    </section>
+ 
+    <%# end %>
+    <%# if current_user.payments.last.nil? %>
+    <%# else %>
+    <%# end %>
+    <section id="accountDetails">
+        <h2><%= t'Account_details' %></h2>
+        <ul>
+            <li><%= link_to I18n.t('Profile'), profile_path %></li>
+            <li><%#= link_to I18n.t('Payments'), :controller => :payments, :action => :history %></li>
+            <li><%#= link_to I18n.t('Call_history'), :controller => :stats, :action => :call_list %></li>
+            <li><%#= link_to I18n.t('Subscriptions'), :controller => :services, :action => :list %></li>
+        </ul>
+    </section>
+    <section id="features">
+        <h2><%= t'Features' %></h2>
+        <ul>
+            <li><%#= link_to I18n.t('Caller_identification'), :controller => :devices, :action => :user_device_clis %></li>
+            <li><%#= link_to I18n.t('Virtual_number'), :controller => :dids, :action => :personal_dids %></li>
+            <li><%#= link_to I18n.t('Call_forwarding'), :controller => :stats, :action => :call_list %></li>
+        </ul>
+    </section>
+    <div class="spacer"></div>
+    <%# sms_var = SmsMessage.find(:all, :conditions => ['user_id = ?', session[:user_id]]) %>
+    <%
+    #t_sms = 0
+    #t_sms_price = 0
+    #sms_var.each { |sms|
+    #  if [0, 4].include?(sms.status_code.to_i) and sms.user_rate.to_d != 0.0
+    #    t_sms += sms.user_price / sms.user_rate
+    #    t_sms_price += sms.user_price
+    #  else
+    #    t_sms += 0
+    #    t_sms_price += 0
+    #  end
+    #}
+     %>
+    </div>
+    <div class="row">
+    <section id="usage" class="col-md-6">
+        <h2>
+            <%#= link_to ({:controller => :stats, :action => :call_list}) do %>
+               <%= I18n.t('Statistics') %>
+               <span>(<%= localize Time.zone.now, :format => '%B' %>)</span>
+            <%# end %>
+        </h2>
+        <ul>
+            <li class="landline">
+                <div class="icon icon-call"></div>
+                <% stats0 = 100 %>
+                <% if stats0 == 0 %>
+                <span title="<%= t'You_didnt_make_any_call' %>" class="usage">0</span>
+                <% else %>
+                <span class="usage"><%= stats0 %></span>
+                <% end -%>
+                <span class="label"><%= t'Calls' %></span>
+                <% month_billsec = 500 %>
+                <% if month_billsec == 0 or nil %>
+                <span title="<%= t'You_didnt_make_any_call' %>" class="usage">0</span>
+                <% else %>
+                <span class="usage"><%= month_billsec / 60 %></span>
+                <% end -%>
+                <span class="label"><%= t'min' %></span>
+            </li>
+            <li class="sms">
+                <div class="icon icon-sms"></div>
+                <span class="usage">0</span>
+                <span class="label"><%= t'SMS' %></span>
+            </li>
+        </ul>
+    </section>
+
+    <section id="usage" class="col-md-6">
+        <h2>
+            <%#= link_to ({:controller => :stats, :action => :last_calls_stats}) do %>
+                <%= I18n.t('Statistics') %>
+                <span>(<%= t'Today' %>, <%= localize Time.zone.now, :format => '%A' %>)</span>
+            <%# end %>
+        </h2>
+        <ul>
+            <li class="landline">
+                <div class="icon icon-call"></div>
+                <% day_calls = 10 %>
+                <% if day_calls == 0 %>
+                <span title="<%= t'You_didnt_make_any_call' %>" class="usage">0</span>
+                <% else %>
+                <span class="usage"><%= day_calls %></span>
+                <% end -%>
+                <span class="label"><%= t'Calls' %></span>
+                <% day_billsec = 120 %>
+                <% if day_billsec == 0 or nil %>
+                <span title="<%= t'You_didnt_make_any_call' %>" class="usage">0</span>
+                <% else %>
+                <span class="usage"><%= day_billsec / 60 %></span>
+                <% end -%>
+                <span class="label"><%= t'min' %></span>
+            </li>
+            <li class="sms">
+                <div class="icon icon-sms"></div>
+                <span class="usage">0</span>
+                <span class="label"><%= t'SMS' %></span>
+            </li> 
+        </ul>
+    </section>
+    </div>

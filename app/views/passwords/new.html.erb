@@ -1,0 +1,73 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<div class="container">
+    <div class="row">
+        <%= form_for @user, url: passwords_path, :id => "passwordForm", method: :post do |f| %>
+            <% if @user.errors.any? %>
+                <div class="error_messages">
+                  <h2>Form is invalid</h2>
+                    <ul>
+                    <% @user.errors.full_messages.each do |message| %>
+                        <li><%= message %></li>
+                    <% end %>
+                    </ul>
+                </div>
+            <% end %>
+            <div class="col-md-6">
+                <p><%= I18n.t'To_change_your_password_please_type_your_old_password_first_Then_enter_a_new_password_twice' %></p>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <%= f.label :original_password %>
+                                            <%= f.password_field :original_password, class: "form-control" %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <%= f.label :new_password %>
+                                            <%= f.password_field :new_password, class: "form-control"  %>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="form-group">
+                                        <div class="col-md-12">
+                                            <%= f.label :new_password_confirmation %>
+                                            <%= f.password_field :new_password_confirmation, class: "form-control" %>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-12 text-right">
+                                        <%= f.submit :class => 'btn btn-primary btn-lg' %>
+                                    </div>
+                                </div>
+                            <% end %>
+            </div>
+
+        <div class="col-md-6">
+            <h4 class="push-top">Зв'яжіться зі <strong>мною</strong></h4>
+
+            <hr />
+
+            <h4>Мій <strong>Офіс</strong></h4>
+            <ul class="list-unstyled">
+                <li><i class="icon icon-map-marker"></i> <strong>Адреса:</strong> 1234 вул, Київ, Україна</li>
+                                <li><i class="icon icon-phone"></i> <strong>Телефон:</strong> (380) 96 ХХХ-ХХХ-хх</li>
+                                <li><i class="icon icon-envelope"></i> <strong>Email:</strong> <a href="mailto:a.fedosin@gmail.com">a.fedosin@gmail.com</a></li>
+                            </ul>
+
+                            <hr />
+
+                            <h4>Години <strong>Роботи</strong></h4>
+                            <ul class="list-unstyled">
+                                <li><i class="icon icon-time"></i>Понеділок - П'ятниця 9:00 до 18:00</li>
+                                <li><i class="icon icon-time"></i>Субота - 9:00 до 14:00</li>
+                                <li><i class="icon icon-time"></i>Неділя - не працюю</li>
+                            </ul>
+                        </div>
+    </div>
+</div>

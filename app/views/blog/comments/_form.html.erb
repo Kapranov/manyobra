@@ -1,0 +1,72 @@
+
+<%#= form_for([@blog_post, @blog_comment], url: blog_post_comments_url(@blog_post)) do |f| %>
+<%= form_for(@blog_comments) do |f| %>
+    <div class="row">
+        <% if current_user %>
+        <%= f.hidden_field :author, :value => current_user.email %>
+        <% else %>
+        <div class="form-group">
+            <div class="col-md-6">
+                <%= f.label :author, t('.name', default: 'Your name') %>
+                <%= f.text_field :author,  maxlength: '100', class: 'form-control' %>
+            </div>
+            <div class="col-md-6">
+                <%= f.label :email, t('.email', default: 'Your email address') %>
+                <%= f.text_field :email,  maxlength: '100', class: 'form-control' %>
+            </div>
+        </div>
+        <% end %>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-12">
+                <%= f.label :body, t('comment', default: 'New comment') %>
+                <%= f.text_area :body, maxlength: "5000", rows: "10", class: "form-control" %>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <%= f.submit t('Add_comment', default: 'Add comment'), class: "btn btn-primary btn-lg" %>
+        </div>
+    </div>
+<% end %>
+<%
+=begin
+ %>
+ 
+<%= form_tag(@blog_post_comments, url: blog_post_comments_url(@blog_post)) do %>
+    <div class="row">
+        <% if current_user %>
+        <%= hidden_field_tag :author, value: "#{current_user.email}" %>
+        <% else %>
+        <div class="form-group">
+            <div class="col-md-6">
+                <%= label_tag :author, t('.name', default: 'Your name') %>
+                <%= text_field_tag :body, params[:author], maxlength: '100', class: 'form-control' %>
+            </div>
+            <div class="col-md-6">
+                <%= label_tag :email, t('.email', default: 'Your email address') %>
+                <%= text_field_tag :body, params[:email],  maxlength: '100', class: 'form-control' %>
+            </div>
+        </div>
+        <% end %>
+    </div>
+    <div class="row">
+        <div class="form-group">
+            <div class="col-md-12">
+                <%= label_tag :body, t('comment', default: 'New comment') %>
+                <%= text_area_tag :body, params[:body], maxlength: "5000", rows: "10", class: "form-control" %>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <%= submit_tag t('Add_comment', default: 'Add comment'), class: "btn btn-primary btn-lg" %>
+        </div>
+    </div>
+<% end %>
+ <%
+=end
+ %>
+ 

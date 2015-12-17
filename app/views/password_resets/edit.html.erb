@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="row featured-boxes">
+                <div class="col-md-6">
+                    <div class="featured-box default">
+                        <div class="box-content">
+                        <h4><%= t'Log_in_to_continue' %></h4>
+                        <%= form_for @user, :url => password_reset_path(params[:id]) do |f| %>
+                            <% if @user.errors.any? %>
+                            <div class="error_messages">
+                                <h2>Form is invalid</h2>
+                                <ul>
+                                    <% for message in @user.errors.full_messages %>
+                                    <li><%= message %></li>
+                                    <% end %>
+                                </ul>
+                            </div>
+                            <% end %>
+                            <div class="row">
+                                 <div class="form-group">
+                                    <div class="col-md-6">
+                                        <%= f.label :new_password %>
+                                        <%= f.password_field :new_password, class: "form-control" %>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <%= f.label :new_password_confirmation %>
+                                        <%= f.password_field :new_password_confirmation, class: "form-control" %>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <%= f.submit "Update Password", class: 'btn btn-primary btn-lg pull-right' %>
+                                </div>
+                            </div>
+                        </div>
+                        <% end %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

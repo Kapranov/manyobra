@@ -1,0 +1,1836 @@
+# 2014-07-21 20:05:05:018 [HEAD] ("blog_posts")
+#
+curl -I "http://localhost:9200/blog_posts"
+
+# 2014-07-21 20:05:05:018 [Errno::ECONNREFUSED]
+
+# 2014-07-21 20:06:04:510 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-21 20:06:04:511 [N/A] (N/A msec)
+
+# 2014-07-21 20:06:59:288 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-21 20:06:59:288 [N/A] (N/A msec)
+
+# 2014-07-23 17:21:36:785 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-23 17:21:36:786 [N/A] (N/A msec)
+
+# 2014-07-27 10:03:34:603 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 10:03:34:604 [N/A] (N/A msec)
+
+# 2014-07-27 11:52:17:049 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 11:52:17:050 [N/A] (N/A msec)
+
+# 2014-07-27 11:54:37:836 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 11:54:37:836 [N/A] (N/A msec)
+
+# 2014-07-27 13:18:30:536 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 13:18:30:536 [N/A] (N/A msec)
+
+# 2014-07-27 13:19:49:434 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 13:19:49:434 [N/A] (N/A msec)
+
+# 2014-07-27 13:22:36:741 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 13:22:36:742 [N/A] (N/A msec)
+
+# 2014-07-27 13:24:52:406 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 13:24:52:406 [N/A] (N/A msec)
+
+# 2014-07-27 16:33:38:922 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 16:33:38:922 [N/A] (N/A msec)
+
+# 2014-07-27 17:55:10:213 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 17:55:10:214 [N/A] (N/A msec)
+
+# 2014-07-27 17:57:28:520 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 17:57:28:520 [N/A] (N/A msec)
+
+# 2014-07-27 18:23:16:616 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 18:23:16:617 [N/A] (N/A msec)
+
+# 2014-07-27 18:23:26:851 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 18:23:26:851 [N/A] (N/A msec)
+
+# 2014-07-27 20:00:40:283 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 20:00:40:284 [N/A] (N/A msec)
+
+# 2014-07-27 21:07:55:287 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:07:55:288 [N/A] (N/A msec)
+
+# 2014-07-27 21:10:16:222 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:10:16:254 [N/A] (N/A msec)
+
+# 2014-07-27 21:18:55:916 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:18:55:916 [N/A] (N/A msec)
+
+# 2014-07-27 21:19:45:522 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:19:45:522 [N/A] (N/A msec)
+
+# 2014-07-27 21:21:29:341 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:21:29:341 [N/A] (N/A msec)
+
+# 2014-07-27 21:21:50:049 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-27 21:21:50:049 [N/A] (N/A msec)
+
+# 2014-07-28 00:17:44:433 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 00:17:44:434 [N/A] (N/A msec)
+
+# 2014-07-28 00:17:58:692 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 00:17:58:692 [N/A] (N/A msec)
+
+# 2014-07-28 00:39:51:314 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 00:39:51:314 [N/A] (N/A msec)
+
+# 2014-07-28 00:40:59:046 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 00:40:59:046 [N/A] (N/A msec)
+
+# 2014-07-28 03:06:49:778 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:06:49:779 [N/A] (N/A msec)
+
+# 2014-07-28 03:07:27:501 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:07:27:502 [N/A] (N/A msec)
+
+# 2014-07-28 03:07:37:755 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:07:37:755 [N/A] (N/A msec)
+
+# 2014-07-28 03:07:58:332 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:07:58:332 [N/A] (N/A msec)
+
+# 2014-07-28 03:08:19:159 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:08:19:159 [N/A] (N/A msec)
+
+# 2014-07-28 03:08:29:402 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:08:29:403 [N/A] (N/A msec)
+
+# 2014-07-28 03:18:32:486 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:18:32:489 [N/A] (N/A msec)
+
+# 2014-07-28 03:18:38:451 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:18:38:451 [N/A] (N/A msec)
+
+# 2014-07-28 03:19:45:674 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:19:45:674 [N/A] (N/A msec)
+
+# 2014-07-28 03:20:01:917 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 03:20:01:917 [N/A] (N/A msec)
+
+# 2014-07-28 06:01:22:280 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 06:01:22:283 [N/A] (N/A msec)
+
+# 2014-07-28 06:01:37:407 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 06:01:37:408 [N/A] (N/A msec)
+
+# 2014-07-28 06:53:07:431 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 06:53:07:434 [N/A] (N/A msec)
+
+# 2014-07-28 06:56:59:581 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 06:56:59:581 [N/A] (N/A msec)
+
+# 2014-07-28 06:59:57:195 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 06:59:57:199 [N/A] (N/A msec)
+
+# 2014-07-28 09:31:30:841 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 09:31:30:849 [N/A] (N/A msec)
+
+# 2014-07-28 09:32:16:330 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 09:32:16:330 [N/A] (N/A msec)
+
+# 2014-07-28 09:32:50:887 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 09:32:50:888 [N/A] (N/A msec)
+
+# 2014-07-28 09:33:21:699 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 09:33:21:699 [N/A] (N/A msec)
+
+# 2014-07-28 09:33:52:543 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 09:33:52:543 [N/A] (N/A msec)
+
+# 2014-07-28 11:55:23:563 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 11:55:23:565 [N/A] (N/A msec)
+
+# 2014-07-28 12:10:15:992 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 12:10:15:992 [N/A] (N/A msec)
+
+# 2014-07-28 12:27:01:914 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 12:27:01:915 [N/A] (N/A msec)
+
+# 2014-07-28 12:27:39:062 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 12:27:39:063 [N/A] (N/A msec)
+
+# 2014-07-28 13:31:44:323 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 13:31:44:324 [N/A] (N/A msec)
+
+# 2014-07-28 16:32:33:111 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 16:32:33:111 [N/A] (N/A msec)
+
+# 2014-07-28 16:33:04:148 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 16:33:04:149 [N/A] (N/A msec)
+
+# 2014-07-28 21:45:38:922 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 21:45:38:929 [N/A] (N/A msec)
+
+# 2014-07-28 21:46:11:684 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 21:46:11:685 [N/A] (N/A msec)
+
+# 2014-07-28 23:05:49:737 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-28 23:05:49:741 [N/A] (N/A msec)
+
+# 2014-07-29 02:52:40:150 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 02:52:40:152 [N/A] (N/A msec)
+
+# 2014-07-29 09:02:37:580 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 09:02:37:590 [N/A] (N/A msec)
+
+# 2014-07-29 09:02:39:947 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 09:02:39:947 [N/A] (N/A msec)
+
+# 2014-07-29 14:18:48:723 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 14:18:48:729 [N/A] (N/A msec)
+
+# 2014-07-29 21:20:13:792 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 21:20:13:797 [N/A] (N/A msec)
+
+# 2014-07-29 21:48:06:283 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-29 21:48:06:284 [N/A] (N/A msec)
+
+# 2014-07-30 03:27:40:657 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 03:27:40:665 [N/A] (N/A msec)
+
+# 2014-07-30 03:56:09:822 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 03:56:09:822 [N/A] (N/A msec)
+
+# 2014-07-30 04:23:35:616 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 04:23:35:616 [N/A] (N/A msec)
+
+# 2014-07-30 05:09:11:004 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 05:09:11:004 [N/A] (N/A msec)
+
+# 2014-07-30 06:04:11:458 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 06:04:11:465 [N/A] (N/A msec)
+
+# 2014-07-30 06:38:13:693 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 06:38:13:694 [N/A] (N/A msec)
+
+# 2014-07-30 06:38:24:009 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 06:38:24:009 [N/A] (N/A msec)
+
+# 2014-07-30 07:39:23:745 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 07:39:23:762 [N/A] (N/A msec)
+
+# 2014-07-30 11:48:10:828 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 11:48:10:830 [N/A] (N/A msec)
+
+# 2014-07-30 13:05:21:054 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 13:05:21:056 [N/A] (N/A msec)
+
+# 2014-07-30 18:40:15:285 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-30 18:40:15:286 [N/A] (N/A msec)
+
+# 2014-07-31 17:13:45:586 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-07-31 17:13:45:591 [N/A] (N/A msec)
+
+# 2014-08-01 01:35:44:717 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 01:35:44:734 [N/A] (N/A msec)
+
+# 2014-08-01 07:10:38:320 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 07:10:38:358 [N/A] (N/A msec)
+
+# 2014-08-01 13:15:34:007 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 13:15:34:008 [N/A] (N/A msec)
+
+# 2014-08-01 14:18:37:032 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 14:18:37:033 [N/A] (N/A msec)
+
+# 2014-08-01 14:20:49:796 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 14:20:49:799 [N/A] (N/A msec)
+
+# 2014-08-01 15:13:05:121 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 15:13:05:122 [N/A] (N/A msec)
+
+# 2014-08-01 15:56:23:354 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 15:56:23:355 [N/A] (N/A msec)
+
+# 2014-08-01 15:56:24:735 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 15:56:24:735 [N/A] (N/A msec)
+
+# 2014-08-01 16:01:55:073 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 16:01:55:073 [N/A] (N/A msec)
+
+# 2014-08-01 23:04:37:710 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 23:04:37:715 [N/A] (N/A msec)
+
+# 2014-08-01 23:04:47:903 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-01 23:04:47:903 [N/A] (N/A msec)
+
+# 2014-08-02 04:37:52:587 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-02 04:37:52:595 [N/A] (N/A msec)
+
+# 2014-08-02 04:38:02:770 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-02 04:38:02:770 [N/A] (N/A msec)
+
+# 2014-08-02 10:15:38:452 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-02 10:15:38:454 [N/A] (N/A msec)
+
+# 2014-08-02 10:15:59:099 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-02 10:15:59:101 [N/A] (N/A msec)
+
+# 2014-08-03 15:47:10:632 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-03 15:47:10:632 [N/A] (N/A msec)
+
+# 2014-08-03 18:39:34:658 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-03 18:39:34:660 [N/A] (N/A msec)
+
+# 2014-08-04 01:23:55:258 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-04 01:23:55:260 [N/A] (N/A msec)
+
+# 2014-08-04 07:15:54:574 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-04 07:15:54:582 [N/A] (N/A msec)
+
+# 2014-08-04 10:10:10:506 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-04 10:10:10:510 [N/A] (N/A msec)
+
+# 2014-08-04 19:50:10:791 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-04 19:50:10:793 [N/A] (N/A msec)
+
+# 2014-08-05 02:11:14:749 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 02:11:14:751 [N/A] (N/A msec)
+
+# 2014-08-05 08:12:02:930 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 08:12:02:934 [N/A] (N/A msec)
+
+# 2014-08-05 11:29:51:102 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 11:29:51:105 [N/A] (N/A msec)
+
+# 2014-08-05 14:06:50:581 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 14:06:50:583 [N/A] (N/A msec)
+
+# 2014-08-05 20:29:47:063 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 20:29:47:065 [N/A] (N/A msec)
+
+# 2014-08-05 22:04:05:580 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-05 22:04:05:581 [N/A] (N/A msec)
+
+# 2014-08-06 02:10:11:975 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-06 02:10:11:977 [N/A] (N/A msec)
+
+# 2014-08-06 04:17:05:385 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-06 04:17:05:387 [N/A] (N/A msec)
+
+# 2014-08-06 17:54:54:071 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-06 17:54:54:073 [N/A] (N/A msec)
+
+# 2014-08-07 03:56:05:107 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 03:56:05:109 [N/A] (N/A msec)
+
+# 2014-08-07 06:00:54:123 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:00:54:125 [N/A] (N/A msec)
+
+# 2014-08-07 06:00:54:325 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:00:54:326 [N/A] (N/A msec)
+
+# 2014-08-07 06:02:58:405 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:02:58:405 [N/A] (N/A msec)
+
+# 2014-08-07 06:03:45:138 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:03:45:138 [N/A] (N/A msec)
+
+# 2014-08-07 06:03:45:595 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:03:45:595 [N/A] (N/A msec)
+
+# 2014-08-07 06:04:34:300 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 06:04:34:300 [N/A] (N/A msec)
+
+# 2014-08-07 08:35:41:426 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 08:35:41:454 [N/A] (N/A msec)
+
+# 2014-08-07 10:20:51:104 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 10:20:51:105 [N/A] (N/A msec)
+
+# 2014-08-07 10:49:16:305 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 10:49:16:305 [N/A] (N/A msec)
+
+# 2014-08-07 12:09:11:471 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 12:09:11:474 [N/A] (N/A msec)
+
+# 2014-08-07 21:35:37:150 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-07 21:35:37:156 [N/A] (N/A msec)
+
+# 2014-08-08 05:55:19:469 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-08 05:55:19:471 [N/A] (N/A msec)
+
+# 2014-08-09 09:48:37:959 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-09 09:48:37:961 [N/A] (N/A msec)
+
+# 2014-08-09 11:50:42:517 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-09 11:50:42:517 [N/A] (N/A msec)
+
+# 2014-08-09 20:12:25:818 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-09 20:12:25:820 [N/A] (N/A msec)
+
+# 2014-08-10 01:30:03:512 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-10 01:30:03:513 [N/A] (N/A msec)
+
+# 2014-08-11 05:14:13:494 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 05:14:13:500 [N/A] (N/A msec)
+
+# 2014-08-11 05:14:14:417 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 05:14:14:417 [N/A] (N/A msec)
+
+# 2014-08-11 05:58:34:799 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 05:58:34:800 [N/A] (N/A msec)
+
+# 2014-08-11 05:58:42:556 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 05:58:42:556 [N/A] (N/A msec)
+
+# 2014-08-11 13:32:34:562 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 13:32:34:562 [N/A] (N/A msec)
+
+# 2014-08-11 13:32:36:942 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 13:32:37:041 [N/A] (N/A msec)
+
+# 2014-08-11 18:41:04:932 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-11 18:41:04:933 [N/A] (N/A msec)
+
+# 2014-08-12 00:23:33:614 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-12 00:23:33:616 [N/A] (N/A msec)
+
+# 2014-08-12 04:59:57:179 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-12 04:59:57:180 [N/A] (N/A msec)
+
+# 2014-08-12 11:55:59:626 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-12 11:55:59:627 [N/A] (N/A msec)
+
+# 2014-08-12 12:06:22:520 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-12 12:06:22:621 [N/A] (N/A msec)
+
+# 2014-08-12 17:21:49:089 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-12 17:21:49:090 [N/A] (N/A msec)
+
+# 2014-08-13 02:05:52:518 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 02:05:52:520 [N/A] (N/A msec)
+
+# 2014-08-13 07:18:35:102 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 07:18:35:104 [404] (N/A msec)
+
+# 2014-08-13 07:19:19:042 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 07:19:19:043 [404] (N/A msec)
+
+# 2014-08-13 07:53:06:255 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 07:53:06:256 [404] (N/A msec)
+
+# 2014-08-13 07:53:10:621 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 07:53:10:621 [404] (N/A msec)
+
+# 2014-08-13 07:54:47:414 [HEAD] ("blog_posts")
+#
+curl -I "http://localhost:9200/blog_posts"
+
+# 2014-08-13 07:54:47:415 [404]
+
+# 2014-08-13 07:54:47:911 [CREATE] ("blog_posts")
+#
+curl -X POST http://localhost:9200/blog_posts -d '{"mappings":{"blog/post":{"properties":{}}},"settings":{}}'
+
+# 2014-08-13 07:54:47:911 [200]
+
+# 2014-08-13 07:54:52:350 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 07:54:52:350 [200] (35 msec)
+
+# 2014-08-13 08:36:39:250 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 08:36:39:250 [N/A] (N/A msec)
+
+# 2014-08-13 08:39:45:396 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 08:39:45:397 [200] (338 msec)
+
+# 2014-08-13 08:41:30:100 [blog%2Fpost/1] ("blog_posts")
+#
+curl -X POST "http://localhost:9200/blog_posts/blog%2Fpost/1" -d '{"title":"Права детей","content":"\u003chtml\u003e\r\n\u003chead\u003e\r\n\t\u003ctitle\u003e\u003c/title\u003e\r\n\u003c/head\u003e\r\n\u003cbody\u003e\r\n\u003cp\u003eСфера защиты прав детей последнее время находится на переднем крае законодательного процесса. Например, запретили усыновление в США, из последних сил защищают детей от \u0026laquo;вредной информации\u0026raquo;, пытаются что-то предпринять, чтобы \u0026laquo;\u003ca href=\"http://zharov.info/pravo/u1688\"\u003eувеличить усыновление\u003c/a\u003e\u0026laquo;\u0026hellip; Но только сотрудникам органов опеки \u0026mdash; не легче. Чем больше на них наваливается забот, тем меньше выходит методических материалов и каких-то разъяснений: что же с этим всем делать. Как, например, вести себя органу опеки, если поступил запрос о продаже квартиры ребенка? Ведь нет никакого законодательства \u0026mdash; очень общие фразы, и все. Или, например,\u0026nbsp;\u003ca href=\"http://zharov.info/adoption/lishenie-roditelskix-prav-poryadok-dejstvij-dokumenty-zakony\"\u003eлишение родительских прав\u003c/a\u003e\u0026hellip; Вопросов больше, чем строчек в законе.\u003c/p\u003e\r\n\r\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\r\n\r\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\r\n\r\n\u003cp\u003eКоманда адвоката Жарова старается что-то изменить в создавшейся ситуации. В частности, мы принимаем активнейшее участие в подготовке новых нормативных актов в этой сфере. Но этого \u0026mdash; мало. Методическая помощь, разъяснения, рекомендации, расшифровки тягуче завернутой мысли законодателя \u0026mdash; вот, чем мы по мере сил заняты денно и нощно.\u003c/p\u003e\r\n\r\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\r\n\r\n\u003cp\u003e\u0026nbsp;\u003c/p\u003e\r\n\r\n\u003cp\u003eМы старались, чтобы каждый сотрудник сферы защиты детства нашел ответ на вопрос в любой сложной ситуации. И продолжаем эту работу каждый день. Пользуйтесь, пожалуйста. Ведь у нас с вами одна забота \u0026mdash; интересы детей.\u003c/p\u003e\r\n\u003c/body\u003e\r\n\u003c/html\u003e\r\n","slug":"childrens","author":"zhuk_andriy@hotmail.com","image_file_name":null,"image_content_type":null,"image_file_size":null,"image_updated_at":null,"created_at":"2014-08-13T12:41:28.302Z","updated_at":"2014-08-13T12:41:28.302Z"}'
+
+# 2014-08-13 08:41:30:103 [201]
+
+# 2014-08-13 08:58:03:448 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 08:58:03:449 [200] (242 msec)
+
+# 2014-08-13 08:59:11:893 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 08:59:11:894 [200] (12 msec)
+
+# 2014-08-13 09:06:10:313 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:06:10:314 [200] (3 msec)
+
+# 2014-08-13 09:06:55:933 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:06:55:933 [200] (2 msec)
+
+# 2014-08-13 09:07:23:355 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:07:23:355 [200] (4 msec)
+
+# 2014-08-13 09:09:37:343 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:09:37:344 [200] (6 msec)
+
+# 2014-08-13 09:13:39:681 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:13:39:681 [200] (3 msec)
+
+# 2014-08-13 09:13:52:261 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:13:52:261 [200] (3 msec)
+
+# 2014-08-13 09:15:39:743 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:15:39:744 [200] (3 msec)
+
+# 2014-08-13 09:15:52:902 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:15:52:902 [200] (4 msec)
+
+# 2014-08-13 09:16:01:652 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:16:01:653 [200] (8 msec)
+
+# 2014-08-13 09:26:25:793 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:26:25:794 [200] (5 msec)
+
+# 2014-08-13 09:40:02:060 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 09:40:02:060 [200] (5 msec)
+
+# 2014-08-13 10:26:55:621 [blog%2Fpost/2] ("blog_posts")
+#
+curl -X POST "http://localhost:9200/blog_posts/blog%2Fpost/2" -d '{"title":"test","content":"Сфера защиты прав детей последнее время находится на переднем крае законодательного процесса. Например, запретили усыновление в США, из последних сил защищают детей от «вредной информации», пытаются что-то предпринять, чтобы «увеличить усыновление«… Но только сотрудникам органов опеки — не легче. Чем больше на них наваливается забот, тем меньше выходит методических материалов и каких-то разъяснений: что же с этим всем делать. Как, например, вести себя органу опеки, если поступил запрос о продаже квартиры ребенка? Ведь нет никакого законодательства — очень общие фразы, и все. Или, например, лишение родительских прав… Вопросов больше, чем строчек в законе.\r\n\r\nКоманда адвоката Жарова старается что-то изменить в создавшейся ситуации. В частности, мы принимаем активнейшее участие в подготовке новых нормативных актов в этой сфере. Но этого — мало. Методическая помощь, разъяснения, рекомендации, расшифровки тягуче завернутой мысли законодателя — вот, чем мы по мере сил заняты денно и нощно.\r\n\r\nМы старались, чтобы каждый сотрудник сферы защиты детства нашел ответ на вопрос в любой сложной ситуации. И продолжаем эту работу каждый день. Пользуйтесь, пожалуйста. Ведь у нас с вами одна забота — интересы детей.","slug":"test","author":"zhuk_andriy@hotmail.com","image_file_name":"fedosin-site.png","image_content_type":"image/png","image_file_size":223973,"image_updated_at":"2014-08-13T14:26:54.295Z","created_at":"2014-08-13T14:26:55.415Z","updated_at":"2014-08-13T14:26:55.415Z"}'
+
+# 2014-08-13 10:26:55:622 [201]
+
+# 2014-08-13 10:27:16:780 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 10:27:16:780 [200] (20 msec)
+
+# 2014-08-13 11:34:02:933 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 11:34:02:934 [200] (7 msec)
+
+# 2014-08-13 12:47:16:011 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:47:16:012 [200] (5 msec)
+
+# 2014-08-13 12:47:41:937 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:47:41:937 [200] (6 msec)
+
+# 2014-08-13 12:50:28:431 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:50:28:432 [200] (44 msec)
+
+# 2014-08-13 12:52:31:550 [blog%2Fpost/3] ("blog_posts")
+#
+curl -X POST "http://localhost:9200/blog_posts/blog%2Fpost/3" -d '{"title":"Скасовано перевірки суб'єктів господарювання","content":"31.07.2014 р. Верховною Радою України прийнято Закон «Про внесення змін до Закону України «Про Державний бюджет України на 2014 рік» № 1622-VII (надалі – Закон), який набрав чинності 03.08.2014 року.\r\n\r\nСтаттею 31 Закону установлено, що перевірки підприємств, установ та організацій, фізичних осіб - підприємців контролюючими органами (крім Державної фіскальної служби України) здійснюються протягом серпня - грудня 2014 року виключно з дозволу Кабінету Міністрів України або за заявкою суб’єкта господарювання щодо його перевірки.","slug":"cancelled_check_undertakings","author":"zhuk_andriy@hotmail.com","image_file_name":"proverka.png","image_content_type":"image/png","image_file_size":47269,"image_updated_at":"2014-08-13T16:52:30.898Z","created_at":"2014-08-13T16:52:31.493Z","updated_at":"2014-08-13T16:52:31.493Z"}'
+
+# 2014-08-13 12:52:31:550 [201]
+
+# 2014-08-13 12:52:54:560 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:52:54:560 [200] (9 msec)
+
+# 2014-08-13 12:53:56:341 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:53:56:341 [200] (5 msec)
+
+# 2014-08-13 12:54:43:916 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 12:54:43:917 [200] (4 msec)
+
+# 2014-08-13 13:29:35:391 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 13:29:35:392 [200] (8 msec)
+
+# 2014-08-13 13:43:55:860 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 13:43:55:860 [200] (5 msec)
+
+# 2014-08-13 14:59:51:132 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 14:59:51:133 [200] (6 msec)
+
+# 2014-08-13 15:13:32:530 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 15:13:32:530 [200] (4 msec)
+
+# 2014-08-13 15:49:15:014 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 15:49:15:015 [200] (5 msec)
+
+# 2014-08-13 15:49:19:320 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 15:49:19:321 [200] (2 msec)
+
+# 2014-08-13 15:56:49:721 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 15:56:49:722 [200] (3 msec)
+
+# 2014-08-13 15:58:11:507 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 15:58:11:507 [200] (3 msec)
+
+# 2014-08-13 16:03:42:897 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-13 16:03:42:897 [200] (6 msec)
+
+# 2014-08-14 00:42:22:376 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 00:42:22:409 [200] (6 msec)
+
+# 2014-08-14 00:48:51:940 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 00:48:51:941 [200] (3 msec)
+
+# 2014-08-14 03:07:15:593 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 03:07:15:594 [200] (9 msec)
+
+# 2014-08-14 07:17:11:726 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 07:17:11:727 [200] (5 msec)
+
+# 2014-08-14 09:11:46:710 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 09:11:46:711 [N/A] (N/A msec)
+
+# 2014-08-14 09:14:50:902 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 09:14:50:903 [N/A] (N/A msec)
+
+# 2014-08-14 10:50:39:574 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 10:50:39:574 [N/A] (N/A msec)
+
+# 2014-08-14 15:02:04:266 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 15:02:04:267 [N/A] (N/A msec)
+
+# 2014-08-14 22:10:54:763 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 22:10:54:764 [N/A] (N/A msec)
+
+# 2014-08-14 22:28:45:348 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 22:28:45:348 [N/A] (N/A msec)
+
+# 2014-08-14 22:40:17:705 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 22:40:17:705 [N/A] (N/A msec)
+
+# 2014-08-14 22:42:00:101 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-14 22:42:00:101 [N/A] (N/A msec)
+
+# 2014-08-15 02:45:39:747 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 02:45:39:748 [N/A] (N/A msec)
+
+# 2014-08-15 03:10:05:947 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 03:10:05:948 [N/A] (N/A msec)
+
+# 2014-08-15 06:38:57:982 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 06:38:57:983 [N/A] (N/A msec)
+
+# 2014-08-15 06:39:08:176 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 06:39:08:176 [N/A] (N/A msec)
+
+# 2014-08-15 15:16:33:842 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 15:16:33:843 [N/A] (N/A msec)
+
+# 2014-08-15 15:16:39:241 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 15:16:39:241 [N/A] (N/A msec)
+
+# 2014-08-15 17:54:39:195 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-15 17:54:39:196 [N/A] (N/A msec)
+
+# 2014-08-16 08:25:03:192 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 08:25:03:193 [N/A] (N/A msec)
+
+# 2014-08-16 10:33:28:201 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 10:33:28:202 [N/A] (N/A msec)
+
+# 2014-08-16 13:23:13:232 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 13:23:13:232 [N/A] (N/A msec)
+
+# 2014-08-16 14:06:37:564 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 14:06:37:565 [N/A] (N/A msec)
+
+# 2014-08-16 18:53:11:222 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 18:53:11:225 [N/A] (N/A msec)
+
+# 2014-08-16 19:30:53:540 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:30:53:541 [N/A] (N/A msec)
+
+# 2014-08-16 19:33:18:652 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:33:18:652 [N/A] (N/A msec)
+
+# 2014-08-16 19:33:52:020 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:33:52:020 [N/A] (N/A msec)
+
+# 2014-08-16 19:34:38:944 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:34:38:945 [N/A] (N/A msec)
+
+# 2014-08-16 19:35:31:255 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:35:31:257 [200] (195 msec)
+
+# 2014-08-16 19:36:44:278 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:36:44:279 [N/A] (N/A msec)
+
+# 2014-08-16 19:36:53:657 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:36:53:657 [N/A] (N/A msec)
+
+# 2014-08-16 19:39:33:859 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:39:33:859 [200] (66 msec)
+
+# 2014-08-16 19:39:45:954 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:39:45:954 [200] (5 msec)
+
+# 2014-08-16 19:40:23:938 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:40:23:938 [200] (3 msec)
+
+# 2014-08-16 19:40:35:804 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:40:35:804 [200] (3 msec)
+
+# 2014-08-16 19:40:49:172 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:40:49:173 [200] (6 msec)
+
+# 2014-08-16 19:41:05:760 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:41:05:761 [200] (4 msec)
+
+# 2014-08-16 19:41:30:843 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-16 19:41:30:844 [200] (4 msec)
+
+# 2014-08-17 03:43:37:690 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-17 03:43:37:691 [N/A] (N/A msec)
+
+# 2014-08-17 09:51:15:008 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-17 09:51:15:010 [N/A] (N/A msec)
+
+# 2014-08-17 20:49:52:242 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-17 20:49:52:244 [N/A] (N/A msec)
+
+# 2014-08-17 21:41:49:268 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-17 21:41:49:268 [N/A] (N/A msec)
+
+# 2014-08-18 04:09:55:565 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-18 04:09:55:569 [N/A] (N/A msec)
+
+# 2014-08-18 10:05:56:984 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-18 10:05:56:986 [N/A] (N/A msec)
+
+# 2014-08-18 11:34:05:472 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-18 11:34:05:472 [N/A] (N/A msec)
+
+# 2014-08-18 11:34:08:292 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-18 11:34:08:292 [N/A] (N/A msec)
+
+# 2014-08-19 06:51:38:718 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-19 06:51:38:719 [N/A] (N/A msec)
+
+# 2014-08-19 20:44:33:507 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-19 20:44:33:509 [N/A] (N/A msec)
+
+# 2014-08-19 21:10:50:532 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-19 21:10:50:532 [N/A] (N/A msec)
+
+# 2014-08-20 03:50:03:035 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:50:03:038 [N/A] (N/A msec)
+
+# 2014-08-20 03:50:05:537 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:50:05:537 [N/A] (N/A msec)
+
+# 2014-08-20 03:50:06:728 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:50:06:728 [N/A] (N/A msec)
+
+# 2014-08-20 03:50:42:675 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:50:42:676 [200] (214 msec)
+
+# 2014-08-20 03:53:52:593 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:53:52:593 [200] (16 msec)
+
+# 2014-08-20 03:59:39:608 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 03:59:39:609 [200] (5 msec)
+
+# 2014-08-20 11:27:54:951 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 11:27:54:952 [N/A] (N/A msec)
+
+# 2014-08-20 12:05:47:170 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 12:05:47:172 [N/A] (N/A msec)
+
+# 2014-08-20 14:49:20:715 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 14:49:20:718 [N/A] (N/A msec)
+
+# 2014-08-20 14:50:01:585 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-20 14:50:01:585 [N/A] (N/A msec)
+
+# 2014-08-21 10:06:27:167 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 10:06:27:168 [N/A] (N/A msec)
+
+# 2014-08-21 10:08:14:939 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 10:08:14:942 [200] (100 msec)
+
+# 2014-08-21 11:10:26:022 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 11:10:26:024 [N/A] (N/A msec)
+
+# 2014-08-21 12:05:47:366 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 12:05:47:367 [N/A] (N/A msec)
+
+# 2014-08-21 13:35:56:642 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 13:35:56:642 [N/A] (N/A msec)
+
+# 2014-08-21 13:38:15:522 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 13:38:15:522 [N/A] (N/A msec)
+
+# 2014-08-21 13:39:13:510 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 13:39:13:510 [N/A] (N/A msec)
+
+# 2014-08-21 16:10:56:082 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 16:10:56:084 [N/A] (N/A msec)
+
+# 2014-08-21 17:12:51:783 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 17:12:51:783 [N/A] (N/A msec)
+
+# 2014-08-21 17:16:29:102 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-21 17:16:29:102 [N/A] (N/A msec)
+
+# 2014-08-22 00:17:16:505 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 00:17:16:508 [N/A] (N/A msec)
+
+# 2014-08-22 00:17:26:757 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 00:17:26:758 [N/A] (N/A msec)
+
+# 2014-08-22 02:35:58:219 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 02:35:58:220 [N/A] (N/A msec)
+
+# 2014-08-22 02:36:52:058 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 02:36:52:060 [200] (77 msec)
+
+# 2014-08-22 02:47:10:116 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 02:47:10:118 [200] (24 msec)
+
+# 2014-08-22 04:50:00:445 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 04:50:00:446 [200] (17 msec)
+
+# 2014-08-22 04:50:23:902 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 04:50:23:903 [200] (5 msec)
+
+# 2014-08-22 07:00:57:456 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:00:57:457 [200] (89 msec)
+
+# 2014-08-22 07:01:09:968 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:01:09:968 [200] (5 msec)
+
+# 2014-08-22 07:02:14:049 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:02:14:050 [200] (9 msec)
+
+# 2014-08-22 07:02:14:496 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:02:14:496 [200] (3 msec)
+
+# 2014-08-22 07:02:18:648 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:02:18:648 [200] (4 msec)
+
+# 2014-08-22 07:02:23:081 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-22 07:02:23:081 [200] (3 msec)
+
+# 2014-08-23 02:57:45:849 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-23 02:57:45:852 [200] (39 msec)
+
+# 2014-08-23 03:21:42:744 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-23 03:21:42:744 [200] (7 msec)
+
+# 2014-08-23 04:59:47:055 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-23 04:59:47:060 [200] (168 msec)
+
+# 2014-08-23 04:59:48:563 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-23 04:59:48:563 [200] (8 msec)
+
+# 2014-08-23 05:17:36:245 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-23 05:17:36:246 [200] (6 msec)
+
+# 2014-08-24 10:01:53:555 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-24 10:01:53:558 [N/A] (N/A msec)
+
+# 2014-08-24 10:05:23:869 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-24 10:05:23:870 [N/A] (N/A msec)
+
+# 2014-08-24 10:05:51:658 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-24 10:05:51:659 [200] (58 msec)
+
+# 2014-08-24 10:06:06:551 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-24 10:06:06:552 [200] (9 msec)
+
+# 2014-08-24 10:06:36:786 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-24 10:06:36:787 [200] (5 msec)
+
+# 2014-08-25 07:34:19:839 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 07:34:19:842 [N/A] (N/A msec)
+
+# 2014-08-25 07:34:26:421 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 07:34:26:422 [N/A] (N/A msec)
+
+# 2014-08-25 08:22:50:229 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 08:22:50:229 [N/A] (N/A msec)
+
+# 2014-08-25 09:35:48:828 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 09:35:48:828 [N/A] (N/A msec)
+
+# 2014-08-25 17:00:39:377 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 17:00:39:378 [N/A] (N/A msec)
+
+# 2014-08-25 17:05:28:448 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-25 17:05:28:448 [N/A] (N/A msec)
+
+# 2014-08-26 04:24:59:037 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 04:24:59:039 [200] (285 msec)
+
+# 2014-08-26 05:09:46:807 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:09:46:810 [200] (10 msec)
+
+# 2014-08-26 05:09:50:732 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:09:50:732 [200] (12 msec)
+
+# 2014-08-26 05:49:52:914 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:49:52:915 [200] (10 msec)
+
+# 2014-08-26 05:55:46:889 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:55:46:890 [200] (104 msec)
+
+# 2014-08-26 05:55:57:654 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:55:57:654 [200] (4 msec)
+
+# 2014-08-26 05:56:31:549 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:56:31:550 [200] (106 msec)
+
+# 2014-08-26 05:56:36:368 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:56:36:368 [200] (6 msec)
+
+# 2014-08-26 05:56:53:233 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:56:53:234 [200] (6 msec)
+
+# 2014-08-26 05:57:39:819 [HEAD] ("blog_posts")
+#
+curl -I "http://localhost:9200/blog_posts"
+
+# 2014-08-26 05:57:39:820 [200]
+
+# 2014-08-26 05:57:40:301 [_bulk] ("blog_posts")
+#
+curl -X POST "http://localhost:9200/blog_posts/_bulk" --data-binary '... data omitted ...'
+
+# 2014-08-26 05:57:40:301 [200]
+
+# 2014-08-26 05:59:06:261 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:59:06:262 [200] (11 msec)
+
+# 2014-08-26 05:59:06:413 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:59:06:413 [200] (19 msec)
+
+# 2014-08-26 05:59:06:569 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 05:59:06:569 [200] (3 msec)
+
+# 2014-08-26 06:12:34:774 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 06:12:34:775 [N/A] (N/A msec)
+
+# 2014-08-26 08:22:26:447 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-26 08:22:26:448 [N/A] (N/A msec)
+
+# 2014-08-27 03:55:15:389 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 03:55:15:390 [N/A] (N/A msec)
+
+# 2014-08-27 04:44:33:838 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 04:44:33:840 [N/A] (N/A msec)
+
+# 2014-08-27 05:06:50:385 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 05:06:50:386 [N/A] (N/A msec)
+
+# 2014-08-27 05:20:57:049 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 05:20:57:049 [N/A] (N/A msec)
+
+# 2014-08-27 05:27:55:365 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 05:27:55:366 [N/A] (N/A msec)
+
+# 2014-08-27 05:32:03:668 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 05:32:03:668 [N/A] (N/A msec)
+
+# 2014-08-27 09:27:42:485 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 09:27:42:486 [N/A] (N/A msec)
+
+# 2014-08-27 09:28:14:416 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-27 09:28:14:416 [N/A] (N/A msec)
+
+# 2014-08-28 13:36:52:379 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:36:52:380 [N/A] (N/A msec)
+
+# 2014-08-28 13:37:09:224 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:37:09:224 [N/A] (N/A msec)
+
+# 2014-08-28 13:47:11:058 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:47:11:058 [N/A] (N/A msec)
+
+# 2014-08-28 13:49:40:069 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:49:40:070 [N/A] (N/A msec)
+
+# 2014-08-28 13:50:32:443 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:50:32:444 [N/A] (N/A msec)
+
+# 2014-08-28 13:50:36:158 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-28 13:50:36:158 [N/A] (N/A msec)
+
+# 2014-08-29 02:23:28:153 [_search] (["blog_posts"])
+#
+curl -X GET 'http://localhost:9200/blog_posts/blog%2Fpost/_search?size=10&pretty' -d '{"size":10}'
+
+# 2014-08-29 02:23:28:154 [N/A] (N/A msec)
+

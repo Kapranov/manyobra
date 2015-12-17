@@ -1,0 +1,7 @@
+<%# add navigation links to this file %>
+<li><%= link_to t('Home'), page_home_path, title: I18n.t(:home, :scope => 'layouts.navigation_link.links_title') %></li>
+<li><%= link_to t('About_us'), page_about_us_path, title: I18n.t(:about_us, :scope => 'layouts.navigation_link.links_title'), :rel => "author" %></li>
+<li><%= link_to t('Services'), page_services_path, title: I18n.t(:services, :scope => 'layouts.navigation_link.links_title') %></li>
+<li><%= link_to t('Prices'), page_prices_path, title: I18n.t(:prices, :scope => 'layouts.navigation_link.links_title')  %></li>
+<li><%= link_to t('Blog'), blog_path, title: I18n.t(:blog, :scope => 'layouts.navigation_link.links_title') %></li>
+<li><%= link_to t('Contact'), page_contact_path, title: I18n.t(:contact, :scope => 'layouts.navigation_link.links_title'), :rel => "contact" %></li>

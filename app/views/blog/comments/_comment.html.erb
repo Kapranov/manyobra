@@ -1,0 +1,18 @@
+<li>
+    <div class="comment">
+        <div class="img-thumbnail">
+            <img class="avatar" alt="" src="img/avatar.jpg" />
+        </div>
+        <div class="comment-block">
+            <div class="comment-arrow"></div>
+            <span class="comment-by">
+                <strong><%#= comment.author %></strong>
+                <span class="pull-right">
+                    <span> <a href="#"><i class="icon icon-reply"></i> Reply</a></span>
+                </span>
+            </span>
+            <p><%= comment.body %></p>
+            <span class="date pull-right"><%#= time_ago_in_words(comment.created_at) %></span>
+        </div>
+    </div>
+</li>

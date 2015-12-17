@@ -1,0 +1,173 @@
+<% content_for :title do t'.page.title' end %>
+<% content_for :description do t'.page.description' end %>
+<%= current_user.inspect %>
+<div class="container">
+    <div class="row">
+    <% if @user.errors.any? %>  
+      <div id="errorExplanation">  
+        <h2><%= pluralize(@user.errors.count, 'error') %> prohibited this user from being saved:</h2>
+        <ul>
+        <% @user.errors.full_messages.each do |msg| %>  
+          <li><%= msg %></li>  
+        <% end %>  
+        </ul>  
+      </div>  
+    <% end %>
+    <%= form_for @user, url: profile_path, method: :post do |f| %>
+        <div class="row">
+            <div class="form-group">
+                <%= label :user, t('.profile_picture'), class: "col-sm-2 control-label" %>
+                <div class="col-sm-4 col-md-offset-2">
+                    <%= image_tag current_user.avatar.url(:original) %>
+                </div>
+                <div class="col-sm-4">
+                    <%= link_to I18n.t('Change_profile_picture'), avatar_path %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= label :user, t('.email'), class: "col-sm-2 control-label" %>
+                <div class="col-sm-4 col-md-offset-2">
+                    <%= @user.email %>
+                </div>
+                <div class="col-sm-4">
+                    <%= link_to I18n.t('Change_password'), change_password_path %>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= label :user, :time_zone, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        GMT <%= I18n.t(@user.time_zone, :scope => 'timezones') %>
+                    </div>
+                    <div class="col-sm-4">
+                        <%= link_to I18n.t('Change_time_zone'), change_time_zone_path %>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= label :user, :language, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <% unless @user.language.blank? %>
+                            <%= I18n.t(@user.language, :scope => 'languages.names') %>
+                        <% else %>
+                            <%= t'Language_was_not_specified' %>
+                        <% end %>
+                    </div>
+                    <div class="col-sm-4">
+                        <%= link_to I18n.t('Change_language'), change_language_path %>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= label :user, :default_currency, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= @user.currency %> (<%= I18n.t @user.currency, :scope => 'currencies.names.long' %>)
+                    </div>
+                    <div class="col-sm-4">
+                        <%= link_to I18n.t('Change_currency'), change_currency_path %>
+                    </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :first_name, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.text_field :first_name, class: "form-control" %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :last_name, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.text_field :last_name, class: "form-control" %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :birthday, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.date_select :birthday, start_year: Time.now.year - 10, end_year: Time.now.year - 120, prompt: true, class: 'userBirthday' %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :gender, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.select :gender, options_for_select(t("options_for_select_gender").invert), prompt: true %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :city, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.text_field :city, class: "form-control" %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :province, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.text_field :province, class: "form-control" %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :country, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.country_select :country, priority: %w(UA RU), prompt: t("Please select a country") %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <%= f.label :email, class: "col-sm-2 control-label" %>
+                    <div class="col-sm-4 col-md-offset-2">
+                        <%= f.text_field :email, class: "form-control" %>
+                    </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <%= f.label :mobile, class: "control-label" %>
+                </div>
+                <div class="col-sm-4 col-md-offset-2">
+                    <%= f.text_field :mobile, class: "form-control" %>
+                </div>
+                     
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <%= f.label :landline, class: "control-label" %>
+                </div>
+                <div class="col-sm-4 col-md-offset-2">
+                    <%= f.text_field :landline, class: "form-control" %>
+                </div>
+            </div>
+        </div>
+
+        <%= f.submit :class => 'btn btn-primary btn-lg' %>
+    <% end %>
+    </div>
+</div>

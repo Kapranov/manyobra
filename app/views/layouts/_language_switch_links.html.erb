@@ -1,0 +1,7 @@
+<i class="fa fa-globe fa-lg"></i>
+<%= link_to_unless I18n.locale == :en, "English", { :locale => "en" }, :data => { :rel => "tooltip", :placement => "#{ params[:tooltip_placement] }" }, :title => t('languages.names.en'), :rel => "#{ params[:rel] }" %> <span>&middot;</span> 
+
+<%= link_to_unless I18n.locale == :es, "Español", { locale: "es" }, :data => { :rel => "tooltip", :placement => "#{ params[:tooltip_placement] }" }, :title => t('languages.names.es'), :rel => "#{ params[:rel] }" %> <span>&middot;</span> 
+
+
+<%= link_to_unless I18n.locale == :ru, "Русский", { locale: "ru" }, :data => { :rel => "tooltip", :placement => "#{ params[:tooltip_placement] }" }, :title => t('languages.names.ru'), :rel => "#{ params[:rel] }" %>
